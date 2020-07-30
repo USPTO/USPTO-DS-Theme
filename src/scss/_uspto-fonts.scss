@@ -1,0 +1,248 @@
+@use "sass:map";
+
+$font-family-sans-serif: 'Public Sans Web', -apple-system, BlinkMacSystemFont,
+  'Segoe UI', 'Roboto', Helvetica, Arial, sans-serif, 'Apple Color Emoji',
+  'Segoe UI Emoji', 'Segoe UI Symbol';
+$font-family-georgia: 'Merriweather Web', 'Georgia', 'Cambria',
+  'Times New Roman', 'Times', serif;
+$font-family-helvetica: Helvetica Neue, 'Helvetica', 'Roboto', 'Arial',
+  sans-serif;
+$font-family-monospace: 'Roboto Mono Web', 'Bitstream Vera Sans Mono',
+  'Consolas', 'Courier', monospace;
+
+$uspto-fonts: (
+  'sans-serif': (
+    display-name: null,
+    cap-height: 362px,
+    stack: $font-family-sans-serif,
+    system-font: true,
+  ),
+  'georgia': (
+    display-name: 'Georgia',
+    cap-height: 346px,
+    stack: $font-family-georgia,
+    system-font: true,
+  ),
+  'helvetica': (
+    display-name: 'Helvetica Neue',
+    cap-height: 357px,
+    stack: $font-family-helvetica,
+    system-font: true,
+  ),
+  'tahoma': (
+    display-name: 'Tahoma',
+    cap-height: 363px,
+    stack: $font-family-sans-serif,
+  ),
+  'verdana': (
+    display-name: 'Verdana',
+    cap-height: 364px,
+    stack: $font-family-sans-serif,
+  ),
+  'open-sans': (
+    display-name: 'Open Sans',
+    cap-height: 357px,
+    stack: $font-family-sans-serif,
+  ),
+  'merriweather': (
+    display-name: 'Merriweather Web',
+    cap-height: 371px,
+    stack: $font-family-georgia,
+    src: (
+      dir: 'merriweather',
+      roman: (
+        100: false,
+        200: false,
+        300: 'Latin-Merriweather-Light',
+        400: 'Latin-Merriweather-Regular',
+        500: false,
+        600: false,
+        700: 'Latin-Merriweather-Bold',
+        800: false,
+        900: 'Latin-Merriweather-Black',
+      ),
+      italic: (
+        100: false,
+        200: false,
+        300: 'Latin-Merriweather-LightItalic',
+        400: 'Latin-Merriweather-Italic',
+        500: false,
+        600: false,
+        700: 'Latin-Merriweather-BoldItalic',
+        800: false,
+        900: 'Latin-Merriweather-BlackItalic',
+      ),
+    ),
+  ),
+  'roboto-mono': (
+    display-name: 'Roboto Mono Web',
+    cap-height: 380px,
+    stack: $font-family-monospace,
+    src: (
+      dir: 'roboto-mono',
+      roman: (
+        100: 'roboto-mono-v5-latin-100',
+        200: false,
+        300: 'roboto-mono-v5-latin-300',
+        400: 'roboto-mono-v5-latin-regular',
+        500: 'roboto-mono-v5-latin-500',
+        600: false,
+        700: 'roboto-mono-v5-latin-700',
+        800: false,
+        900: false,
+      ),
+      italic: (
+        100: 'roboto-mono-v5-latin-100italic',
+        200: false,
+        300: 'roboto-mono-v5-latin-300italic',
+        400: 'roboto-mono-v5-latin-italic',
+        500: 'roboto-mono-v5-latin-500italic',
+        600: false,
+        700: 'roboto-mono-v5-latin-700italic',
+        800: false,
+        900: false,
+      ),
+    ),
+  ),
+  'source-sans-pro': (
+    display-name: 'Source Sans Pro Web',
+    cap-height: 340px,
+    stack: $font-family-helvetica,
+    src: (
+      dir: 'source-sans-pro',
+      roman: (
+        100: false,
+        200: 'sourcesanspro-extralight-webfont',
+        300: 'sourcesanspro-light-webfont',
+        400: 'sourcesanspro-regular-webfont',
+        500: false,
+        600: 'sourcesanspro-semibold-webfont',
+        700: 'sourcesanspro-bold-webfont',
+        800: false,
+        900: 'sourcesanspro-black-webfont',
+      ),
+      italic: (
+        100: false,
+        200: 'sourcesanspro-extralightitalic-webfont',
+        300: 'sourcesanspro-lightitalic-webfont',
+        400: 'sourcesanspro-italic-webfont',
+        500: false,
+        600: 'sourcesanspro-semibolditalic-webfont',
+        700: 'sourcesanspro-bolditalic-webfont',
+        800: false,
+        900: 'sourcesanspro-blackitalic-webfont',
+      ),
+    ),
+  ),
+  'public-sans': (
+    display-name: 'Public Sans Web',
+    cap-height: 362px,
+    stack: $font-family-sans-serif,
+    src: (
+      dir: 'public-sans',
+      roman: (
+        100: 'PublicSans-Thin',
+        200: 'PublicSans-ExtraLight',
+        300: 'PublicSans-Light',
+        400: 'PublicSans-Regular',
+        500: 'PublicSans-Medium',
+        600: 'PublicSans-SemiBold',
+        700: 'PublicSans-Bold',
+        800: 'PublicSans-ExtraBold',
+        900: 'PublicSans-Black',
+      ),
+      italic: (
+        100: 'PublicSans-ThinItalic',
+        200: 'PublicSans-ExtraLightItalic',
+        300: 'PublicSans-LightItalic',
+        400: 'PublicSans-Italic',
+        500: 'PublicSans-MediumItalic',
+        600: 'PublicSans-SemiBoldItalic',
+        700: 'PublicSans-BoldItalic',
+        800: 'PublicSans-ExtraBoldItalic',
+        900: 'PublicSans-BlackItalic',
+      ),
+    ),
+  ),
+);
+
+// Output the @font-face rule
+@mixin at-font-face($display-name, $file-path, $font-weight, $font-style) {
+  $file-path: unquote($file-path);
+
+  // TODO: If $theme-use-rails-pipeline use font-url() statements
+  // instead of url()
+  // Dunno why I can't do this without an error...
+
+  @font-face {
+    font-family: unquote($display-name);
+    font-style: unquote($font-style);
+    font-weight: $font-weight;
+    font-display: fallback;
+    src: url(#{$file-path}.woff2) format('woff2'),
+      url(#{$file-path}.woff) format('woff'),
+      url(#{$file-path}.ttf) format('truetype');
+  }
+}
+
+// Loop through weights, then call at-font-face
+@mixin generate-font-face(
+  $font-style-src,
+  $output-weights,
+  $display-name,
+  $dir,
+  $font-style
+) {
+  @each $font-weight, $filename in $font-style-src {
+    @each $key, $output-weight in $output-weights {
+      @if $output-weight == $font-weight and $filename {
+        @include at-font-face(
+          '#{$display-name}',
+          './fonts/#{$dir}/#{$filename}',
+          #{$font-weight},
+          unquote('#{$font-style}')
+        );
+      }
+    }
+  }
+}
+
+@each $font, $font-name in $uspto-fonts {
+  $this-src: map-get($font-name, src);
+  $display-name: map-get($font-name, display-name);
+  @if $this-src {
+    $dir: map.get($this-src, dir);
+    $roman: map-get($this-src, roman);
+    $italic: map-get($this-src, italic);
+    $output-weights: (
+      100: 100,
+      200: 200,
+      300: 300,
+      400: 400,
+      500: 500,
+      600: 600,
+      700: 700,
+      800: 800,
+      900: 900,
+    );
+
+    @if $roman {
+      @include generate-font-face(
+        $roman,
+        $output-weights,
+        $display-name,
+        $dir,
+        normal
+      );
+    }
+    @if $italic {
+      @include generate-font-face(
+        $italic,
+        $output-weights,
+        $display-name,
+        $dir,
+        italic
+      );
+    }
+  }
+}

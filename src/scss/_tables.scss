@@ -1,0 +1,34 @@
+@use "sass:map";
+
+.table {
+  td,
+  th {
+    border-bottom: $table-border-width solid $table-border-color;
+    border-top: 0;
+  }
+
+  tbody th {
+    font-weight: $font-weight-normal;
+  }
+
+  thead th {
+    border-bottom-width: $table-border-width;
+  }
+  &.table-dark {
+    background-color: $secondary-darker;
+    color: $white;
+  }
+}
+
+@each $color, $value in $theme-colors {
+  @include table-row-variant(
+    $color,
+    map.get($colors-variant, #{$color}-lightest),
+    $value
+  );
+  .table-#{$color} {
+    &.table-bordered {
+      border-color: $value;
+    }
+  }
+}

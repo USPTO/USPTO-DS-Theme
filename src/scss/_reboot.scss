@@ -1,0 +1,17 @@
+//
+// Links
+//
+
+a {
+  @include hover-focus() {
+    text-decoration: $link-hover-decoration;
+  }
+  &:focus {
+    outline-offset: 0.25rem;
+    outline: 0.25rem solid #2491ff;
+  }
+}
+
+label {
+  line-height: 1.1;
+}

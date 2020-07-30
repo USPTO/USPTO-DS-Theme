@@ -1,0 +1,28 @@
+{
+  "name": "USPTOstrap",
+  "version": "2.0.0",
+  "description": "A product of the United States Patent and Trademark Office",
+  "repository": "https://github.com/uspto/designsystem",
+  "main": "index.js",
+  "scripts": {
+    "build": "sass src/scss:css && postcss css/usptostrap.css --use=autoprefixer --output=css/usptostrap.css",
+    "dev": "sass --watch src/scss:css",
+    "prefix": "npm run build && postcss css/usptostrap.css --use=autoprefixer --output=css/usptostrap.css",
+    "pretty-scss": "prettier ./src/scss/**/*.scss --write"
+  },
+  "author": "USPTO",
+  "license": "MIT",
+  "dependencies": {
+    "bootstrap": "^4.5.0",
+    "bootstrap-icons": "^1.0.0-alpha5",
+    "glob": "^7.1.6",
+    "jquery": "*",
+    "popper.js": "^1.16.1",
+    "prettier": "^2.0.5",
+    "sass": "^1.26.9"
+  },
+  "devDependencies": {
+    "autoprefixer": "^9.8.4",
+    "postcss-cli": "^7.1.1"
+  }
+}

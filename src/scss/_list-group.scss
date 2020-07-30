@@ -1,0 +1,11 @@
+@use "sass:map";
+
+@each $color, $value in $theme-colors {
+  .list-group-item-#{$color} {
+    background-color: map.get($colors-variant, #{$color}-lightest);
+    color: $body-color;
+    &.active {
+      background-color: map.get($colors-variant, #{$color}-dark);
+    }
+  }
+}

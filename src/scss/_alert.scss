@@ -1,0 +1,67 @@
+@use "sass:map";
+
+//
+// Base styles
+//
+
+.alert {
+  @extend .d-flex;
+  &::before {
+    content: '';
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 0.5rem;
+  }
+  line-height: 1.5;
+  padding: $alert-padding-t $alert-padding-r $alert-padding-b $alert-padding-l;
+  &-heading {
+    font-family: $font-family-base;
+    font-size: 1.33rem;
+    line-height: 1.1;
+  }
+  &-icon {
+    line-height: 1;
+    .material-icons {
+      font-size: 2.4rem;
+      margin-right: 1rem;
+      //offset material icon styles
+      margin-top: -2px;
+      margin-left: -2px;
+    }
+  }
+}
+
+//
+// Alternate style
+//
+
+@each $color, $value in $theme-colors {
+  .alert-#{$color} {
+    &::before {
+      background-color: $value;
+    }
+    background-color: map.get($colors-variant, #{$color}-lightest);
+    color: $body-color;
+    .alert-link {
+      color: $link-color;
+      @include hover() {
+        color: $link-hover-color;
+      }
+    }
+  }
+}
+
+.alert-sm {
+  line-height: 1.2;
+  padding-bottom: $alert-padding-y-sm;
+  padding-top: $alert-padding-y-sm;
+  .alert-icon {
+    line-height: 0.75;
+    .material-icons {
+      font-size: 1.4rem;
+      margin-top: 0;
+    }
+  }
+}

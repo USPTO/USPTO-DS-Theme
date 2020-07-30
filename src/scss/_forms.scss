@@ -1,0 +1,24 @@
+.form-control {
+  &:focus,
+  &.focus {
+    outline: 0.25rem solid #2491ff;
+    outline-offset: 0;
+  }
+  &.is-valid,
+  &.is-invalid {
+    border-width: 0.25rem !important;
+    &.no-icon {
+      background-image: none;
+      padding-right: $input-padding-x !important;
+    }
+  }
+}
+
+.was-validated {
+  .form-control {
+    &:valid,
+    &:invalid {
+      border-width: 0.25rem !important;
+    }
+  }
+}

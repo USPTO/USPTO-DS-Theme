@@ -1,0 +1,129 @@
+.banner {
+  @extend .bg-light;
+  button {
+    &:focus,
+    &.focus {
+      outline-offset: 0;
+    }
+  }
+  &-content {
+    font-size: 0.94rem;
+    line-height: 1.6;
+    max-width: 64rem;
+    padding: 1.5rem 2rem;
+  }
+  &-inner {
+    padding: 0.25rem 2rem;
+    display: flex !important;
+    flex-wrap: wrap !important;
+    align-items: center;
+
+    .btn {
+      font-size: 0.75rem;
+      font-weight: 400 !important;
+      padding: 0;
+
+      .material-icons {
+        font-size: 0.75rem;
+        line-height: 0.75;
+        vertical-align: bottom;
+      }
+      &[aria-expanded='true'] {
+        .material-icons {
+          transform: rotate(180deg);
+          transition-duration: 0.5s;
+        }
+      }
+    }
+  }
+  &-icon {
+    margin-right: 0.5rem;
+    width: 2.5rem;
+  }
+  &-header-text {
+    font-size: 0.75rem;
+    line-height: 1.2;
+    margin-bottom: 0;
+    text-decoration: none !important;
+  }
+
+  &-dark {
+    @extend .bg-dark;
+    color: $white;
+    .btn {
+      color: $white;
+      &.banner-btn {
+        @extend .btn-link-light;
+      }
+    }
+  }
+}
+
+@media (max-width: 767.98px) {
+  .no-gutters-sm {
+    margin-right: 0;
+    margin-left: 0;
+
+    > .col,
+    > [class*='col-'] {
+      padding-right: 0;
+      padding-left: 0;
+    }
+  }
+  .banner-inner {
+    align-items: flex-start;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: none;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 0.5rem;
+    padding-top: 0.5rem;
+    height: 3rem;
+  }
+  .banner-content {
+    padding: 1.25rem 0.5rem;
+  }
+  .accordion-btn {
+    font-weight: normal;
+    line-height: 1;
+    padding: 0;
+    text-align: left;
+    width: 100%;
+    .expand-btn {
+      color: uspto-color('gray', '300');
+      display: block;
+      font-size: 0.75rem;
+      margin-top: 0.125rem;
+      text-decoration: underline;
+    }
+    .close-btn {
+      display: none;
+    }
+    .material-icons {
+      font-size: 0.85rem;
+      vertical-align: middle;
+    }
+    &[aria-expanded='true'] {
+      .expand-btn {
+        display: none;
+      }
+
+      .close-btn {
+        display: inline-block;
+        color: $primary;
+        background: $light-dark;
+
+        position: absolute;
+        right: 0;
+        top: 0;
+        padding: 0.725rem;
+        height: 3rem;
+        width: 3rem;
+        .material-icons {
+          font-size: 1.75rem;
+        }
+      }
+    }
+  }
+}

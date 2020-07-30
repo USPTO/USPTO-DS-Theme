@@ -1,0 +1,67 @@
+.custom-control {
+  + .custom-control {
+    margin-top: 0.75rem;
+  }
+  &-label {
+    line-height: $line-height-base;
+    &::before {
+      border: 0;
+      box-shadow: 0 0 0 0.125rem #757575;
+      @media print {
+        -webkit-print-color-adjust: exact;
+        -webkit-filter: opacity(1);
+      }
+    }
+  }
+  &-input {
+    &:checked ~ .custom-control-label::before {
+      box-shadow: 0 0 0 0.125rem $primary;
+    }
+    &:focus {
+      outline: 0.25rem solid #2491ff;
+      outline-offset: 0;
+      ~ .custom-control-label::before {
+        box-shadow: 0 0 0 0.125rem $primary;
+        outline: 0.25rem solid #2491ff;
+        outline-offset: 0;
+      }
+    }
+  }
+}
+.custom-control-input {
+  &[disabled],
+  &:disabled {
+    ~ .custom-control-label {
+      &::before {
+        box-shadow: 0 0 0 0.125rem $custom-control-label-disabled-color;
+      }
+    }
+  }
+}
+
+.custom-checkbox {
+  .custom-control-label::after {
+    background: no-repeat 50%/70% 70%;
+  }
+}
+
+.custom-radio {
+  .custom-control-label::after {
+    background: no-repeat 50%/100% 100%;
+  }
+  .custom-control-input:checked ~ .custom-control-label::before {
+    background-color: white !important;
+  }
+}
+
+.custom-select:focus {
+  outline: 0.25rem solid #2491ff;
+  outline-offset: 0;
+  box-shadow: none;
+}
+
+.custom-file-label {
+  &::after {
+    background-color: transparent;
+  }
+}

@@ -1,0 +1,89 @@
+@use "sass:map";
+
+.card {
+  border: $card-border-width solid $card-border-color;
+  &-body {
+    line-height: 1.5;
+  }
+  &-header {
+    .card-title {
+      margin: 0;
+    }
+  }
+  &-img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+  &-title {
+    font-size: 1.22rem;
+  }
+  @each $color, $value in $theme-colors {
+    &.bg-#{$color} {
+      border-color: map.get($colors-variant, #{$color}-dark);
+      .card-header {
+        border-color: map.get($colors-variant, #{$color}-dark);
+      }
+    }
+  }
+}
+
+//
+// Accordion
+//
+
+.accordion {
+  .card {
+    @include border-radius(0);
+    overflow: visible;
+    &-borderless {
+      border: 0 !important;
+      .card-header {
+        border: 0 !important;
+      }
+    }
+    &-header {
+      padding: 0 !important;
+      .accordion-heading {
+        font-family: $font-family-base;
+        margin-bottom: 0;
+        .btn {
+          @include border-radius(0);
+          @extend .d-flex;
+          @extend .align-items-center;
+          line-height: 1.25;
+          &:focus,
+          &.focus {
+            outline-offset: 0;
+          }
+          .material-icons {
+            @extend .ml-auto;
+            &.collapsed-icon {
+              display: block;
+            }
+            &.expanded-icon {
+              display: none;
+            }
+          }
+          &[aria-expanded='true'] {
+            .collapsed-icon {
+              display: none;
+            }
+            .expanded-icon {
+              display: block;
+            }
+          }
+        }
+      }
+    }
+    &-body {
+      padding: 1rem 1.25rem calc(1rem - 0.25rem);
+    }
+    &:not(:last-of-type) {
+      border-bottom: $card-border-width solid $card-border-color;
+    }
+  }
+  .card + .card {
+    margin-top: 0.5rem;
+  }
+}

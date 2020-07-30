@@ -1,0 +1,11 @@
+@use "sass:map";
+
+.badge {
+  text-transform: uppercase;
+}
+
+@each $color, $value in $theme-colors {
+  .badge-#{$color} {
+    background-color: map.get($colors-variant, #{$color}-dark);
+  }
+}
