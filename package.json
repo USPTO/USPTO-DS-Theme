@@ -7,7 +7,6 @@
   "scripts": {
     "build": "sass src/scss:css && postcss css/usptostrap.css --use=autoprefixer --output=css/usptostrap.css",
     "dev": "sass --watch src/scss:css",
-    "prefix": "npm run build && postcss css/usptostrap.css --use=autoprefixer --output=css/usptostrap.css",
     "pretty-scss": "prettier ./src/scss/**/*.scss --write"
   },
   "author": "USPTO",
