@@ -65,3 +65,10 @@
     background-color: transparent;
   }
 }
+
+.custom-range {
+  &:focus {
+    outline: 0.25rem solid #2491ff;
+    outline-offset: 0;
+  }
+}

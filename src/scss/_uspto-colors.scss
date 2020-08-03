@@ -1,51 +1,51 @@
 $uspto-colors: (
-  'blue': (
-    '100': #eff6fb,
-    '400': #005ea2,
-    '600': #1a4480,
-    '700': #162e51,
+  "blue": (
+    "100": #eff6fb,
+    "400": #005ea2,
+    "600": #1a4480,
+    "700": #162e51,
   ),
-  'cyan': (
-    '100': #e7f6f8,
-    '400': #00bde3,
-    '600': #28a0cb,
-    '700': #07648d,
+  "cyan": (
+    "100": #e7f6f8,
+    "400": #00bde3,
+    "600": #28a0cb,
+    "700": #07648d,
   ),
-  'light': (
-    '100': #ffffff,
-    '400': #f0f0f0,
-    '600': #e6e6e6,
-    '700': #cfcfcf,
+  "light": (
+    "100": #ffffff,
+    "400": #f0f0f0,
+    "600": #e6e6e6,
+    "700": #cfcfcf,
   ),
-  'gray': (
-    '200': #c9c9c9,
-    '300': #adadad,
-    '400': #757575,
-    '600': #5c5c5c,
-    '700': #2e2e2e,
-    '900': #1b1b1b,
+  "gray": (
+    "200": #c9c9c9,
+    "300": #adadad,
+    "400": #757575,
+    "600": #5c5c5c,
+    "700": #2e2e2e,
+    "900": #1b1b1b,
   ),
-  'green': (
-    '100': #ecf3ec,
-    '400': #00a91c,
-    '600': #216e1f,
-    '700': #154c21,
+  "green": (
+    "100": #ecf3ec,
+    "400": #00a91c,
+    "600": #216e1f,
+    "700": #154c21,
   ),
-  'red': (
-    '100': #f4e3db,
-    '400': #d83933,
-    '600': #b50909,
-    '700': #8b0a03,
+  "red": (
+    "100": #f4e3db,
+    "400": #d83933,
+    "600": #b50909,
+    "700": #8b0a03,
   ),
-  'yellow': (
-    '100': #faf3d1,
-    '400': #ffbe2e,
-    '600': #e5a000,
-    '700': #c2850c,
+  "yellow": (
+    "100": #faf3d1,
+    "400": #ffbe2e,
+    "600": #e5a000,
+    "700": #c2850c,
   ),
 );
 
-@function uspto-color($color-name, $color-variant: '400') {
+@function uspto-color($color-name, $color-variant: "400") {
   $color: map-get(map-get($uspto-colors, $color-name), $color-variant);
   @if $color {
     @return $color;

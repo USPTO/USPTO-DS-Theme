@@ -1,7 +1,7 @@
 .btn-group {
   // box-shadow
   > .btn:not(:last-child):not(:first-child) {
-    &[class*='btn-outline-'] {
+    &[class*="btn-outline-"] {
       box-shadow: inset 2px 0 0 2px;
     }
   }

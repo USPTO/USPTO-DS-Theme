@@ -10,7 +10,7 @@
   // Disabled comes first so active can properly restyle
   &.disabled,
   &:disabled {
-    background-color: uspto-color('gray', '200');
+    background-color: uspto-color("gray", "200");
     pointer-events: none;
     &:focus,
     &.focus {
@@ -40,7 +40,7 @@
     }
     &.disabled,
     &:disabled {
-      background-color: uspto-color('gray', '200');
+      background-color: uspto-color("gray", "200");
     }
     &:not(:disabled):not(.disabled):active,
     &:not(:disabled):not(.disabled).active,
@@ -60,7 +60,7 @@
     }
     &.disabled,
     &:disabled {
-      color: uspto-color('gray', '200');
+      color: uspto-color("gray", "200");
       background-color: transparent;
     }
     &:not(:disabled):not(.disabled):active,
@@ -105,7 +105,7 @@
 
 .btn-link-light {
   @extend .btn-link;
-  color: uspto-color('gray', '300');
+  color: uspto-color("gray", "300");
   @include hover {
     color: $light;
   }

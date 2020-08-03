@@ -28,7 +28,7 @@
         line-height: 0.75;
         vertical-align: bottom;
       }
-      &[aria-expanded='true'] {
+      &[aria-expanded="true"] {
         .material-icons {
           transform: rotate(180deg);
           transition-duration: 0.5s;
@@ -65,7 +65,7 @@
     margin-left: 0;
 
     > .col,
-    > [class*='col-'] {
+    > [class*="col-"] {
       padding-right: 0;
       padding-left: 0;
     }
@@ -91,7 +91,7 @@
     text-align: left;
     width: 100%;
     .expand-btn {
-      color: uspto-color('gray', '300');
+      color: uspto-color("gray", "300");
       display: block;
       font-size: 0.75rem;
       margin-top: 0.125rem;
@@ -104,7 +104,7 @@
       font-size: 0.85rem;
       vertical-align: middle;
     }
-    &[aria-expanded='true'] {
+    &[aria-expanded="true"] {
       .expand-btn {
         display: none;
       }

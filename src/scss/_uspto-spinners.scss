@@ -50,7 +50,7 @@
           width: 100px;
           height: 100px;
           box-sizing: border-box;
-          border: 10px solid #4285F4;
+          border: 10px solid #4285f4;
           border-bottom-color: transparent;
           border-radius: 50%;
         }
@@ -61,7 +61,8 @@
           left: 0;
           border-right-color: transparent;
           animation: left-wobble 1.3125s cubic-bezier(0.35, 0, 0.25, 1) infinite;
-          -webkit-animation: left-wobble 1.3125s cubic-bezier(0.35, 0, 0.25, 1) infinite;
+          -webkit-animation: left-wobble 1.3125s cubic-bezier(0.35, 0, 0.25, 1)
+            infinite;
         }
       }
       .right {
@@ -69,8 +70,10 @@
         .half-circle {
           right: 0;
           border-left-color: transparent;
-          animation: right-wobble 1.3125s cubic-bezier(0.35, 0, 0.25, 1) infinite;
-          -webkit-animation: right-wobble 1.3125s cubic-bezier(0.35, 0, 0.25, 1) infinite;
+          animation: right-wobble 1.3125s cubic-bezier(0.35, 0, 0.25, 1)
+            infinite;
+          -webkit-animation: right-wobble 1.3125s cubic-bezier(0.35, 0, 0.25, 1)
+            infinite;
         }
       }
     }
@@ -129,12 +132,6 @@
   }
 }
 
-
-
-
-
-
-
 $easing: cubic-bezier(0.8, 0, 0.4, 0.8);
 $speed: 1320ms; // animation time for each loop
 $linecap-variant: () !default;
@@ -192,7 +189,7 @@ body {
     circle {
       fill: none;
       stroke: $white; //default value
-      stroke-linecap: 'round'; //default value
+      stroke-linecap: "round"; //default value
       stroke-width: 6; //default value
       animation: arc $speed $easing infinite;
 

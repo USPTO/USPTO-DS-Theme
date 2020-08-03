@@ -1,53 +1,53 @@
 /*import variable dependencies*/
-@import './uspto-colors';
-@import './uspto-fonts';
+@import "./uspto-colors";
+@import "./uspto-fonts";
 
 $black: #000;
 $white: #fff;
 
-$primary: uspto-color('blue') !default;
+$primary: uspto-color("blue") !default;
 //primary variant
-$primary-lightest: uspto-color('blue', '100') !default;
-$primary-dark: uspto-color('blue', '600') !default;
-$primary-darker: uspto-color('blue', '700') !default;
+$primary-lightest: uspto-color("blue", "100") !default;
+$primary-dark: uspto-color("blue", "600") !default;
+$primary-darker: uspto-color("blue", "700") !default;
 
-$danger: uspto-color('red') !default;
+$danger: uspto-color("red") !default;
 //danger variant
-$danger-lightest: uspto-color('red', '100') !default;
-$danger-dark: uspto-color('red', '600') !default;
-$danger-darker: uspto-color('red', '700') !default;
+$danger-lightest: uspto-color("red", "100") !default;
+$danger-dark: uspto-color("red", "600") !default;
+$danger-darker: uspto-color("red", "700") !default;
 
-$dark: uspto-color('gray', '900') !default;
+$dark: uspto-color("gray", "900") !default;
 
-$info: uspto-color('cyan') !default;
+$info: uspto-color("cyan") !default;
 //info variant
-$info-lightest: uspto-color('cyan', '100') !default;
-$info-dark: uspto-color('cyan', '600') !default;
-$info-darker: uspto-color('cyan', '700') !default;
+$info-lightest: uspto-color("cyan", "100") !default;
+$info-dark: uspto-color("cyan", "600") !default;
+$info-darker: uspto-color("cyan", "700") !default;
 
-$light: uspto-color('light') !default;
+$light: uspto-color("light") !default;
 //light variant
-$light-lightest: uspto-color('light', '100') !default;
-$light-dark: uspto-color('light', '600') !default;
-$light-darker: uspto-color('light', '700') !default;
+$light-lightest: uspto-color("light", "100") !default;
+$light-dark: uspto-color("light", "600") !default;
+$light-darker: uspto-color("light", "700") !default;
 
-$secondary: uspto-color('gray') !default;
+$secondary: uspto-color("gray") !default;
 //secondary variant
-$secondary-lightest: uspto-color('gray', '200') !default;
-$secondary-dark: uspto-color('gray', '600') !default;
-$secondary-darker: uspto-color('gray', '700') !default;
+$secondary-lightest: uspto-color("gray", "200") !default;
+$secondary-dark: uspto-color("gray", "600") !default;
+$secondary-darker: uspto-color("gray", "700") !default;
 
-$success: uspto-color('green') !default;
+$success: uspto-color("green") !default;
 //secondary variant
-$success-lightest: uspto-color('green', '100') !default;
-$success-dark: uspto-color('green', '600') !default;
-$success-darker: uspto-color('green', '700') !default;
+$success-lightest: uspto-color("green", "100") !default;
+$success-dark: uspto-color("green", "600") !default;
+$success-darker: uspto-color("green", "700") !default;
 
-$warning: uspto-color('yellow') !default;
+$warning: uspto-color("yellow") !default;
 //warning variant
-$warning-lightest: uspto-color('yellow', '100') !default;
-$warning-dark: uspto-color('yellow', '600') !default;
-$warning-darker: uspto-color('yellow', '700') !default;
+$warning-lightest: uspto-color("yellow", "100") !default;
+$warning-dark: uspto-color("yellow", "600") !default;
+$warning-darker: uspto-color("yellow", "700") !default;
 
 $colors-variant: () !default;
 $colors-variant: map-merge(
@@ -88,7 +88,7 @@ $yiq-contrasted-threshold: 130 !default;
 //
 // Settings for the `<body>` element.
 
-$body-color: uspto-color('gray', '900') !default;
+$body-color: uspto-color("gray", "900") !default;
 
 $border-width: 1px !default;
 $border-color: $secondary-dark !default;
@@ -151,7 +151,7 @@ $badge-border-radius: 0.15rem !default;
 $breadcrumb-bg: transparent !default;
 $breadcrumb-divider-color: $secondary-dark !default;
 $breadcrumb-active-color: $secondary-dark !default;
-$breadcrumb-divider: quote('>') !default;
+$breadcrumb-divider: quote(">") !default;
 
 // Buttons + Forms
 //
@@ -209,8 +209,8 @@ $input-focus-border-color: $secondary-dark !default;
 $custom-control-indicator-size: 1.25rem !default;
 $custom-control-indicator-border-width: 0 !default;
 
-$custom-control-indicator-disabled-bg: uspto-color('light', '600') !default;
-$custom-control-label-disabled-color: uspto-color('gray', '200') !default;
+$custom-control-indicator-disabled-bg: uspto-color("light", "600") !default;
+$custom-control-label-disabled-color: uspto-color("gray", "200") !default;
 
 $custom-checkbox-indicator-border-radius: 0.125rem !default;
 

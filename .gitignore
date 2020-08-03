@@ -1,4 +1,4 @@
 
 /node_modules
 !.prettierrc
-css/*.css.map
+assets/css/*.css.map
