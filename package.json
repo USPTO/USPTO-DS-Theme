@@ -5,8 +5,8 @@
   "repository": "https://github.com/uspto/designsystem",
   "main": "index.js",
   "scripts": {
-    "build": "sass src/scss:css && postcss css/usptostrap.css --use=autoprefixer --output=css/usptostrap.css",
-    "dev": "sass --watch src/scss:css",
+    "build": "sass src/scss:assets/css && postcss assets/css/usptostrap.css --use=autoprefixer --output=assets/css/usptostrap.css",
+    "dev": "sass --watch src/scss:assets/css",
     "pretty-scss": "prettier ./src/scss/**/*.scss --write"
   },
   "author": "USPTO",

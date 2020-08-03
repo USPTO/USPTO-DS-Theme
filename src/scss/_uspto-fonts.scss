@@ -169,7 +169,7 @@ $uspto-fonts: (
 // Output the @font-face rule
 @mixin at-font-face($display-name, $file-path, $font-weight, $font-style) {
   $file-path: unquote($file-path);
-
+ @debug $file-path;
   // TODO: If $theme-use-rails-pipeline use font-url() statements
   // instead of url()
   // Dunno why I can't do this without an error...
@@ -198,10 +198,11 @@ $uspto-fonts: (
       @if $output-weight == $font-weight and $filename {
         @include at-font-face(
           '#{$display-name}',
-          './fonts/#{$dir}/#{$filename}',
+          '.././fonts/#{$dir}/#{$filename}',
           #{$font-weight},
           unquote('#{$font-style}')
         );
+        
       }
     }
   }

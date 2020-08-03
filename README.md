@@ -26,7 +26,7 @@ npm run dev
 
 
 ### Distribution Builds
-After running `npm run build`, you will have a `css` folder that contains the stylesheet and resources. 
+After running `npm run build`, you will have an `assets` folder that contains the stylesheet and resources. 
 
 
 ## License
