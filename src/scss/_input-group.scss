@@ -1,0 +1,19 @@
+.input-group {
+  &-prepend,
+  &-append {
+    .btn {
+      line-height: 0.75;
+    }
+  }
+  &-sm > .input-group-prepend {
+    .material-icons {
+      font-size: 0.95rem;
+    }
+  }
+  &-sm > .form-control,
+  &-sm > .custom-select ,
+  &-lg > .form-control,
+  &-lg > .custom-select{
+    border-radius: 0;
+  }
+}

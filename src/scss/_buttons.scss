@@ -119,6 +119,8 @@
 //button with material icons
 .btn {
   &.md-icon {
-    padding: 0.45rem 1rem;
+    @extend .d-inline-flex;
+    // @extend .align-items-center;
+    vertical-align: middle;
   }
 }

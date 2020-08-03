@@ -58,6 +58,7 @@
           }
           .material-icons {
             @extend .ml-auto;
+            font-size: 1.375rem;
             &.collapsed-icon {
               display: block;
             }
