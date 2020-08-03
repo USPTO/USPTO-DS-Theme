@@ -1,4 +1,4 @@
-# USPTO-DS-Theme
+# USPTO Design System: Theme v2.0 (Alpha)
 The USPTO's open source Design System theme, based on the USWDS and Boostrap (Version 2.x)
 
 
