@@ -193,7 +193,7 @@ $uspto-fonts: (
       @if $output-weight == $font-weight and $filename {
         @include at-font-face(
           "#{$display-name}",
-          "./fonts/#{$dir}/#{$filename}",
+          "../fonts/#{$dir}/#{$filename}",
           #{$font-weight},
           unquote("#{$font-style}")
         );
