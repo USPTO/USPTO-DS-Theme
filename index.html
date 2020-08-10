@@ -9,7 +9,7 @@
 
   <!-- Custom built theme - This already includes Bootstrap 4 -->
   <link rel="stylesheet" href="assets/css/usptostrap.css">
-
+  <link rel="stylesheet" href="assets/css/uswds.css">
   <style>
     /* demo page css*/
     .bd-toc {
@@ -963,6 +963,90 @@
               </div>
             </div>
             <div class="row mt-3">
+              <div class="col-6">
+            <form class="usa-form">
+              <div class="usa-form-group">
+                <label class="usa-label" id="appointment-date-label" for="appointment-date">Appointment date</label>
+                <div class="usa-hint" id="appointment-date-hint">mm/dd/yyyy</div>
+                <div class="usa-date-picker">
+                  <input class="usa-input" id="appointment-date" name="appointment-date" type="text" aria-describedby="appointment-date-label appointment-date-hint">
+                </div>
+              </div>
+            </form>
+            <form class="usa-form">
+              <label class="usa-label" for="fruit">Select a fruit</label>
+              <div class="usa-combo-box">
+                <select class="usa-select" name="fruit" id="fruit" required>
+                  <option value>Select a fruit</option>
+                  <option value="apple">Apple</option>
+                  <option value="apricot">Apricot</option>
+                  <option value="avocado">Avocado</option>
+                  <option value="banana">Banana</option>
+                  <option value="blackberry">Blackberry</option>
+                  <option value="blood orange">Blood orange</option>
+                  <option value="blueberry">Blueberry</option>
+                  <option value="boysenberry">Boysenberry</option>
+                  <option value="breadfruit">Breadfruit</option>
+                  <option value="buddhas hand citron">Buddha's hand citron</option>
+                  <option value="cantaloupe">Cantaloupe</option>
+                  <option value="clementine">Clementine</option>
+                  <option value="crab apple">Crab apple</option>
+                  <option value="currant">Currant</option>
+                  <option value="cherry">Cherry</option>
+                  <option value="custard apple">Custard apple</option>
+                  <option value="coconut">Coconut</option>
+                  <option value="cranberry">Cranberry</option>
+                  <option value="date">Date</option>
+                  <option value="dragonfruit">Dragonfruit</option>
+                  <option value="durian">Durian</option>
+                  <option value="elderberry">Elderberry</option>
+                  <option value="fig">Fig</option>
+                  <option value="gooseberry">Gooseberry</option>
+                  <option value="grape">Grape</option>
+                  <option value="grapefruit">Grapefruit</option>
+                  <option value="guava">Guava</option>
+                  <option value="honeydew melon">Honeydew melon</option>
+                  <option value="jackfruit">Jackfruit</option>
+                  <option value="kiwifruit">Kiwifruit</option>
+                  <option value="kumquat">Kumquat</option>
+                  <option value="lemon">Lemon</option>
+                  <option value="lime">Lime</option>
+                  <option value="lychee">Lychee</option>
+                  <option value="mandarine">Mandarine</option>
+                  <option value="mango">Mango</option>
+                  <option value="mangosteen">Mangosteen</option>
+                  <option value="marionberry">Marionberry</option>
+                  <option value="nectarine">Nectarine</option>
+                  <option value="orange">Orange</option>
+                  <option value="papaya">Papaya</option>
+                  <option value="passionfruit">Passionfruit</option>
+                  <option value="peach">Peach</option>
+                  <option value="pear">Pear</option>
+                  <option value="persimmon">Persimmon</option>
+                  <option value="plantain">Plantain</option>
+                  <option value="plum">Plum</option>
+                  <option value="pineapple">Pineapple</option>
+                  <option value="pluot">Pluot</option>
+                  <option value="pomegranate">Pomegranate</option>
+                  <option value="pomelo">Pomelo</option>
+                  <option value="quince">Quince</option>
+                  <option value="raspberry">Raspberry</option>
+                  <option value="rambutan">Rambutan</option>
+                  <option value="soursop">Soursop</option>
+                  <option value="starfruit">Starfruit</option>
+                  <option value="strawberry">Strawberry</option>
+                  <option value="tamarind">Tamarind</option>
+                  <option value="tangelo">Tangelo</option>
+                  <option value="tangerine">Tangerine</option>
+                  <option value="ugli fruit">Ugli fruit</option>
+                  <option value="watermelon">Watermelon</option>
+                  <option value="white currant">White currant</option>
+                  <option value="yuzu">Yuzu</option>
+                </select>
+              </div>
+            </form>
+            </div></div>
+            <div class="row mt-3">
               <div class="col">
                 <div class="custom-file">
                   <input type="file" class="custom-file-input" id="customFile">
@@ -1859,6 +1943,7 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
     integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
     crossorigin="anonymous"></script>
+  <script src="assets/js/uswds.min.js"></script>
   <script>
     $(function () {
       $('[data-toggle="popover"]').popover()
