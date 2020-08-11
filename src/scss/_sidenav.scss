@@ -1,6 +1,6 @@
 .sidenav {
-    @extend .nav;
-    @extend .flex-column;
+  @extend .nav;
+  @extend .flex-column;
   :first-child {
     border-top: none;
   }
@@ -8,10 +8,10 @@
   border-radius: 0.25rem;
 
   li {
-      @extend .nav-item;
+    @extend .nav-item;
     border-top: 1px solid rgba(0, 0, 0, 0.05);
     > a {
-        @extend .nav-link;
+      @extend .nav-link;
       &.active {
         border-left: 0.25rem solid $primary;
         margin-left: -0.125rem;
