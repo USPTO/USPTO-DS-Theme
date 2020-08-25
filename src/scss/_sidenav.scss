@@ -1,9 +1,6 @@
 .sidenav {
   @extend .nav;
   @extend .flex-column;
-  :first-child {
-    border-top: none;
-  }
   background: #fff;
   border: 2px solid rgba(0, 0, 0, 0.1);
   border-radius: 0.25rem;
@@ -14,13 +11,20 @@
 
   li {
     @extend .nav-item;
-    border-top: 1px solid rgba(0, 0, 0, 0.05);
+    &.active {
+      border-left: 0.25rem solid $primary;
+      margin-left: -0.125rem;
+    }
+
     > a {
       @extend .nav-link;
-      &.active {
-        border-left: 0.25rem solid $primary;
-        margin-left: -0.125rem;
-      }
+      border-top: 1px solid rgba(0, 0, 0, 0.05);
     }
+  }
+  &-sublist {
+    list-style-type: none;
+    padding-left: 0;
+    margin: 0;
+    font-size: 0.81rem;
   }
 }
