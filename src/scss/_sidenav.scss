@@ -4,8 +4,13 @@
   :first-child {
     border-top: none;
   }
+  background: #fff;
   border: 2px solid rgba(0, 0, 0, 0.1);
   border-radius: 0.25rem;
+  display: block;
+  float: left;
+  margin: 2rem 2rem 2rem 0;
+  width: 15rem;
 
   li {
     @extend .nav-item;
