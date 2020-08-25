@@ -1,6 +1,11 @@
 @charset "UTF-8";
 /*! uswds v2.8.0 */
 
+.usa-sr-only{
+  position:absolute;
+  left:-999em;
+}
+
 .usa-combo-box__list, .usa-combo-box__input, .usa-input,
 .usa-textarea, .usa-range, .usa-select, .usa-fieldset,
 .usa-hint{
