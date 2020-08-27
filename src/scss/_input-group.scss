@@ -1,8 +1,19 @@
 .input-group {
+  &-text {
+    border-radius: 0.2rem;    
+  }
+  &-prepend {
+    margin-right: -0.125rem;
+  }
   &-prepend,
   &-append {
     .btn {
-      line-height: 0.75;
+      padding: $input-padding-y $input-padding-x;
+    }
+    .md-icon {
+      .material-icons {
+        line-height: 0.75;
+      }
     }
   }
   &-sm > .input-group-prepend {

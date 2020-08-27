@@ -120,7 +120,7 @@
 .btn {
   &.md-icon {
     @extend .d-inline-flex;
-    // @extend .align-items-center;
+    @extend .align-items-center;
     vertical-align: middle;
   }
 }
