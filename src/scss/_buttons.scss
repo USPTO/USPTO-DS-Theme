@@ -123,4 +123,9 @@
     @extend .align-items-center;
     vertical-align: middle;
   }
+  &-sm {
+    .material-icons {
+      font-size: 1rem;
+    }
+  }
 }

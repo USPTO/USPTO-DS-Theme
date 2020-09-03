@@ -2,6 +2,7 @@
 
 .badge {
   text-transform: uppercase;
+  text-decoration: none;
 }
 
 @each $color, $value in $theme-colors {

@@ -1,11 +1,8 @@
 @use "sass:map";
 
-//
-// Base styles
-//
-
 .alert {
   @extend .d-flex;
+  @extend .align-items-center;
   &::before {
     content: "";
     height: 100%;
