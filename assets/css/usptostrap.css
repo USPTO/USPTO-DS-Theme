@@ -10058,7 +10058,7 @@ button.banner-dark:focus {
   font-weight: 400 !important;
 }
 
-.font-weight-bold {
+.font-weight-bold, header .navbar .navbar-brand {
   font-weight: 700 !important;
 }
 
@@ -10070,7 +10070,7 @@ button.banner-dark:focus {
   font-style: italic !important;
 }
 
-.text-white {
+.text-white, header .navbar .navbar-brand, header .navbar-top {
   color: #fff !important;
 }
 
@@ -11164,6 +11164,31 @@ h3 {
   background-color: #24282c;
 }
 
+header .navbar-top {
+  background-color: #252f3e;
+}
+header .navbar li a.nav-link, header .navbar .sidenav li > a, .sidenav header .navbar li > a {
+  color: #fff !important;
+}
+header .navbar li a.nav-link:hover, header .navbar .sidenav li > a:hover, .sidenav header .navbar li > a:hover {
+  text-decoration: underline;
+}
+header .navbar li a.nav-link:focus, header .navbar .sidenav li > a:focus, .sidenav header .navbar li > a:focus {
+  text-decoration: underline;
+}
+header .navbar li.active a {
+  background-color: #1a4480;
+}
+header .navbar .navbar-brand {
+  padding-left: 0.5rem;
+  text-decoration: none;
+}
+@media (min-width: 768.98px) {
+  header .navbar {
+    padding: 0 1rem 0 0.5rem;
+  }
+}
+
 .table td,
 .table th {
   border-bottom: 1px solid #5c5c5c;
@@ -11426,13 +11451,20 @@ label {
   width: 15rem;
 }
 .sidenav li.active {
+  background-color: #ffffff;
   border-left: 0.25rem solid #005ea2;
+  font-weight: 700;
   margin-left: -0.125rem;
+}
+.sidenav li.active .sidenav-sublist {
+  display: block;
+  font-weight: 400;
 }
 .sidenav li > a {
   border-top: 1px solid rgba(0, 0, 0, 0.05);
 }
 .sidenav-sublist {
+  display: none;
   list-style-type: none;
   padding-left: 0;
   margin: 0;

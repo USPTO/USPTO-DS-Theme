@@ -1,0 +1,33 @@
+header {
+  .navbar {
+    &-top {
+      background-color: #252f3e;
+      @extend .text-white;
+    }
+    li {
+      a.nav-link {
+        color: $white !important;
+        @include hover {
+          text-decoration: underline;
+        }
+        &:focus {
+          text-decoration: underline;
+        }
+      }
+      &.active {
+        a {
+          background-color: #1a4480;
+        }
+      }
+    }
+    .navbar-brand {
+      @extend .text-white;
+      @extend .font-weight-bold;
+      padding-left: 0.5rem;
+      text-decoration: none;
+    }
+    @media (min-width: 768.98px) {
+      padding: 0 1rem 0 0.5rem;
+    }
+  }
+}

@@ -12,8 +12,15 @@
   li {
     @extend .nav-item;
     &.active {
+      background-color: $light-lightest;
       border-left: 0.25rem solid $primary;
+      font-weight: $font-weight-bold;
       margin-left: -0.125rem;
+
+      .sidenav-sublist {
+        display: block;
+        font-weight: $font-weight-normal;
+      }
     }
 
     > a {
@@ -22,6 +29,7 @@
     }
   }
   &-sublist {
+    display: none;
     list-style-type: none;
     padding-left: 0;
     margin: 0;
