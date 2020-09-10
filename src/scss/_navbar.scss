@@ -1,8 +1,7 @@
 header {
   .navbar {
     &-top {
-      background-color: #252f3e;
-      @extend .text-white;
+      background-color: #ebebeb;      
     }
     li {
       a.nav-link {
@@ -21,8 +20,8 @@ header {
       }
     }
     .navbar-brand {
-      @extend .text-white;
       @extend .font-weight-bold;
+      color: $dark;
       padding-left: 0.5rem;
       text-decoration: none;
     }

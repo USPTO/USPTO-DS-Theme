@@ -11,7 +11,8 @@
   &.disabled,
   &:disabled {
     background-color: uspto-color("gray", "200");
-    pointer-events: none;
+    cursor: not-allowed;
+    pointer-events: none;   
     &:focus,
     &.focus {
       outline: none;

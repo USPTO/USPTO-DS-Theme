@@ -4875,7 +4875,7 @@ input[type=button].btn-block {
 .breadcrumb {
   display: flex;
   flex-wrap: wrap;
-  padding: 0.75rem 1rem;
+  padding: 0.25rem 0.25rem;
   margin-bottom: 1rem;
   list-style: none;
   background-color: transparent;
@@ -10070,7 +10070,7 @@ button.banner-dark:focus {
   font-style: italic !important;
 }
 
-.text-white, header .navbar .navbar-brand, header .navbar-top {
+.text-white {
   color: #fff !important;
 }
 
@@ -10582,6 +10582,7 @@ h3 {
 }
 .btn.disabled, .btn:disabled {
   background-color: #c9c9c9;
+  cursor: not-allowed;
   pointer-events: none;
 }
 .btn.disabled:focus, .btn.disabled.focus, .btn:disabled:focus, .btn:disabled.focus {
@@ -11173,7 +11174,7 @@ h3 {
 }
 
 header .navbar-top {
-  background-color: #252f3e;
+  background-color: #ebebeb;
 }
 header .navbar li a.nav-link, header .navbar .sidenav li > a, .sidenav header .navbar li > a {
   color: #fff !important;
@@ -11188,6 +11189,7 @@ header .navbar li.active a {
   background-color: #1a4480;
 }
 header .navbar .navbar-brand {
+  color: #1b1b1b;
   padding-left: 0.5rem;
   text-decoration: none;
 }
