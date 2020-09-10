@@ -1,0 +1,10 @@
+.modal {
+  &-content {
+    box-shadow: 0 0px 2px rgba(0, 0, 0, 0.3);
+    border: none;
+  }
+  &-header,
+  &-footer {
+    background-color: #fafafb;
+  }
+}
