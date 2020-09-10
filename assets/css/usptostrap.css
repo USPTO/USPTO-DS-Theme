@@ -10576,6 +10576,20 @@ h3 {
     font-size: 1.75rem;
   }
 }
+.breadcrumb:not(.breadcrumb-wrap) {
+  display: block !important;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.breadcrumb:not(.breadcrumb-wrap) .breadcrumb-item {
+  display: inline;
+}
+
+.breadcrumb a:focus {
+  outline-offset: 0;
+}
+
 .btn:focus, .btn.focus {
   outline: 0.25rem solid #2491ff;
   outline-offset: 0.25rem;

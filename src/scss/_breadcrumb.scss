@@ -1,0 +1,16 @@
+.breadcrumb:not(.breadcrumb-wrap) {
+  display: block !important;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  .breadcrumb-item {
+    display: inline;
+  }
+}
+.breadcrumb {
+  a {
+    &:focus {
+      outline-offset: 0;
+    }
+  }
+}
