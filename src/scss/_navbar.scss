@@ -1,33 +1,31 @@
-
-  .navbar {
-    &-top {
-      background-color: #ebebeb;
-    }
-    li {
-      a.nav-link {
-        color: $white !important;
-        line-height: 1;
-        @include hover {
-          background-color: $primary-dark;
-        }
-        &:focus {
-          background-color: $primary-dark;
-        }
+.navbar {
+  &-top {
+    background-color: #ebebeb;
+  }
+  li {
+    a.nav-link {
+      color: $white !important;
+      line-height: 1;
+      @include hover {
+        background-color: $primary-dark;
       }
-      &.active {
-        a {
-          background-color: #1a4480;
-        }
+      &:focus {
+        background-color: $primary-dark;
       }
     }
-    .navbar-brand {
-      @extend .font-weight-bold;
-      color: $dark;
-      padding-left: 0.5rem;
-      text-decoration: none;
-    }
-    @media (min-width: 768.98px) {
-      padding: 0 1rem 0 0.5rem;
+    &.active {
+      a {
+        background-color: #1a4480;
+      }
     }
   }
-
+  .navbar-brand {
+    @extend .font-weight-bold;
+    color: $dark;
+    padding-left: 0.5rem;
+    text-decoration: none;
+  }
+  @media (min-width: 768.98px) {
+    padding: 0 1rem 0 0.5rem;
+  }
+}

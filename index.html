@@ -36,7 +36,14 @@
       }
 
       main {
-        width: 100%;
+        width: calc(100% - 17rem);
+
+      }
+
+      @media (max-width: 768px) {
+        main {
+          width: 100%;
+        }
       }
 
       main section {
@@ -288,10 +295,8 @@
               </div>
             </li>
           </ul>
-<ul class="navbar-nav ml-auto">
-            
+          <ul class="navbar-nav ml-auto">
 
-            
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             My Navigation
@@ -308,7 +313,7 @@
           </ul>
         </div>
       </nav>
-    </header>    
+    </header>
     <div class="main-container">
       <div class="d-none d-sm-none d-md-block">
 
@@ -665,6 +670,12 @@
               </li>
               <li class="breadcrumb-item">
                 <a href="#">Long list of item</a>
+              </li>
+              <li class="breadcrumb-item">
+                <a href="#">Another long list of item added next</a>
+              </li>
+              <li class="breadcrumb-item">
+                <a href="#">One more long list of item added next</a>
               </li>
               <li class="breadcrumb-item active" aria-current="page">Another long list of item</li>
             </ol>
