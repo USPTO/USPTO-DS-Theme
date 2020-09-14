@@ -1,4 +1,4 @@
-header {
+
   .navbar {
     &-top {
       background-color: #ebebeb;
@@ -6,11 +6,12 @@ header {
     li {
       a.nav-link {
         color: $white !important;
+        line-height: 1;
         @include hover {
-          text-decoration: underline;
+          background-color: $primary-dark;
         }
         &:focus {
-          text-decoration: underline;
+          background-color: $primary-dark;
         }
       }
       &.active {
@@ -29,4 +30,4 @@ header {
       padding: 0 1rem 0 0.5rem;
     }
   }
-}
+
