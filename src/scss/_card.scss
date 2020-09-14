@@ -4,6 +4,7 @@
   border: $card-border-width solid $card-border-color;
   &-body {
     line-height: 1.5;
+    padding: 1rem 1.5rem; //move to variables
   }
   &-header {
     .card-title {

@@ -10911,6 +10911,7 @@ h3 {
 }
 .card-body {
   line-height: 1.5;
+  padding: 1rem 1.5rem;
 }
 .card-header .card-title {
   margin: 0;
