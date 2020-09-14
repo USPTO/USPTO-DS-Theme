@@ -12,7 +12,7 @@
   &:disabled {
     background-color: uspto-color("gray", "200");
     cursor: not-allowed;
-    pointer-events: none;   
+    pointer-events: none;
     &:focus,
     &.focus {
       outline: none;
