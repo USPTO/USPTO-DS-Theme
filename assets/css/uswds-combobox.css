@@ -624,7 +624,7 @@ button.usa-combo-box__clear-input:focus{
   position:absolute;
   top:1px;
   height:2.25em;
-  z-index:100;
+  z-index:99;
 }
 
 .usa-combo-box__clear-input{
@@ -649,7 +649,7 @@ button.usa-combo-box__clear-input:focus{
   width:1px;
   right:calc(2.5em + 2px);
   box-sizing:border-box;
-  z-index:200;
+  z-index:99;
 }
 
 .usa-combo-box__list{
@@ -666,7 +666,7 @@ button.usa-combo-box__clear-input:focus{
   padding:0;
   position:absolute;
   width:100%;
-  z-index:100;
+  z-index:99;
 }
 .usa-combo-box__list:focus{
   outline:0;
