@@ -49,6 +49,10 @@ $warning-lightest: uspto-color("yellow", "100") !default;
 $warning-dark: uspto-color("yellow", "600") !default;
 $warning-darker: uspto-color("yellow", "700") !default;
 
+$gray-deafult: uspto-color("gray") !default;
+//gray variant
+$gray-lightest: uspto-color("gray", "100") !default;
+
 $colors-variant: () !default;
 $colors-variant: map-merge(
   (
@@ -61,6 +65,8 @@ $colors-variant: map-merge(
     dark-lightest: #aeaeae,
     dark-dark: #24282c,
     dark-darker: #141719,
+    gray-deafult: $gray-deafult,
+    gray-lightest: $gray-lightest,
     info-lightest: $info-lightest,
     info-dark: $info-dark,
     info-darker: $info-darker,
@@ -200,11 +206,11 @@ $input-padding-y: 0.5rem !default;
 $input-padding-x: 0.5rem !default;
 $input-line-height: 1.375 !default;
 $input-color: $body-color !default;
-$input-border-color: $secondary-dark !default;
+$input-border-color: $gray-lightest !default;
 
 $input-border-radius: 0 !default;
 
-$input-focus-border-color: $secondary-dark !default;
+$input-focus-border-color: $gray-lightest !default;
 
 //Custom form element
 
@@ -240,3 +246,5 @@ $table-accent-bg: $light !default;
 $table-head-bg: $light !default;
 $table-head-color: null !default;
 $table-dark-bg: $secondary-darker !default;
+
+$text-muted: $gray-deafult !default;
