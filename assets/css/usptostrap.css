@@ -11737,6 +11737,10 @@ body {
   }
 }
 
+.text-muted {
+  color: #757575 !important;
+}
+
 @font-face {
   font-family: "Material Icons";
   font-style: normal;
