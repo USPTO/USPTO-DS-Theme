@@ -43,9 +43,8 @@
   .custom-control-label::after {
     background: no-repeat 50%/70% 70%;
   }
-  .custom-control-input:disabled:checked ~ .custom-control-label::before  {    
-      background-color: $secondary-lightest;
-   
+  .custom-control-input:disabled:checked ~ .custom-control-label::before {
+    background-color: $secondary-lightest;
   }
 }
 
