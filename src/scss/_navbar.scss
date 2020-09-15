@@ -24,12 +24,9 @@
     color: $dark;
     padding-left: 2rem;
     text-decoration: none;
-    &:focus, &:hover{
+    &:focus,
+    &:hover {
       color: #24282c;
     }
   }
-
-  
-
-  
 }

@@ -1,4 +1,10 @@
 header {
+  .btn {
+    padding: 0.5rem;
+    &:focus {
+      outline-offset: 0 !important;
+    }
+  }
   .btn-group {
     .btn-text {
       @extend .d-none;
@@ -27,44 +33,53 @@ header {
         }
       }
     }
-    
+
     @media (min-width: 768.98px) {
       //padding: 0 1rem 0 0.5rem;
     }
   }
-  .uspto-header-top{
-    .dropdown-menu{
-      margin-top: -1px;
-      li a{
+  .dropdown-menu {
+    border: none;
+    border-radius: 0;
+    margin-top: -0.125rem;
+    padding: 0;
+  }
+
+  .uspto-header-top {
+    .dropdown-menu {
+      li a {
         display: block;
-        padding: 3px 20px;
+        padding: 0.5rem 1rem;
         clear: both;
         font-weight: 400;
-        line-height: 2.5;
         color: #ccc;
         white-space: nowrap;
+        &:focus {
+          outline-offset: 0;
+        }
       }
     }
   }
-  .uspto-header-middle{
-    @extend .navbar; @extend .navbar-expand-md; @extend .navbar-dark; @extend .navbar-top;
+  .uspto-header-middle {
+    @extend .navbar;
+    @extend .navbar-expand-md;
+    @extend .navbar-dark;
+    @extend .navbar-top;
     padding: 0;
-    .nav-collapse-section{
+    .nav-collapse-section {
       @extend .flex-fill;
-     
-     .navbar-toggler{
-       @extend .btn-primary;
-      //background-color: $primary;
-      border-radius: 0;
-      line-height: 1.5;
-      width: 100%;
-      .navbar-toggler-icon {
-        color: $white;
-        width: 1em;
-       height: 1em;
-       
-     }
-     }
+
+      .navbar-toggler {
+        @extend .btn-primary;
+        border-radius: 0;
+        line-height: 1.5;
+        width: 100%;
+        .navbar-toggler-icon {
+          color: $white;
+          width: 1em;
+          height: 1em;
+        }
+      }
     }
   }
 }
@@ -180,33 +195,18 @@ header {
   min-width: 250px;
   min-width: 25rem;
 }
-.uspto-header-top .dropdown-menu > li > a {
-  line-height: 2.5;
-  color: #cccccc;
-}
+
 .uspto-header-top .dropdown-menu > li > a:hover {
   background-color: #323232;
 }
-.uspto-header-top .dropdown-menu {
-  margin: 0;
-}
-.uspto-header-top .icon-btn {
-  min-width: 17px;
-  min-width: 1.7rem;
-}
-@media (min-width: 320px) {
-  .uspto-header-top .icon-btn {
-    min-width: 12px;
-    min-width: 1.2rem;
-  }
-}
+
 .uspto-header-top .icon-my-link {
   background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAOCAYAAAAfSC3RAAAA40lEQVQokaXSPyvHURzF8ddXhl95DshgUcjkCbCZlEEyehw8CJ6CP/UrJVEymPwZrGSWASmyKDmW+607/BI/Z7r3fO77du7pSrKTv6vbJIk+NNAPVINn2MBFNdsq3mtPsmReT9JJslD2D0mGyvyp1yPrqLM4wTu2MVn8O8zgDeeYQwYrcBQfOCzgYjk4UflXmEJTg7CCTbyUBK3WcIBLHNXltFoqBS2jKV4HqzjGMMbrcm6TXJf1aZLHJM9J9ov3lWQsyV5bTgv+pJsk00nmywVJkt/8nE/cY6SK719fbrcPrvsNS1n7YXCTQaUAAAAASUVORK5CYII=);
   background-repeat: no-repeat;
   width: 14px;
-  width: .85rem;
+  width: 0.85rem;
   height: 14px;
-  height: .85rem;
+  height: 0.85rem;
 }
 
 .uspto-header-top .btn-group.open button:hover {
@@ -220,8 +220,7 @@ header {
 .uspto-header-top a.user-link,
 .uspto-header-top a.my-link {
   color: #cccccc;
-  font-weight: 400;  
- 
+  font-weight: 400;
 }
 .uspto-header-top button:hover,
 .uspto-header-top a.user-link:hover,
@@ -375,7 +374,6 @@ header {
   line-height: 1.4;
 }
 
-
 /* media rules for xs screens */
 @media (max-width: 767px) {
   .uspto-header-top ul.dropdown-menu li a {
@@ -415,8 +413,6 @@ header {
   .uspto-header-middle {
     display: none;
   }
-    
-  
 }
 
 .uspto-footer-logo a {

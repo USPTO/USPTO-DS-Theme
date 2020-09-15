@@ -197,14 +197,7 @@ $card-border-width: 0.125rem !default;
 $card-border-color: $light !default;
 $card-cap-bg: none !default;
 
-//Dropdown
-//$dropdown-spacer:                  -.125rem !default;
-//$dropdown-border-radius:            0 !default;
-
 // Forms
-
-//discuss the following line with Zoin
-//$input-height-border:                   0 * 2 !default;
 
 $input-padding-y: 0.5rem !default;
 $input-padding-x: 0.5rem !default;
@@ -241,8 +234,8 @@ $modal-content-border-radius: 0 !default;
 $modal-header-border-color: #ddd !default;
 
 //navbar
-$navbar-dark-color:                 $white !default;
-$navbar-dark-hover-color:           $white !default;
+$navbar-dark-color: $white !default;
+$navbar-dark-hover-color: $white !default;
 //$navbar-dark-active-color:          $white !default;
 
 // Popovers
