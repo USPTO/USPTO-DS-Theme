@@ -43,6 +43,10 @@
   .custom-control-label::after {
     background: no-repeat 50%/70% 70%;
   }
+  .custom-control-input:disabled:checked ~ .custom-control-label::before  {    
+      background-color: $secondary-lightest;
+   
+  }
 }
 
 .custom-radio {
@@ -51,6 +55,11 @@
   }
   .custom-control-input:checked ~ .custom-control-label::before {
     background-color: white !important;
+  }
+  .custom-control-input:checked:disabled ~ .custom-control-label {
+    &::after {
+      background-image: escape-svg($custom-radio-indicator-icon-disabled);
+    }
   }
 }
 

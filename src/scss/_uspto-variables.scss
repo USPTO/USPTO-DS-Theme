@@ -212,17 +212,20 @@ $input-border-radius: 0 !default;
 
 $input-focus-border-color: $gray-lightest !default;
 
+
 //Custom form element
 
 $custom-control-indicator-size: 1.25rem !default;
 $custom-control-indicator-border-width: 0 !default;
 
-$custom-control-indicator-disabled-bg: uspto-color("light", "600") !default;
+$custom-control-indicator-disabled-bg: uspto-color("light", "400") !default;
 $custom-control-label-disabled-color: uspto-color("gray", "200") !default;
 
 $custom-checkbox-indicator-border-radius: 0.125rem !default;
 
 $custom-radio-indicator-icon-checked: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='18' height='18' viewBox='-5 -5 10 10'><circle r='4' fill='#{$primary}'/></svg>") !default;
+
+$custom-radio-indicator-icon-disabled: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='18' height='18' viewBox='-5 -5 10 10'><circle r='4' fill='#{$secondary-lightest}'/></svg>") !default;
 
 $custom-select-border-radius: 0 !default;
 
@@ -248,3 +251,5 @@ $table-head-color: null !default;
 $table-dark-bg: $secondary-darker !default;
 
 $text-muted: $gray-deafult !default;
+
+$table-border-color: $gray-lightest !default;
