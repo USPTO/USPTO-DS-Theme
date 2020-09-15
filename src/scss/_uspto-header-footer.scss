@@ -21,15 +21,6 @@ header {
       background-color: #ebebeb;
     }
     li {
-      a.nav-link {
-        color: $white !important;
-        // @include hover {
-        //   text-decoration: underline;
-        // }
-        &:focus {
-          text-decoration: underline;
-        }
-      }
       &.active {
         a {
           background-color: #1a4480;
@@ -43,6 +34,7 @@ header {
   }
   .uspto-header-top{
     .dropdown-menu{
+      margin-top: -1px;
       li a{
         display: block;
         padding: 3px 20px;
