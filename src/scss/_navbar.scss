@@ -22,10 +22,14 @@
   .navbar-brand {
     @extend .font-weight-bold;
     color: $dark;
-    padding-left: 0.5rem;
+    padding-left: 2rem;
     text-decoration: none;
+    &:focus, &:hover{
+      color: #24282c;
+    }
   }
-  @media (min-width: 768.98px) {
-    padding: 0 1rem 0 0.5rem;
-  }
+
+  
+
+  
 }

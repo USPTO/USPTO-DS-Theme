@@ -36,14 +36,43 @@ header {
         }
       }
     }
-    .navbar-brand {
-      //@extend .font-weight-bold;
-      color: $dark;
-      padding-left: 0.5rem;
-      text-decoration: none;
-    }
+    
     @media (min-width: 768.98px) {
       //padding: 0 1rem 0 0.5rem;
+    }
+  }
+  .uspto-header-top{
+    .dropdown-menu{
+      li a{
+        display: block;
+        padding: 3px 20px;
+        clear: both;
+        font-weight: 400;
+        line-height: 2.5;
+        color: #ccc;
+        white-space: nowrap;
+      }
+    }
+  }
+  .uspto-header-middle{
+    @extend .navbar; @extend .navbar-expand-md; @extend .navbar-dark; @extend .navbar-top;
+    padding: 0;
+    .nav-collapse-section{
+      @extend .flex-fill;
+     
+     .navbar-toggler{
+       @extend .btn-primary;
+      //background-color: $primary;
+      border-radius: 0;
+      line-height: 1.5;
+      width: 100%;
+      .navbar-toggler-icon {
+        color: $white;
+        width: 1em;
+       height: 1em;
+       
+     }
+     }
     }
   }
 }
@@ -183,13 +212,11 @@ header {
   background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAOCAYAAAAfSC3RAAAA40lEQVQokaXSPyvHURzF8ddXhl95DshgUcjkCbCZlEEyehw8CJ6CP/UrJVEymPwZrGSWASmyKDmW+607/BI/Z7r3fO77du7pSrKTv6vbJIk+NNAPVINn2MBFNdsq3mtPsmReT9JJslD2D0mGyvyp1yPrqLM4wTu2MVn8O8zgDeeYQwYrcBQfOCzgYjk4UflXmEJTg7CCTbyUBK3WcIBLHNXltFoqBS2jKV4HqzjGMMbrcm6TXJf1aZLHJM9J9ov3lWQsyV5bTgv+pJsk00nmywVJkt/8nE/cY6SK719fbrcPrvsNS1n7YXCTQaUAAAAASUVORK5CYII=);
   background-repeat: no-repeat;
   width: 14px;
-  width: 1.4rem;
+  width: .85rem;
   height: 14px;
-  height: 1.4rem;
+  height: .85rem;
 }
-.uspto-header-top .bigger {
-  transform: scale(1.2);
-}
+
 .uspto-header-top .btn-group.open button:hover {
   background-color: #282828;
   color: #ffffff;
@@ -201,30 +228,8 @@ header {
 .uspto-header-top a.user-link,
 .uspto-header-top a.my-link {
   color: #cccccc;
-  font-weight: 400;
-  text-decoration: none;
-
-  margin-right: 0px;
-  margin-right: 0rem;
-  margin-bottom: 0px;
-  margin-bottom: 0rem;
-  margin-left: 0px;
-  margin-left: 0rem;
-  padding-top: 8px;
-  padding-top: 0.8rem;
-  padding-right: 8px;
-  padding-right: 0.8rem;
-  padding-bottom: 8px;
-  padding-bottom: 0.8rem;
-  padding-left: 8px;
-  padding-left: 0.8rem;
-  box-shadow: none;
-  vertical-align: middle;
-  border-radius: 4px;
-  border-radius: 0.4rem;
-  text-align: center;
-  background: #323232;
-  /* fallback color for old browsers */
+  font-weight: 400;  
+ 
 }
 .uspto-header-top button:hover,
 .uspto-header-top a.user-link:hover,
@@ -232,18 +237,7 @@ header {
   background-color: #282828;
   color: #ffffff;
 }
-@media (min-width: 360px) {
-  .uspto-header-top button,
-  .uspto-header-top a.user-link,
-  .uspto-header-top a.my-link {
-    margin-right: 5px;
-    margin-right: 0.5rem;
-    margin-bottom: 0px;
-    margin-bottom: 0rem;
-    margin-left: 0px;
-    margin-left: 0rem;
-  }
-}
+
 .uspto-header-top button.ex-btn-inverse.btn:focus.user-link,
 .uspto-header-top a.user-link.ex-btn-inverse.btn:focus.user-link,
 .uspto-header-top a.my-link.ex-btn-inverse.btn:focus.user-link {
@@ -388,24 +382,7 @@ header {
   padding-left: 1.2rem;
   line-height: 1.4;
 }
-.uspto-header-bottom button > a {
-  color: #ffffff;
-}
-.uspto-header-bottom .nav > li > button:hover,
-.uspto-header-bottom .nav > li > button:focus,
-.uspto-header-bottom .nav > li > a:hover,
-.uspto-header-bottom .nav > li > a:focus {
-  text-decoration: none;
-  background-color: #043464;
-  color: #ffffff;
-}
-.uspto-header-bottom .navbar-nav .open .dropdown-menu {
-  background-color: #ffffff;
-}
-.uspto-header-bottom .open > .dropdown-toggle.btn-default {
-  background-color: #043464;
-  color: #ffffff;
-}
+
 
 /* media rules for xs screens */
 @media (max-width: 767px) {
@@ -446,29 +423,8 @@ header {
   .uspto-header-middle {
     display: none;
   }
-  .uspto-header-middle .container,
-  .uspto-header-middle .container-fluid {
-    font-size: 26px;
-    font-size: 2.6rem;
-  }
-  .uspto-header-bottom .navbar-collapse button,
-  .uspto-header-bottom .nav > li > a {
-    /* align the menu buttons with other header content */
-    padding-left: 22px;
-    padding-left: 2.2rem;
-    width: 100%;
-    text-align: left;
-  }
-  .navbar-toggle {
-    padding-top: 5px;
-    padding-top: 0.5rem;
-    padding-right: 10px;
-    padding-right: 1rem;
-    padding-bottom: 5px;
-    padding-bottom: 0.5rem;
-    padding-left: 10px;
-    padding-left: 1rem;
-  }
+    
+  
 }
 
 .uspto-footer-logo a {
@@ -553,12 +509,3 @@ header {
     display: block;
   }
 }
-/*
- * At-rule correction for IE10+ auto-hide scrollbar. This rule only works in
- * IE.
- */
-@-ms-viewport {
-  width: auto !important;
-}
-/* browser upgrade prompt */
-/*# sourceMappingURL=header-footer.min.css.map */
