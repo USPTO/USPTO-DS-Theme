@@ -1,0 +1,8 @@
+.page-link {
+  &:focus{
+    @extend :hover;
+    text-decoration: none !important;
+    outline: 0.25rem solid #2491ff;
+    outline-offset: 0;
+  }
+}
