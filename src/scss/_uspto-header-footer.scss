@@ -184,10 +184,8 @@ header {
         padding-left: 1.25rem;
         padding-right: 1.25rem;
         font-size: 0.8125rem;
-        &.active,
-        &:active {
-          color: black;
-          background-color: #ccc;
+        &:hover &:focus {
+          background-color: #eee;
         }
       }
     }
