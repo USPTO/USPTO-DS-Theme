@@ -68,12 +68,6 @@
   box-shadow: none;
 }
 
-.custom-file-label {
-  &::after {
-    background-color: transparent;
-  }
-}
-
 .custom-range {
   &:focus {
     outline: 0.25rem solid #2491ff;

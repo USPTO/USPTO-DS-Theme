@@ -112,7 +112,7 @@
     </section>
     <header>
       <div class="uspto-header-top" >
-        <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #323232;">
+        <nav class="navbar navbar-expand-lg navbar-dark" >
 
           <a href="https://www.uspto.gov" target="_blank" class="uspto-logo"
                title="United States Patent and Trademark Office - An Agency of the Department of Commerce">
@@ -132,7 +132,7 @@
                   <span class="btn-text">Patents&nbsp;</span>
                   <span class="btn-icon">
                     <span
-                                  class="icon icon-lightbulb-o icon-inverse"></span></span>
+                                  class="icon-lightbulb"></span></span>
                 </button>
               </div>
 
@@ -144,7 +144,7 @@
                   <span class="btn-text">Trademarks&nbsp;</span>
                   <span class="btn-icon">
                     <span
-                                  class="icon icon-trademark icon-inverse"></span></span>
+                                  class="icon-trademark"></span></span>
                 </button>
               </div>
 
@@ -155,7 +155,7 @@
                                     aria-haspopup="false" aria-expanded="false">
                   <span class="btn-text">Fees and payment&nbsp;</span>
                   <span class="btn-icon">
-                    <span class="icon icon-dollar icon-inverse"></span></span>
+                    <span class="icon-dollar"></span></span>
                 </button>
               </div>
 
@@ -167,7 +167,7 @@
                   <span class="btn-text">Help&nbsp;<span class="caret"></span></span>
                   <span class="btn-icon">
                     <span
-                                  class="icon icon-question-circle icon-inverse"></span></span>
+                                  class="icon-question-circle"></span></span>
                 </button>
                 <ul class="dropdown-menu dropdown-menu-right">
                   <li>
@@ -197,7 +197,7 @@
               <a class="btn btn-default ex-btn-inverse my-link"
                         href="https://my.uspto.gov">
                 <span class="btn-text">MyUSPTO&nbsp;</span>
-                <div class="btn-icon icon-my-link"></div>
+                <span class="btn-icon"> <span class="icon-myuspto"></span></span>
 
               </a>
             </div>
@@ -214,20 +214,20 @@
                       aria-haspopup="true" aria-expanded="false">
                 <span class="btn-text">John Doe&nbsp;<span class="caret"></span></span>
                 <span class="btn-icon">
-                  <span class="icon icon-user icon-inverse icon-color-warning"></span></span>
+                  <span class="icon-user-orange"></span></span>
               </button>
               <ul class="dropdown-menu dropdown-menu-right">
                 <li>
                   <a href="https://my.uspto.gov">
-                    <span class="icon icon-inverse icon-home"></span> &nbsp;MyUSPTO<span class="sr-only">&nbsp;console</span></a>
+                    <span class="icon-home"></span> &nbsp;MyUSPTO<span class="sr-only">&nbsp;console</span></a>
                 </li>
                 <li>
                   <a href="https://account.uspto.gov">
-                    <span class="icon icon-inverse icon-user"></span> &nbsp;<span class="sr-only">Manage your&nbsp;</span>Account</a>
+                    <span class="icon-user"></span> &nbsp;<span class="sr-only">Manage your&nbsp;</span>Account</a>
                 </li>
                 <li>
                   <a href="https://my.uspto.gov/signout">
-                    <span class="icon icon-inverse icon-sign-out"></span> &nbsp;Sign out</a>
+                    <span class="icon-sign-out"></span> &nbsp;Sign out</a>
                 </li>
               </ul>
               <!-- END USER DROPDOWN MENU -->
@@ -265,6 +265,7 @@
         </div>
 
       </div>
+      <div class="uspto-header-bottom">
       <nav class="navbar navbar-expand-md navbar-dark bg-primary" aria-label="header sub navigation">
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav">
@@ -304,6 +305,7 @@
           </ul>
         </div>
       </nav>
+      </div>
     </header>
     <div class="main-container">
       <div class="d-none d-sm-none d-md-block">
@@ -2223,9 +2225,21 @@
       </main>
     </div>
     <footer>
+    <div class="uspto-footer-top">
+      <div class="row">
+        <div class="col-10">
+        <a class="logo" href="https://www.uspto.gov/" target="_blank"
+                       title="United States Patent and Trademark Office">
+                <span class="sr-only">United States Patent and Trademark Office</span>
+              </a>
+        </div>
+      </div>
+    </div>
+    </footer>
+    <footer>
       <div class="container-fluid">
-        <div class="row">
-          <div class="uspto-footer-top col-sm-12">
+        <div class="uspto-footer-top row">
+          <div class=" col-sm-12">
             <div class="uspto-footer-logo col-sm-10">
               <a class="logo" href="https://www.uspto.gov/" target="_blank"
                        title="United States Patent and Trademark Office">
@@ -2238,7 +2252,7 @@
             </div>
           </div>
           <!-- /.uspto-footer-top -->
-          <div class="uspto-footer-middle row">
+          <div class="uspto-footer-middle col-sm-12 pt-5 mt-5">
             <div class="navbar-header d-sm-block d-md-none col-12">
               <button type="button" class="navbar-toggle collapsed visible-xs" data-toggle="collapse"
                             data-target="#navbar-collapse-topic">
@@ -2246,7 +2260,7 @@
               </button>
             </div>
             <!--navbar-collapse collapse -->
-            <div class="uspto-footer-column col-sm-3 "
+            <div class="uspto-footer-column col-3 "
                      id="navbar-collapse-topic">
               <span class="uspto-footer-column-hdg hidden-xs">Browse By Topic</span>
               <ul>
@@ -2283,7 +2297,7 @@
               </button>
             </div>
             <!--navbar-collapse collapse -->
-            <div class="uspto-footer-column col-sm-3"
+            <div class="uspto-footer-column col-3"
                      id="navbar-collapse-about">
               <span class="uspto-footer-column-hdg hidden-xs">About This Site</span>
               <ul>

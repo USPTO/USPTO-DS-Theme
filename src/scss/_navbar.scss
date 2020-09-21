@@ -5,7 +5,9 @@
   li {
     a.nav-link {
       color: $white !important;
+      font-size: 0.875rem;
       line-height: 1;
+      outline-offset: 0;
       @include hover {
         background-color: $primary-dark;
       }
@@ -22,7 +24,7 @@
   .navbar-brand {
     @extend .font-weight-bold;
     color: $dark;
-    padding-left: 2rem;
+    padding-left: 1.5rem;
     text-decoration: none;
     &:focus,
     &:hover {
