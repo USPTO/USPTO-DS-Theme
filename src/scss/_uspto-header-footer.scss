@@ -49,22 +49,22 @@ $icon-lightbulb: "\e908";
 
 .icon-home {
   &:before {
-    content: $icon-home;   
+    content: $icon-home;
   }
 }
 .icon-sign-out {
   &:before {
-    content: $icon-sign-out;    
+    content: $icon-sign-out;
   }
 }
 .icon-myuspto {
   &:before {
-    content: $icon-myuspto;    
+    content: $icon-myuspto;
   }
 }
 .icon-bars {
   &:before {
-    content: $icon-bars;    
+    content: $icon-bars;
   }
 }
 .icon-user-orange {
@@ -75,37 +75,37 @@ $icon-lightbulb: "\e908";
 }
 .icon-trademark {
   &:before {
-    content: $icon-trademark;    
+    content: $icon-trademark;
   }
 }
 .icon-question-circle {
   &:before {
-    content: $icon-question-circle;    
+    content: $icon-question-circle;
   }
 }
 .icon-user {
   &:before {
-    content: $icon-user;    
+    content: $icon-user;
   }
 }
 .icon-caret {
   &:before {
-    content: $icon-caret;    
+    content: $icon-caret;
   }
 }
 .icon-dollar {
   &:before {
-    content: $icon-dollar;    
+    content: $icon-dollar;
   }
 }
 .icon-external-link {
   &:before {
-    content: $icon-external-link;    
+    content: $icon-external-link;
   }
 }
 .icon-lightbulb {
   &:before {
-    content: $icon-lightbulb;    
+    content: $icon-lightbulb;
   }
 }
 
@@ -115,6 +115,12 @@ header {
     &:hover,
     &:focus {
       text-decoration: none;
+    }
+  }
+
+  .dropdown-toggle {
+    &:after {
+      vertical-align: middle;
     }
   }
   .uspto-header-top {
@@ -144,7 +150,6 @@ header {
         &:after {
           @extend .d-none;
           @extend .d-md-inline-block;
-          vertical-align: middle;
         }
       }
       .user-link {
@@ -168,10 +173,36 @@ header {
       margin-left: 0.5rem;
     }
   }
-
+  .uspto-header-middle {
+    background-color: #ebebeb;
+  }
   .uspto-header-bottom {
+    background-color: $primary;
     .navbar {
       @extend .py-0;
+      .dropdown-item {
+        padding-left: 1.25rem;
+        padding-right: 1.25rem;
+        font-size: 0.8125rem;
+        &.active,
+        &:active {
+          color: black;
+          background-color: #ccc;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .uspto-header-bottom {
+    .navbar {
+      padding-left: 0 !important;
+      padding-right: 0 !important;
+      .nav-link {
+        padding-left: 1rem !important;
+        padding-right: 1rem !important;
+      }
     }
   }
 }
