@@ -236,9 +236,12 @@ $modal-content-border-radius: 0 !default;
 $modal-header-border-color: #ddd !default;
 
 //navbar
+$navbar-brand-padding-y: 0.25rem !default;
+
 $navbar-dark-color: $white !default;
 $navbar-dark-hover-color: $white !default;
-//$navbar-dark-active-color:          $white !default;
+
+$navbar-padding-y: 0.25rem !default;
 
 // Popovers
 $popover-border-radius: 0 !default;

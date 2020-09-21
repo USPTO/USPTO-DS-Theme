@@ -34,6 +34,7 @@ $icon-lightbulb: "\e908";
 [class*=" icon-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: "#{$icomoon-font-family}" !important;
+  color: #fff;
   speak: never;
   font-style: normal;
   font-weight: normal;
@@ -48,26 +49,22 @@ $icon-lightbulb: "\e908";
 
 .icon-home {
   &:before {
-    content: $icon-home;
-    color: #fff;
+    content: $icon-home;   
   }
 }
 .icon-sign-out {
   &:before {
-    content: $icon-sign-out;
-    color: #fff;
+    content: $icon-sign-out;    
   }
 }
 .icon-myuspto {
   &:before {
-    content: $icon-myuspto;
-    color: #fff;
+    content: $icon-myuspto;    
   }
 }
 .icon-bars {
   &:before {
-    content: $icon-bars;
-    color: #fff;
+    content: $icon-bars;    
   }
 }
 .icon-user-orange {
@@ -78,44 +75,37 @@ $icon-lightbulb: "\e908";
 }
 .icon-trademark {
   &:before {
-    content: $icon-trademark;
-    color: #fff;
+    content: $icon-trademark;    
   }
 }
 .icon-question-circle {
   &:before {
-    content: $icon-question-circle;
-    color: #fff;
+    content: $icon-question-circle;    
   }
 }
 .icon-user {
   &:before {
-    content: $icon-user;
-    color: #fff;
+    content: $icon-user;    
   }
 }
 .icon-caret {
   &:before {
-    content: $icon-caret;
-    color: #fff;
+    content: $icon-caret;    
   }
 }
 .icon-dollar {
   &:before {
-    content: $icon-dollar;
-    color: #fff;
+    content: $icon-dollar;    
   }
 }
 .icon-external-link {
   &:before {
-    content: $icon-external-link;
-    color: #fff;
+    content: $icon-external-link;    
   }
 }
 .icon-lightbulb {
   &:before {
-    content: $icon-lightbulb;
-    color: #fff;
+    content: $icon-lightbulb;    
   }
 }
 
@@ -148,11 +138,13 @@ header {
       .btn-icon {
         @extend .d-sm-block;
         @extend .d-md-none;
+        @extend .px-1;
       }
       .dropdown-toggle {
         &:after {
           @extend .d-none;
           @extend .d-md-inline-block;
+          vertical-align: middle;
         }
       }
       .user-link {
