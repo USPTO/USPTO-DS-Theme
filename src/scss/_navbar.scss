@@ -29,4 +29,14 @@
       outline-offset: 0;
     }
   }
+  .navbar-toggler {
+    @extend .btn-primary;
+    border-radius: 0;
+    padding: 0.45rem 0.75rem;
+    font-size: 1.25rem;
+    &-icon {
+      width: 1em;
+      height: 1em;
+    }
+  }
 }
