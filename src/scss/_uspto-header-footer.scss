@@ -204,3 +204,51 @@ header {
     }
   }
 }
+
+footer {
+  background-color: #363636;
+  padding: 1rem;
+
+  margin-top: 1rem;
+  .uspto-footer-top {
+    position: relative;
+    .uspto-footer-watermark {
+      background-position: left top;
+      background-repeat: no-repeat;
+      background-size: contain;
+      position: absolute;
+      z-index: 0;
+      top: 0;
+      right: 0;
+      height: 157px;
+      width: 157px;
+      margin-right: 15px;
+    }
+  }
+  .uspto-footer-middle {
+    .column-header {
+      font-size: 12px;
+      line-height: 1.1em;
+      margin-top: 27px;
+      margin-bottom: 9px;
+      color: white;
+      text-transform: uppercase;
+      font-weight: 700;
+      display: block;
+    }
+    ul {
+      list-style-type: none;
+      padding: 0;
+      margin-top: 0;
+
+      li {
+        padding-top: 0.61em;
+
+        a {
+          color: #4ec5f1;
+          font-size: 13px;
+        }
+      }
+    }
+  }
+}
