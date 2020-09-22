@@ -12160,6 +12160,11 @@ header a:hover, header a.page-link:focus, header a:focus {
 header .dropdown-toggle:after {
   vertical-align: middle;
 }
+header .dropdown-menu {
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  border-radius: 2px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+}
 header .uspto-header-top {
   background-color: #323232;
 }
@@ -12204,6 +12209,7 @@ header .uspto-header-bottom .navbar .dropdown-item, header .uspto-header-bottom 
   font-size: 0.8125rem;
 }
 header .uspto-header-bottom .navbar .dropdown-item:hover header .uspto-header-bottom .navbar .dropdown-item:focus, header .uspto-header-bottom .uspto-header-middle .dropdown-item:hover header .uspto-header-bottom .navbar .dropdown-item:focus, header .uspto-header-bottom .navbar .dropdown-item.page-link:focus header .uspto-header-bottom .navbar .dropdown-item:focus, header .uspto-header-bottom .uspto-header-middle .dropdown-item.page-link:focus header .uspto-header-bottom .navbar .dropdown-item:focus, header .uspto-header-bottom .navbar .dropdown-item:hover header .uspto-header-bottom .uspto-header-middle .dropdown-item:focus, header .uspto-header-bottom .uspto-header-middle .dropdown-item:hover header .uspto-header-bottom .uspto-header-middle .dropdown-item:focus, header .uspto-header-bottom .navbar .dropdown-item.page-link:focus header .uspto-header-bottom .uspto-header-middle .dropdown-item:focus, header .uspto-header-bottom .uspto-header-middle .dropdown-item.page-link:focus header .uspto-header-bottom .uspto-header-middle .dropdown-item:focus {
+  color: #262626;
   background-color: #eee;
 }
 

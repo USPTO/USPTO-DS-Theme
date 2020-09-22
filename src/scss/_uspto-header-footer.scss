@@ -123,6 +123,12 @@ header {
       vertical-align: middle;
     }
   }
+
+  .dropdown-menu{
+    border: 1px solid rgba(0,0,0,.05);
+    border-radius: 2px;
+    box-shadow: 0 6px 12px rgba(0,0,0,.175);
+  }
   .uspto-header-top {
     background-color: #323232;
     .btn {
@@ -185,7 +191,8 @@ header {
         padding-right: 1.25rem;
         font-size: 0.8125rem;
         &:hover &:focus {
-          background-color: #eee;
+          color: #262626;
+          background-color: #eee;         
         }
       }
     }
