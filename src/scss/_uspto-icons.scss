@@ -1,0 +1,102 @@
+@import "_uspto-icons-vars";
+
+@font-face {
+  font-family: '#{$icomoon-font-family}';
+  src:  url('#{$icomoon-font-path}/#{$icomoon-font-family}.eot?a38xwg');
+  src:  url('#{$icomoon-font-path}/#{$icomoon-font-family}.eot?a38xwg#iefix') format('embedded-opentype'),
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.ttf?a38xwg') format('truetype'),
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.woff?a38xwg') format('woff'),
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.svg?a38xwg##{$icomoon-font-family}') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="uspto-icon-"], [class*=" uspto-icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: '#{$icomoon-font-family}' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.uspto-icon-home {
+  &:before {
+    content: $uspto-icon-home;     
+    color: #fff;
+  }
+}
+.uspto-icon-sign-out {
+  &:before {
+    content: $uspto-icon-sign-out;     
+    color: #fff;
+  }
+}
+.uspto-icon-myuspto {
+  &:before {
+    content: $uspto-icon-myuspto;     
+    color: #fff;
+  }
+}
+.uspto-icon-bars {
+  &:before {
+    content: $uspto-icon-bars;     
+    color: #fff;
+  }
+}
+.uspto-icon-user {
+  &:before {
+    content: $uspto-icon-user;     
+    color: #f2a900;
+  }
+}
+.uspto-icon-trademark {
+  &:before {
+    content: $uspto-icon-trademark;     
+    color: #fff;
+  }
+}
+.uspto-icon-question-circle {
+  &:before {
+    content: $uspto-icon-question-circle;     
+    color: #fff;
+  }
+}
+.uspto-icon-user-white {
+  &:before {
+    content: $uspto-icon-user-white;     
+    color: #fff;
+  }
+}
+.uspto-icon-caret {
+  &:before {
+    content: $uspto-icon-caret;     
+    color: #fff;
+  }
+}
+.uspto-icon-dollar {
+  &:before {
+    content: $uspto-icon-dollar;     
+    color: #fff;
+  }
+}
+.uspto-icon-external-link {
+  &:before {
+    content: $uspto-icon-external-link;     
+    color: #fff;
+  }
+}
+.uspto-icon-lightbulb {
+  &:before {
+    content: $uspto-icon-lightbulb;     
+    color: #fff;
+  }
+}
+

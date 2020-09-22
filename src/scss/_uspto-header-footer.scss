@@ -1,115 +1,6 @@
-$icomoon-font-family: "uspto-header" !default;
-$icomoon-font-path: "../icons/uspto-icons" !default;
 
-$icon-home: "\e90a";
-$icon-sign-out: "\e90b";
-$icon-myuspto: "\e909";
-$icon-bars: "\e900";
-$icon-user-orange: "\e901";
-$icon-trademark: "\e902";
-$icon-question-circle: "\e903";
-$icon-user: "\e904";
-$icon-caret: "\e905";
-$icon-dollar: "\e906";
-$icon-external-link: "\e907";
-$icon-lightbulb: "\e908";
-
-@font-face {
-  font-family: "#{$icomoon-font-family}";
-  src: url("#{$icomoon-font-path}/#{$icomoon-font-family}.eot?j3jzt");
-  src: url("#{$icomoon-font-path}/#{$icomoon-font-family}.eot?j3jzt#iefix")
-      format("embedded-opentype"),
-    url("#{$icomoon-font-path}/#{$icomoon-font-family}.ttf?j3jzt")
-      format("truetype"),
-    url("#{$icomoon-font-path}/#{$icomoon-font-family}.woff?j3jzt")
-      format("woff"),
-    url("#{$icomoon-font-path}/#{$icomoon-font-family}.svg?j3jzt##{$icomoon-font-family}")
-      format("svg");
-  font-weight: normal;
-  font-style: normal;
-  font-display: block;
-}
-
-[class^="icon-"],
-[class*=" icon-"] {
-  /* use !important to prevent issues with browser extensions that change fonts */
-  font-family: "#{$icomoon-font-family}" !important;
-  color: #fff;
-  speak: never;
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1;
-
-  /* Better Font Rendering =========== */
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-.icon-home {
-  &:before {
-    content: $icon-home;
-  }
-}
-.icon-sign-out {
-  &:before {
-    content: $icon-sign-out;
-  }
-}
-.icon-myuspto {
-  &:before {
-    content: $icon-myuspto;
-  }
-}
-.icon-bars {
-  &:before {
-    content: $icon-bars;
-  }
-}
-.icon-user-orange {
-  &:before {
-    content: $icon-user-orange;
-    color: #f2a900;
-  }
-}
-.icon-trademark {
-  &:before {
-    content: $icon-trademark;
-  }
-}
-.icon-question-circle {
-  &:before {
-    content: $icon-question-circle;
-  }
-}
-.icon-user {
-  &:before {
-    content: $icon-user;
-  }
-}
-.icon-caret {
-  &:before {
-    content: $icon-caret;
-  }
-}
-.icon-dollar {
-  &:before {
-    content: $icon-dollar;
-  }
-}
-.icon-external-link {
-  &:before {
-    content: $icon-external-link;
-  }
-}
-.icon-lightbulb {
-  &:before {
-    content: $icon-lightbulb;
-  }
-}
-
-header {
+header,
+footer {
   a {
     text-decoration: none;
     &:hover,
@@ -117,17 +8,18 @@ header {
       text-decoration: none;
     }
   }
-
+}
+header {
   .dropdown-toggle {
     &:after {
       vertical-align: middle;
     }
   }
 
-  .dropdown-menu{
-    border: 1px solid rgba(0,0,0,.05);
+  .dropdown-menu {
+    border: 1px solid rgba(0, 0, 0, 0.05);
     border-radius: 2px;
-    box-shadow: 0 6px 12px rgba(0,0,0,.175);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
   }
   .uspto-header-top {
     background-color: #323232;
@@ -192,7 +84,7 @@ header {
         font-size: 0.8125rem;
         &:hover &:focus {
           color: #262626;
-          background-color: #eee;         
+          background-color: #eee;
         }
       }
     }
@@ -210,14 +102,25 @@ header {
       }
     }
   }
+  .uspto-footer-top { a.logo{
+  width: 93%;
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAKsAAAA7CAYAAAAEjnpaAAANEUlEQVR42u1dDZBVVR1/oPIdQWmEEJAoigiEE1aoiRaNGFGWa5mfU1Mq2UypFVK2WYLpTJYFJSJiNc7gFn0ZO6FTiw6uEqu4zQ5hCyzL8mC/3ve9736+R//fvrvOstxz7r3n3fex7LnDmQX23XvP/39+53/+3y8Sca5sNvuBXM561LKMllzOzuXz9EeOqh+0ZlsiLldbW8MY+t3LQ5EmyzLbbNvcZBjKfDfaRti2vYk+mD1xIn9CjqEzaFH3R9wvWlPz2aFKFwnMvG1bbZqmfeIdinp6eqYSkn8tF16CtRpHPm93koRd2EcRHfs/JAQrcuElWKuYxtei0eg4Aqv5qlx0CdbqptFKqap6aYR0g4RcdAnW6lYFcnnDyH45Qn+x5aJLsFb7ME39PoA1LxddgrXah2XpD0iwSrAOEbAaqyVYJVglWOWQYJVglUOC9XQceUTOC3HmXaZpvkDjj/T3f9D/vU7j7VzO1ssYPtRoNnvp/S9iHvm8/ZJtW2/RT3WogNWJ3SeIjn2WZf0zlzO3If+A6Hib3qVWJVjpxodaW1+fOHhkMrF5ICbo8wwje6Pb89rb/zOZFjkahJnEuG4CQ4Nparf39vZOi3Cu1tb60ZqW/jjR8yCBZheNmF9+2LZxm9ucMWjOljOXFC3qvwzD+FI02jTObQ779+9/F9F/A815O90T9/PuWOzo9P53tbQ0TGDR19DQMMZtfvS+LwbgqUV0HCA6Nmta5qq6urozWJtD19XPEh3bSBB0VBNY17jNNpvNzvDL8IGDiFzh9jwwhhjVEUDKPJPJZOa1tLSMigS8sLCKoswnSbHGj8SlBa9hPQtgpQU7bFna1ZzFPenCnAnUC0labfd6d1vb3kmRIi7i90qfp0GCeHo38WVKkOfH4/GZxMfVIoLrtAcrMbUL0ikS0pVMJj9YOObsvAhYIU0hMUXe3d3dMoEA8lvio1kpsBaOe3sXkpyKeQ/h4SNQGcJQNU8LsBKgDE3TrsExFAnxisejMwg0MRGwqipf/fCW8rVn0nH6h0qBlejekU5Hzw6Dj6qqTgsj/2TIg5XeZZim/k0fPBsB/bSjo3FsTU2N57Hc3Nw8ngcWL7CGcRlGZh7RnnF7dzLZNfv48ePnYCST7ZN5Urr/cwMHzf0WDlB3Ed9HhUkLnVSzCbAHhjVY6Yh5IxaLTeQw6Tw6kh8nRu1FIq8zDtDYTTQ8ruvKtfSxkScbXa0T6XeN8CSEBdZ0+uh76V3LsbHI8PtKNpteMvi97uqEsYaRhXSMjumjGPSZV1gblH738/7PDRx0fy97bbNXeIOv8zyi4w6i514An9SFc73ugXFWjOdjyIOV5vGwu5XfOhqxZJpL0oe1e4ie82MYBWTkQF/c6ocnfsCq66nzUXbiNg9auIO02N9uanL3EuCKRqNn071d5XJdoZSEv3n0ldBlB+vyhRPO3E6AXMozYOkz9cMWrHCVuR+hxk1ektHFf9hOdL3l9z4vsBIIz4Jx4fFemwCwmeUxwHEM/bEcYIXl39y8YzwHqN+n+eoec1FpLa9jS1dt6bAEK4oam5r+No7B2KdL7eTngbWurobmbT7vj5dmBr5ejirwWDnACslYW1s7kmEkXcozNgedGKqiOGUorqqJ+d9hB1Yiupvt5zS3VRKstLiLAvKTpXdGoOOWA6wslQoXPacuID3rOJvvZ2VNEawGsKISlw1Wa10lwUpS6ltBKznh23VfXO2qcoCVVKdb2XpzMMOI+L+H7eXI3iyIuaGtsyIc6259py8Eg0uZ98APCuhPBeeBfj0jGjSjPGqAuthdqhqfFymjRliXETC5XKTkf8iDlaTBDTw/Je3wtUhaIebFyyxZdwgkpNzP4gHP6AsLrHCvMWi5V4Q/2Wz6Csa6XExr2jPswAo3kx8nP67GxsaxqVTPHE3LXIMkF6LhR7QQf6L57kNtOnZ7EF7wcwOsPcGlkfUoW1KbmVKDta6udhTj3U+I1Uxpd7q785Kz4ScehmC1ejKZ2MXFRFfwjmw2PkPTlE+SBF7vxzfrBVYC//7gPDV/w0mM6SolWBGyZhtX9jNiBpHFwEh8RpDkpNMqN4AWuVlRut8fVmhQ11MXEH27eYkkPsB6UEDP28QB66FSghWBB867fy8I1ocZnpKpdIocHsZZV9YbqppYFBZgoTLQJtgobmCZhwXUgM2sZBwkipcSrPT8I6xnEFifE/SLuqo1itI1BVHDYZ3PSkw1aWwgPfSyrq6uKcUCtru7ewKktiBYDwhIoqc4zztSYjUgwfFs/E4QrA+xMtIQLRz2ydeOHpsuZLabLxMAfgVFHyFARUkshM8wCGDT6d6LWOUaHgbWPgFvwHq23shOPAlJDcixpbr1tJiBpX/P7XmJRGIWkmmqAKxxUbB+Oiyw+jEmUHZBDNtJdKxV1dRlrDCjE99/RQCsrwpI1p9w9Ea91N4A9HNlgPURQdfeTe42gX4+renxioMVhg7qmMLyyZUCrC76WoqOuk9xQo3rg4KV7vlrcElk3uP2LOTg8tYoLLDGYrHpDFruFOFrJhO/xN3PqiwQ8XsLgxXOdreJdHY2j4fPMmDFpEHX3EqB1VnwTsydISUfCK6zBo9/W1ZftcMpVyaTmVuOCBb8z4xw75UiAoCVwI2qDi9PS8iS1XoyrOgN3Biqqp5bSbA64cZFDMlyl0AE646Aqokdjx98t/v79evKlHV1F+M5I3l+Xnd6zBc4iTl3lzU3gAj7O9tPqVwbpDMhSndZ1ah+wYpy4WLzAN7prnyqZF0dFKzZbGx6kJ4EvIAAqgs8Nnsrx4vwZIA5/MIjlzXv86TMEyBXcfTvZwW9C2JgxW5GVj1HZ3vRb006K4E6QMGgiQ2CORWht3ZwfJxPiCRfY8H8tiGno/59HF5u8qA/yQaZ9WAAMDSyDE3MjzbF/3zysufgQfdToqYmcgb9Pl3WFEEwmKy6C1hMQgiUPtPk4WI6RhP4jFco1KMG6zAZZ5fjs2AQ4v1BdWZ6RrtpZj/Kej8dafUiYMXCewENTTBIX7+FtVHa2trG0GcavSRZKtXxHrf7kQuBd/gUHFlFic9nnxbZj6GWzYOenZoWn8nZwF8ve6UAsvRZrolBhsY6xNqddD3N+Zm0bXtrV9chT8c9C6yFr9Sxk32tu93f+wNYnPiuBCjzjpqQcwb+rWOHm6bxF5YVjAvFiKxcAb8FgwTG2xAkQKVqIVnGVh1f8M50uudC3r0oB/cqJXHSC5ezngHA4uuinHcqDk80hlTcw5KuBQO6czyKEBFEAB1oieTQA8Hz3Y0bN57F4yXKhirS64okUrOfbiOF9jjKfNqZS2DEBIkuscCK/yNpuIR3b319/WjDSF+EhbRt40YYPfTzVgLP58jCXQoJUFvLrjDFotECbAmjuhWl3fAv0hwWo4oA/uiId5+DEdDn/all9gZetSz8xWilBH4YRmYuSfxVHBXvdi96Eom2ScTHBTiR0MWGpxIO0L3vEfEChNaYDbuJtxOLvdhgNTdgASIlvNCfqpJ9A4i3ywPo3IdJrzzHf7IOu8kFPetYb2/HtDBp0TTtang8KtpFEGFAln/Q70V62SRVTS4OqAboKApkuXuKz7zSV3gZdnzXlbt64j8voYWbl8BYi5d4Zd1+wdpfJu70NgiDl8t4uQ1lbXkJHQgL19DQcGZQQlS1Zyrd/2dIaEEDax8MrI6OjrFhMDaZTE52jqucj3AiL4L1Gm3AD/ttyjY4HwEJ4YIn3RY/G9hPYzYCWK+uK8tEeQvVgNSYr8G+qar+rESYgqx9lJL4I6RuFBFyX787RBSs/e9Gr1N89Qwrvu2Psfo30D8Vxljxyde59kK7S2Ntff0vR/uZQyyGTjDWangniuifasNi55X7+AWr8zwNEjuolCVpupLw8G8/xmHFmgkXLENzKxkyN+MohEJP+sosdCYhRXwBQm20GD9FG59BEmEzMqNcxgr47QJsmm4kC6N8mRb+ShgzaIEJN5umJWZhpFKpObSpLkGbHPrcV5ECB8CHWYM1MAUO0R+i+TFUIoAHhbloM5HkTaCaT/NcRr9/RCTH08MXfpToQtbZKuLj9QP5ivS9oN4fuudNAAbhVxI0HyI65qAiF2uMtUbvA6fm7UBpcjhK1Pkax2hBspjdTm+lY8jGQh5AGbtemwU3mdWD2D8kNEah3qqvabBeDO1+wXpylA3vtZ25mKj7iiOoMZS+PA2ROccd2YkNgSoDrHWp11Z+p0CJqltFkovlkGCVYJVglUOCVYJVglUOCVYJ1tMDrJpkhgRrtQ/T1O+PiDQckEOCtZwDjd6I319AaPA5qQpIsFa3f9eOIaDSFxorRZc9CVbJo/Akq7kdieh9eZNo9VJMrqEEqwRrqSJmtm0dOenL45DhTQrsd0SavEqwSrCWsKdDM/I7GAnHfVnkz6NlIwyv/ni6HKcOVssjp6xmt+SR0DiCjon08018x9bgaor/AyAkXIHeHbuIAAAAAElFTkSuQmCC);
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-position: left center;
+  height: 57px;
+  
+  display: block;}}
 }
 
 footer {
   background-color: #363636;
-  padding: 1rem;
+  padding: 1rem 0;
 
   margin-top: 1rem;
   .uspto-footer-top {
+    padding-left: 1rem;
+    padding-right: 1rem;
     position: relative;
     .uspto-footer-watermark {
       background-position: left top;
@@ -233,6 +136,7 @@ footer {
     }
   }
   .uspto-footer-middle {
+    overflow: hidden;
     .column-header {
       font-size: 12px;
       line-height: 1.1em;
@@ -255,6 +159,21 @@ footer {
           color: #4ec5f1;
           font-size: 13px;
         }
+      }
+    }
+    .btn-collapse {
+      text-align: left;
+      color: white;
+      width: 100%;
+      font-size: .8125rem;
+      text-transform: uppercase;
+      background: transparent;
+      border: 0;
+      padding: 0.5rem 1rem;
+      i,
+      span {
+        float: right;
+        margin-right: 10px;
       }
     }
   }
