@@ -235,6 +235,10 @@ $modal-content-border-color: #ccc !default;
 $modal-content-border-radius: 0 !default;
 $modal-header-border-color: #ddd !default;
 
+$modal-header-padding-y: 0.5rem !default;
+$modal-header-padding-x: 1rem !default;
+$modal-inner-padding: $modal-header-padding-y $modal-header-padding-x !default; // Keep this for backwards compatibility
+
 //navbar
 $navbar-brand-padding-y: 0.25rem !default;
 

@@ -5,6 +5,7 @@
   }
   &-header,
   &-footer {
+    padding: $modal-inner-padding;
     background-color: #fafafb;
   }
 }

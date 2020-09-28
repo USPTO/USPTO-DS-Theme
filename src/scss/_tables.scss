@@ -18,6 +18,9 @@
     background-color: $secondary-darker;
     color: $white;
   }
+  &-sm {
+    font-size: 0.875rem;
+  }
 }
 
 @each $color, $value in $theme-colors {
