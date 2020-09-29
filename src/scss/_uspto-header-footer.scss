@@ -28,7 +28,8 @@ header {
       font-weight: 400;
       padding: 0.5rem;
       &:hover,
-      &:focus {
+      &:focus,
+      &[aria-expanded="true"] {
         background-color: #282828;
         color: #ffffff;
         outline-offset: 0 !important;
@@ -205,6 +206,13 @@ footer {
 }
 
 @media (max-width: 767px) {
+  .uspto-header-top {
+    .patent-menu,
+    .trademark-menu,
+    .fees-menu {
+      right: -100px;
+    }
+  }
   .uspto-header-bottom {
     .navbar {
       padding-left: 0 !important;
