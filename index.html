@@ -110,7 +110,7 @@
         </div>
       </div>
     </section>
-    <header>
+    <header id="global-header">
       <div class="uspto-header-top" >
         <nav class="navbar navbar-expand-lg navbar-dark" >
 
@@ -120,10 +120,10 @@
                             United States Patent and Trademark Office
                         </span>
           </a>
-          <div class="ml-auto">
+          <div class="ml-auto d-flex">
             <!-- Dynamic menu zone -->
             <!-- Do not customize this area -->
-            <span class="dyn-menuarea">
+            <div class="display-inline dyn-menuarea">
               <!-- Patents -->
               <div class="btn-group">
                 <button type="button" class="btn btn-default ex-btn-inverse"
@@ -187,7 +187,7 @@
                 </ul>
               </div>
 
-            </span>
+            </div>
             <!-- /End dynamic menu zone -->
 
             <!-- Sign-in/user menu -->
@@ -2409,8 +2409,11 @@
     integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
     crossorigin="anonymous"></script>
 <script src="assets/js/uswds.min.js"></script>
+
 <script>
+
   $(function () {
+    ptoDynamicHeader.loadMenu();
     $('a').on('click', function (event) {
       $('.sidenav a').removeClass('active');
       $(this).addClass('active')
