@@ -1,3 +1,6 @@
+$header-footer-font-size: 0.8125rem;
+$border-color-dark: #444;
+
 header,
 footer {
   a {
@@ -16,7 +19,7 @@ header {
   }
 
   .dropdown-menu {
-    border: 1px solid rgba(0, 0, 0, 0.05);
+    border: 1px solid $border-color-dark;
     border-radius: 2px;
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
     padding: 0;
@@ -39,7 +42,7 @@ header {
       .btn-text {
         @extend .d-none;
         @extend .d-md-inline-block;
-        font-size: 0.8125rem;
+        font-size: $header-footer-font-size;
       }
       .btn-icon {
         @extend .d-sm-block;
@@ -76,12 +79,12 @@ header {
     .dropdown-menu {
       background-color: #282828;
       li {
-        border-bottom: 1px solid #444444;
+        border-bottom: 1px solid $border-color-dark;
         a {
           display: block;
           padding: 0.5rem 1rem;
           clear: both;
-          font-size: 0.8125rem;
+          font-size: $header-footer-font-size;
           font-weight: 400;
           color: #ccc;
           white-space: nowrap;
@@ -111,7 +114,7 @@ header {
       .dropdown-item {
         padding-left: 1.25rem;
         padding-right: 1.25rem;
-        font-size: 0.8125rem;
+        font-size: $header-footer-font-size;
         &:hover &:focus {
           color: #262626;
           background-color: #eee;
@@ -159,9 +162,9 @@ footer {
   .uspto-footer-middle {
     overflow: hidden;
     .column-header {
-      font-size: 12px;
+      font-size: $header-footer-font-size;
       line-height: 1.1em;
-      margin-top: 27px;
+      margin-top: 1.5rem;
       margin-bottom: 9px;
       color: white;
       text-transform: uppercase;
@@ -179,7 +182,7 @@ footer {
 
         a {
           color: #4ec5f1;
-          font-size: 13px;
+          font-size: $header-footer-font-size;
         }
       }
     }
@@ -187,7 +190,7 @@ footer {
       text-align: left;
       color: white;
       width: 100%;
-      font-size: 0.8125rem;
+      font-size: $header-footer-font-size;
       text-transform: uppercase;
       background: transparent;
       border: 0;
