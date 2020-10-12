@@ -8,5 +8,10 @@
 @each $color, $value in $theme-colors {
   .badge-#{$color} {
     background-color: map.get($colors-variant, #{$color}-dark);
+    &.subtle {
+      color: map.get($colors-variant, #{$color}-dark);
+      background-color: map.get($colors-variant, #{$color}-lightest);
+      border: 1px solid map.get($colors-variant, #{$color}-dark);
+    }
   }
 }
