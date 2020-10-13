@@ -43,11 +43,11 @@ $success-lightest: uspto-color("green", "100") !default;
 $success-dark: uspto-color("green", "600") !default;
 $success-darker: uspto-color("green", "700") !default;
 
-$warning: uspto-color("yellow") !default;
+$warning: uspto-color("orange") !default;
 //warning variant
 $warning-lightest: uspto-color("yellow", "100") !default;
-$warning-dark: uspto-color("yellow", "600") !default;
-$warning-darker: uspto-color("yellow", "700") !default;
+$warning-dark: uspto-color("orange", "600") !default;
+$warning-darker: uspto-color("orange", "700") !default;
 
 $gray-deafult: uspto-color("gray") !default;
 //gray variant
@@ -88,7 +88,7 @@ $colors-variant: map-merge(
 
 //bootstrap variable override
 
-$yiq-contrasted-threshold: 130 !default;
+$yiq-contrasted-threshold: 160 !default;
 
 // Body
 //

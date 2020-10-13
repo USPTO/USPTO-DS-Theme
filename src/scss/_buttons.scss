@@ -36,6 +36,7 @@
 
 @each $color, $value in $theme-colors {
   .btn-#{$color} {
+    color: color-yiq($value);
     @include hover {
       background-color: map.get($colors-variant, #{$color}-dark);
     }
@@ -47,7 +48,8 @@
     &:not(:disabled):not(.disabled):active,
     &:not(:disabled):not(.disabled).active,
     .show > &.dropdown-toggle {
-      background-color: map.get($colors-variant, #{$color}-dark);
+      background-color: map.get($colors-variant, #{$color}-darker);
+      // color: color-yiq(map.get($colors-variant, #{$color}-darker));
     }
   }
   .btn-outline-#{$color} {
@@ -92,6 +94,23 @@
   &:not(:disabled):not(.disabled).active,
   .show > &.dropdown-toggle {
     color: $light-lightest;
+  }
+}
+
+.btn-outline-warning {
+  color: $warning-dark;
+  box-shadow: $btn-box-shadow;
+  @include hover {
+    color: $warning-darker;
+  }
+  &.disabled,
+  &:disabled {
+    color: uspto-color("gray", "400");
+  }
+  &:not(:disabled):not(.disabled):active,
+  &:not(:disabled):not(.disabled).active,
+  .show > &.dropdown-toggle {
+    color: $warning-darker;
   }
 }
 
