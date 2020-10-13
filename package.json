@@ -1,8 +1,11 @@
 {
-  "name": "USPTOstrap",
+  "name": "usptostrap",
   "version": "2.0.0",
   "description": "A product of the United States Patent and Trademark Office",
-  "repository": "https://github.com/uspto/designsystem",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/uspto/designsystem.git"
+  },
   "main": "index.js",
   "scripts": {
     "build": "sass src/scss:assets/css && postcss assets/css/usptostrap.css --use=autoprefixer --output=assets/css/usptostrap.css",
@@ -23,5 +26,14 @@
   "devDependencies": {
     "autoprefixer": "^9.8.4",
     "postcss-cli": "^7.1.1"
-  }
+  },
+  "bugs": {
+    "url": "https://github.com/uspto/designsystem/issues"
+  },
+  "homepage": "https://github.com/uspto/designsystem#readme",
+  "keywords": [
+    "USPTO",
+    "DESING",
+    "THEME"
+  ]
 }
