@@ -147,10 +147,16 @@
     @extend .d-inline-flex;
     @extend .align-items-center;
     vertical-align: middle;
+    .material-icons + .btn-text{
+       padding-left: .5rem;
+     }
   }
   &-sm {
     .material-icons {
       font-size: 1rem;
+      + .btn-text{
+        padding-left: .25rem !important;
+      }
     }
   }
 }
