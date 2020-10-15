@@ -1,6 +1,6 @@
 {
   "name": "usptostrap",
-  "version": "2.2.0",
+  "version": "0.1.1",
   "description": "A product of the United States Patent and Trademark Office",
   "repository": {
     "type": "git",
@@ -8,8 +8,8 @@
   },
   "main": "index.js",
   "scripts": {
-    "build": "sass src/scss:assets/css && postcss assets/css/usptostrap.css --use=autoprefixer --output=assets/css/usptostrap.css",
-    "dev": "sass --watch src/scss:assets/css",
+    "build": "node ./scripts/build",
+    "dev": "node ./scripts/dev",
     "pretty-scss": "prettier ./src/scss/**/*.scss --write"
   },
   "author": "USPTO",
