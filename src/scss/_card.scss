@@ -53,12 +53,12 @@
           @extend .d-flex;
           @extend .align-items-center;
           line-height: 1.25;
+          padding: .75rem;
           &:focus,
           &.focus {
             outline-offset: 0;
           }
           .material-icons {
-            @extend .ml-auto;
             font-size: 1.375rem;
             &.collapsed-icon {
               display: block;
@@ -74,6 +74,11 @@
             .expanded-icon {
               display: block;
             }
+          }
+        }
+        &.icon-right {
+          .material-icons {
+            @extend .ml-auto;
           }
         }
       }

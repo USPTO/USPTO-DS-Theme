@@ -8229,7 +8229,7 @@ header .uspto-header-top .btn-group .btn-icon {
   margin-bottom: auto !important;
 }
 
-.ml-auto, .accordion .card-header .accordion-heading .btn .material-icons,
+.ml-auto, .accordion .card-header .accordion-heading.icon-right .material-icons,
 .mx-auto {
   margin-left: auto !important;
 }
@@ -11127,6 +11127,7 @@ h3 {
 .accordion .card-header .accordion-heading .btn {
   border-radius: 0;
   line-height: 1.25;
+  padding: 0.75rem;
 }
 .accordion .card-header .accordion-heading .btn:focus, .accordion .card-header .accordion-heading .btn.focus {
   outline-offset: 0;

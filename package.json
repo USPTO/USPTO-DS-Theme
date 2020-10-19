@@ -1,6 +1,6 @@
 {
   "name": "usptostrap",
-  "version": "0.1.1",
+  "version": "2.0.0",
   "description": "A product of the United States Patent and Trademark Office",
   "repository": {
     "type": "git",
@@ -13,7 +13,7 @@
     "pretty-scss": "prettier ./src/scss/**/*.scss --write"
   },
   "author": "USPTO",
-  "license": "MIT",
+  "license": "",
   "dependencies": {
     "bootstrap": "4.5.0",
     "bootstrap-icons": "^1.0.0-alpha5",
