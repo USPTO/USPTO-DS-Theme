@@ -10,9 +10,12 @@
     background-color: map.get($colors-variant, #{$color}-dark);
     color: color-yiq(map.get($colors-variant, #{$color}-dark));
     &.subtle {
-      color: map.get($colors-variant, #{$color}-dark);
+      color: map.get($colors-variant, #{$color}-darker);
       background-color: map.get($colors-variant, #{$color}-lightest);
-      border: 1px solid map.get($colors-variant, #{$color}-dark);
+      border: 1px solid map.get($colors-variant, #{$color}-darker);
     }
   }
+}
+.badge-light.subtle {
+  color: uspto-color("gray") !important;
 }
