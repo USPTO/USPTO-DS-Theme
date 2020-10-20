@@ -10468,83 +10468,91 @@ h3 {
   background-color: #1a4480;
   color: #fff;
 }
-.badge-primary.subtle {
+
+.badge-subtle-primary {
   color: #162e51;
   background-color: #eff6fb;
-  border: 1px solid #162e51;
+  box-shadow: inset 0 0 0 0.0625rem;
 }
 
 .badge-secondary {
   background-color: #5c5c5c;
   color: #fff;
 }
-.badge-secondary.subtle {
+
+.badge-subtle-secondary {
   color: #2e2e2e;
   background-color: #c9c9c9;
-  border: 1px solid #2e2e2e;
+  box-shadow: inset 0 0 0 0.0625rem;
 }
 
 .badge-success {
   background-color: #216e1f;
   color: #fff;
 }
-.badge-success.subtle {
+
+.badge-subtle-success {
   color: #154c21;
   background-color: #ecf3ec;
-  border: 1px solid #154c21;
+  box-shadow: inset 0 0 0 0.0625rem;
 }
 
 .badge-info {
   background-color: #1b6e8b;
   color: #fff;
 }
-.badge-info.subtle {
+
+.badge-subtle-info {
   color: #07648d;
   background-color: #e7f6f8;
-  border: 1px solid #07648d;
+  box-shadow: inset 0 0 0 0.0625rem;
 }
 
 .badge-warning {
   background-color: #c05600;
   color: #fff;
 }
-.badge-warning.subtle {
+
+.badge-subtle-warning {
   color: #775540;
   background-color: #faf3d1;
-  border: 1px solid #775540;
+  box-shadow: inset 0 0 0 0.0625rem;
 }
 
 .badge-danger {
   background-color: #b50909;
   color: #fff;
 }
-.badge-danger.subtle {
+
+.badge-subtle-danger {
   color: #8b0a03;
   background-color: #f4e3db;
-  border: 1px solid #8b0a03;
+  box-shadow: inset 0 0 0 0.0625rem;
 }
 
 .badge-light {
   background-color: #e6e6e6;
   color: #212529;
 }
-.badge-light.subtle {
+
+.badge-subtle-light {
   color: #cfcfcf;
   background-color: #ffffff;
-  border: 1px solid #cfcfcf;
+  box-shadow: inset 0 0 0 0.0625rem;
 }
 
 .badge-dark {
   background-color: #24282c;
   color: #fff;
 }
-.badge-dark.subtle {
+
+.badge-subtle-dark {
   color: #141719;
   background-color: #aeaeae;
-  border: 1px solid #141719;
+  box-shadow: inset 0 0 0 0.0625rem;
 }
 
-.badge-light.subtle {
+.badge-subtle-light {
   color: #757575 !important;
 }
 
@@ -11386,7 +11394,6 @@ h3 {
 }
 .table.table-dark {
   background-color: #2e2e2e;
-  color: #fff;
 }
 .table-sm {
   font-size: 0.875rem;
