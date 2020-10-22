@@ -1318,11 +1318,21 @@
               </div>
               <div class="custom-control custom-checkbox">
                 <input type="checkbox" class="custom-control-input" id="customCheck3" disabled>
-                <label class="custom-control-label" for="customCheck2">Custom checkbox disabled</label>
+                <label class="custom-control-label" for="customCheck3">Custom checkbox disabled</label>
               </div>
               <div class="custom-control custom-checkbox">
                 <input type="checkbox" class="custom-control-input" id="customCheck4" disabled checked>
-                <label class="custom-control-label" for="customCheck2">Custom checkbox disabled checked</label>
+                <label class="custom-control-label" for="customCheck4">Custom checkbox disabled checked</label>
+              </div>
+
+              <p class="mb-1 mt-4">Indeterminate custom checkboxes</p>
+              <div class="custom-control custom-checkbox">
+                <input type="checkbox" class="custom-control-input" id="customCheck5" checked>
+                <label class="custom-control-label" for="customCheck5">Indeterminate custom checkbox</label>
+              </div>
+               <div class="custom-control custom-checkbox">
+                <input type="checkbox" class="custom-control-input" id="customCheck6" disabled checked>
+                <label class="custom-control-label" for="customCheck6">Indeterminate custom checkbox disabled</label>
               </div>
             </div>
             <div class="col">
@@ -2536,8 +2546,9 @@
         $('.sidenav a').removeClass('active');
         $(this).addClass('active')
       })
-      $('[data-toggle="popover"]').popover()
-      $('[data-toggle="tooltip"]').tooltip()
+      $('[data-toggle="popover"]').popover();
+      $('[data-toggle="tooltip"]').tooltip();
+       $("#customCheck5, #customCheck6").prop("indeterminate", true);
     })
   </script>
 </body>
