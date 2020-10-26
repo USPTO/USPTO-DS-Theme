@@ -9,9 +9,8 @@
   .badge-#{$color} {
     background-color: map.get($colors-variant, #{$color}-dark);
     color: color-yiq(map.get($colors-variant, #{$color}-dark));
-    
   }
-  .badge-subtle-#{$color}  {
+  .badge-subtle-#{$color} {
     color: map.get($colors-variant, #{$color}-darker);
     background-color: map.get($colors-variant, #{$color}-lightest);
     box-shadow: inset 0 0 0 0.0625rem;

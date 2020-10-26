@@ -78,6 +78,33 @@
       }
     }
   }
+  .btn-icon-only-#{$color} {
+    color: $value;
+    @include hover {
+      color: map.get($colors-variant, #{$color}-dark);
+      background-color: transparent;
+      box-shadow: $btn-box-shadow;
+    }
+    &:focus,
+    &.focus {
+      box-shadow: $btn-box-shadow;
+    }
+    &.disabled,
+    &:disabled {
+      color: uspto-color("gray", "200");
+      background-color: transparent;
+    }
+    &:not(:disabled):not(.disabled):active,
+    &:not(:disabled):not(.disabled).active,
+    .show > &.dropdown-toggle {
+      color: map.get($colors-variant, #{$color}-darker);
+      background-color: transparent;
+      &:focus {
+        // Avoid using mixin so we can pass custom focus shadow properly
+        box-shadow: $btn-box-shadow;
+      }
+    }
+  }
 }
 
 .btn-outline-light {
