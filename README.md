@@ -1,4 +1,4 @@
-# USPTO Design System: Theme v2.X
+# USPTO Design System: Theme
 The USPTO's open source Design System V2.x theme, based on the United States Web Design System (USWDS) and Bootstrap v4.
 
 
@@ -92,12 +92,6 @@ We offer both the CSS and the JavaScript in two versions — minified and un-min
 And that’s it — you should now be able to copy our code samples into your `index.html` and start using the design system.
 
 
-
-## License and attribution
-
-Software code created by U.S. Government employees is not subject to copyright in the United States (17 U.S.C. §105). The United States Department of Commerce reserves all rights to seek and obtain copyright protection in countries other than the United States for Software authored in its entirety by the Department of Commerce. To this end, the Department of Commerce hereby grants to recipients a royalty-free, nonexclusive license to use, copy, and create derivative works of the software outside of the United States.
-
-A few parts of this project are not in the public domain. Attribution and licensing information for those parts are described in detail in LICENSE.md.
 
 ## Disclaimer
 
