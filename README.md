@@ -1,5 +1,5 @@
 # USPTO Design System - Theme
-The USPTO's Design System Theme, an open source design library based on the United States Web Design System (USWDS) and Bootstrap v4.
+The USPTO's Design System Theme, an open source design library based on the United States Web Design System (USWDS) and Bootstrap 4.
 
 This theme library is currently in Beta and we welcome your [feedback](https://github.com/USPTO/USPTO-DS-Theme/issues)!
 
