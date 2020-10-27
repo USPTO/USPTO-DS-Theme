@@ -37,7 +37,7 @@ Add the following to your package.json file:
   "usptostrap": "^2.0.1"
   }
 ```
-Adding directly
+Adding directly:
 ```
 npm install usptostrap
 ```
