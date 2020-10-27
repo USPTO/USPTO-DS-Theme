@@ -46,6 +46,11 @@ npm install usptostrap
 ```
 
 ### (Alternative) Add the precompiled theme to your site or application:
+
+- Download the [lastest](https://github.com/USPTO/USPTO-DS-Theme/archive/master.zip) source code.
+- Copy the contents of /assets to your project.
+- Add the following code to your HTML pages or templates: 
+
 ```
 <!-- USPTO v2.x Base Theme - Note: This already includes Bootstrap 4 -->
 <link rel="stylesheet" href="assets/css/usptostrap.css">
