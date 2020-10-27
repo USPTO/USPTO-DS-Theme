@@ -31,7 +31,7 @@ How you implement the USPTO Design System depends on the needs of your project.
 
 ### (Preferred) As a dependency within the NPM:
 Add the following to your package.json file:
-'''json
+'''
 "dependencies": {
   "bootstrap": "^4.5.0",
   "usptostrap": "^2.0.1"
