@@ -38,7 +38,7 @@ Add the following to your package.json file:
   }
 ```
 
-### Add the precompiled theme to your site or application:
+### (Alternative) Add the precompiled theme to your site or application:
 ```
 <!-- USPTO v2.x Base Theme - Note: This already includes Bootstrap 4 -->
 <link rel="stylesheet" href="assets/css/usptostrap.css">
