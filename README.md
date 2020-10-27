@@ -3,7 +3,8 @@ The USPTO's Design System Theme, an open source design library based on the Unit
 
 This theme library is currently in Beta and we welcome your [feedback](https://github.com/USPTO/USPTO-DS-Theme/issues)!
 
-Supporting an older and/or legacy application? Take a look at version 1.x of our [UI Design Library](https://github.com/USPTO/designpatterns).
+- Supporting an older and/or legacy application? Take a look at version 1.x of our [UI Design Library](https://github.com/USPTO/designpatterns).
+- Looking for UX tools and assets to support software development? Check out our UX [resources site](https://github.com/USPTO/USPTO-DS-for-Designers) -COMING SOON
 
 ## Installing
 Install the project's dependencies with:
