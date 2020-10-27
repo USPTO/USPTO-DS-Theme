@@ -31,14 +31,14 @@ How you implement the USPTO Design System depends on the needs of your project.
 
 ### (Preferred) As a dependency within the NPM:
 Add the following to your package.json file:
-'''
+```
 "dependencies": {
   "bootstrap": "^4.5.0",
   "usptostrap": "^2.0.1"
-'''
+```
 
 ### Add the precompiled theme to your site or application:
-'''
+```
 <!-- USPTO v2.x Base Theme - Note: This already includes Bootstrap 4 -->
 <link rel="stylesheet" href="assets/css/usptostrap.css">
 <!-- Optional libraries -->
@@ -46,7 +46,7 @@ Add the following to your package.json file:
 <link rel="stylesheet" href="assets/css/uswds-datepicker.css">
 <link rel="stylesheet" href="assets/css/uswds-overrides.css">
 <style>
-'''
+```
 
 ----
 
