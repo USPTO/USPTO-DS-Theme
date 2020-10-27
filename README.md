@@ -49,7 +49,7 @@ npm install usptostrap
 
 - Download the [lastest](https://github.com/USPTO/USPTO-DS-Theme/archive/master.zip) source code.
 - Copy the /assets to the root folder to your project.
-- Add the following code to your HTML pages or templates: 
+- Add the following code to the head of your HTML pages or templates: 
 
 ```
 <!-- USPTO v2.x Base Theme - Note: This already includes Bootstrap 4 -->
@@ -58,7 +58,6 @@ npm install usptostrap
 <link rel="stylesheet" href="assets/css/uswds-combobox.css">
 <link rel="stylesheet" href="assets/css/uswds-datepicker.css">
 <link rel="stylesheet" href="assets/css/uswds-overrides.css">
-<style>
 ```
 
 ----
