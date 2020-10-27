@@ -29,12 +29,13 @@ npm run dev
 
 How you implement the USPTO Design System depends on the needs of your project.
 
-### (Preferred) As a dependency within the NPM:
+### (Preferred) As a dependency within NPM:
 Add the following to your package.json file:
 ```
 "dependencies": {
   "bootstrap": "^4.5.0",
   "usptostrap": "^2.0.1"
+  }
 ```
 
 ### Add the precompiled theme to your site or application:
