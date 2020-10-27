@@ -1,5 +1,5 @@
-# USPTO Design System: Theme v2.0 (Alpha)
-The USPTO's open source Design System theme, based on the USWDS and Boostrap (Version 2.x)
+# USPTO Design System: Theme v2.X
+The USPTO's open source Design System V2.x theme, based on the United States Web Design System (USWDS) and Bootstrap v4.
 
 
 ## Installing
@@ -26,11 +26,11 @@ npm run dev
 
 
 ### Distribution Builds
-After running `npm run build`, you will have an `assets` folder that contains the stylesheet and resources. 
+After running `npm run build`, you will have an `assets` folder that contains the stylesheet and resources.
 
 ## Using the design theme
 
-How you implement the design system depends on the needs of your project and your workstyle. 
+How you implement the design system depends on the needs of your project and your workstyle.
 
 - **[Download the design theme](#download)**  to do
 
@@ -93,9 +93,11 @@ And that’s it — you should now be able to copy our code samples into your `i
 
 
 
-## License
+## License and attribution
 
 Software code created by U.S. Government employees is not subject to copyright in the United States (17 U.S.C. §105). The United States Department of Commerce reserves all rights to seek and obtain copyright protection in countries other than the United States for Software authored in its entirety by the Department of Commerce. To this end, the Department of Commerce hereby grants to recipients a royalty-free, nonexclusive license to use, copy, and create derivative works of the software outside of the United States.
+
+A few parts of this project are not in the public domain. Attribution and licensing information for those parts are described in detail in LICENSE.md.
 
 ## Disclaimer
 
@@ -103,7 +105,7 @@ The United States Department of Commerce (DOC) GitHub project code is provided o
 
 ## Acknowledgments
 
-* U.S. Web Design Standards
+* U.S. Web Design Standards (USWDS)
 * Bootstrap 4 and bootstrap icons
 * Material icons
 * Google fonts

@@ -1,7 +1,7 @@
 {
   "name": "usptostrap",
   "version": "2.0.1",
-  "description": "A product of the United States Patent and Trademark Office",
+  "description": "United States Patent and Trademark Office Design System Open Source UI Theme v2.X",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/uspto/designsystem.git"
@@ -13,7 +13,7 @@
     "pretty-scss": "prettier ./src/scss/**/*.scss --write"
   },
   "author": "USPTO",
-  "license": "",
+  "license": "SEE LICENSE IN LICENSE.md",
   "dependencies": {
     "bootstrap": "4.5.0",
     "bootstrap-icons": "^1.0.0-alpha5",
@@ -28,12 +28,14 @@
     "postcss-cli": "^7.1.1"
   },
   "bugs": {
-    "url": "https://github.com/uspto/designsystem/issues"
+    "url": "https://github.com/uspto/USPTO-DS-Theme/issues"
   },
-  "homepage": "https://github.com/uspto/designsystem#readme",
+  "homepage": "https://github.com/uspto/USPTO-DS-Theme#readme",
   "keywords": [
     "USPTO",
     "Design Theme",
-    "Design Library"
+    "Design Library",
+    "Design System",
+    "USWDS Bootstrap"
   ]
 }
