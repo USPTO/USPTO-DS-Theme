@@ -1,6 +1,4 @@
 
-Software code created by U.S. Government employees is not subject to copyright in the United States (17 U.S.C. §105).
-
 This project includes a mix of the following:
 
 * Open source works that are not in the public domain
@@ -19,7 +17,7 @@ This library is in part based on the U.S. Web Design System (USWDS), which also 
 
 ## The rest of this project is in the worldwide public domain
 
-As a work of the United States government, this project is in the public domain within the United States.
+As a work of the United States government, this project is in the public domain within the United States. Software code created by U.S. Government employees is not subject to copyright in the United States (17 U.S.C. §105).
 
 Additionally, we waive copyright and related rights in the work worldwide through the [CC0 1.0 Universal public domain dedication](https://creativecommons.org/publicdomain/zero/1.0/).
 
