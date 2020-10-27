@@ -61,4 +61,3 @@ The United States Department of Commerce (DOC) GitHub project code is provided o
 * U.S. Web Design Standards (USWDS)
 * Bootstrap 4 and bootstrap icons
 * Material icons
-* Google fonts
