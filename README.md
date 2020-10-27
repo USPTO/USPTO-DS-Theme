@@ -48,7 +48,7 @@ npm install usptostrap
 ### (Alternative) Add the precompiled theme to your site or application:
 
 - Download the [lastest](https://github.com/USPTO/USPTO-DS-Theme/archive/master.zip) source code.
-- Copy the contents of /assets to your project.
+- Copy the /assets folder to your project.
 - Add the following code to your HTML pages or templates: 
 
 ```
