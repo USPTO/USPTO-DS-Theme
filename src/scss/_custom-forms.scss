@@ -14,8 +14,11 @@
     }
   }
   &-input {
-    &:checked ~ .custom-control-label::before {
-      box-shadow: 0 0 0 0.125rem $primary;
+    &:checked,
+    &:indeterminate {
+      ~ .custom-control-label::before {
+        box-shadow: 0 0 0 0.125rem $primary;
+      }
     }
     &:focus {
       outline: 0.25rem solid #2491ff;
@@ -39,12 +42,17 @@
   }
 }
 
+// .custom-checkbox .custom-control-input:disabled:indeterminate ~ .custom-control-label::before
+
 .custom-checkbox {
   .custom-control-label::after {
     background: no-repeat 50%/70% 70%;
   }
-  .custom-control-input:disabled:checked ~ .custom-control-label::before {
-    background-color: $secondary-lightest;
+  .custom-control-input:disabled:checked,
+  .custom-control-input:disabled:indeterminate {
+    ~ .custom-control-label::before {
+      background-color: $secondary-lightest;
+    }
   }
 }
 
