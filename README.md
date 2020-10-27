@@ -17,12 +17,12 @@ npm install
 ## Building & running locally
 This project can be built with SASS.
 
-To build the front-end assets (Fonts/CSS/JS) use:
+To build the front-end assets (fonts/CSS/JS) use:
 ```
 npm run build
 ```
 
-To watch sass files while making changes in local use:
+To watch sass files while making changes locally use:
 ```
 npm run dev
 ```
