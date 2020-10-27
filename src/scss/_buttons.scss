@@ -187,3 +187,11 @@
     }
   }
 }
+
+//custom style for btn group light
+.btn-group-toggle {
+  .btn-light {
+    background-color: uspto-color("light", "300");
+    border: 0.0625rem solid uspto-color("gray", "100");
+  }
+}

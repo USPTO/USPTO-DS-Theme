@@ -11232,6 +11232,11 @@ h3 {
   padding-left: 0.25rem !important;
 }
 
+.btn-group-toggle .btn-light {
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+}
+
 .btn-group > .btn:not(:last-child):not(:first-child)[class*=btn-outline-] {
   box-shadow: inset 2px 0 0 2px;
 }
