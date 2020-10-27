@@ -15,6 +15,19 @@ This library is in part based on the U.S. Web Design System (USWDS), which also 
 - [Material Icons](https://github.com/google/material-design-icons) by Google is licensed under Apache 2.0.
 - [Public Sans Font](https://github.com/google/material-design-icons) licensed under SIL Open Font V1.1
 
+#### Full license text for the MIT licensed files:
+
+```
+The MIT License (MIT)
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the “Software”), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+```
+
+
 ## The rest of this project is in the worldwide public domain
 
 As a work of the United States government, this project is in the public domain within the United States. Software code created by U.S. Government employees is not subject to copyright in the United States (17 U.S.C. §105).
