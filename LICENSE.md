@@ -6,7 +6,7 @@ This project includes a mix of the following:
 
 ## Parts of this project that are not in the public domain
 
-This library is in part based on the U.S. Web Design System (USWDS), which also includes works under the SIL Open Font License, MIT license, and public domain. The full license details for those assets are described in the [WDS license file](https://github.com/uswds/uswds/blob/develop/LICENSE.md).
+This library is in part based on the U.S. Web Design System (USWDS), which also includes works under the SIL Open Font License, MIT license, and public domain. The full license details for those assets are described in the [USWDS license file](https://github.com/uswds/uswds/blob/develop/LICENSE.md).
 
 
 - [Bootstrap](http://getbootstrap.com/) is licensed under MIT.
