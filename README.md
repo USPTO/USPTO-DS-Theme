@@ -1,5 +1,5 @@
-# USPTO Design System V2.0: Beta
-The USPTO's Design System theme, an open source design library based on the United States Web Design System (USWDS) and Bootstrap v4.
+# USPTO Design System - Theme
+The USPTO's Design System Theme, an open source design library based on the United States Web Design System (USWDS) and Bootstrap v4.
 
 This theme library is currently in Beta and we welcome your [feedback](https://github.com/USPTO/USPTO-DS-Theme/issues)!
 
@@ -29,15 +29,20 @@ npm run dev
 
 How you implement the USPTO Design System depends on the needs of your project.
 
-### (Preferred) As a dependency within the NPM:
+### (Preferred) As a dependency within NPM:
 Add the following to your package.json file:
 ```
 "dependencies": {
   "bootstrap": "^4.5.0",
   "usptostrap": "^2.0.1"
+  }
+```
+Adding directly
+```
+npm install usptostrap
 ```
 
-### Add the precompiled theme to your site or application:
+### (Alternative) Add the precompiled theme to your site or application:
 ```
 <!-- USPTO v2.x Base Theme - Note: This already includes Bootstrap 4 -->
 <link rel="stylesheet" href="assets/css/usptostrap.css">
