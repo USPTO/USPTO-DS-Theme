@@ -15,7 +15,7 @@ If you have any questions [send us an email](mailto:uxb@uspto.gov).
 Here are a few guidelines to follow when submitting a pull request:
 
 1. Create a GitHub account or sign in to your existing account.
-1. Fork this repo into your GitHub account (or just clone it if you’re an 18F team member). Read more about forking a repo here on GitHub:
+1. Fork this repo into your GitHub account. Read more about forking a repo here on GitHub:
 [https://help.github.com/articles/fork-a-repo/](https://help.github.com/articles/fork-a-repo/)
 1. Create a branch from `develop` that lightly defines what you’re working on (for example, add-styles).
 1. Ensure that your contribution works via `npm`, if applicable.
