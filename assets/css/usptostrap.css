@@ -11234,7 +11234,7 @@ h3 {
 
 .btn-group-toggle .btn-light {
   background-color: #f9f9f9;
-  border: 1px solid #ccc;
+  border: 0.0625rem solid #cccccc;
 }
 
 .btn-group > .btn:not(:last-child):not(:first-child)[class*=btn-outline-] {
