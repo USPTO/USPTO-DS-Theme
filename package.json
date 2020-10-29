@@ -1,7 +1,7 @@
 {
   "name": "usptostrap",
   "version": "2.0.1",
-  "description": "United States Patent and Trademark Office Design System Open Source UI Theme v2.X",
+  "description": "USPTO Design System Base Theme v2.x",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/uspto/designsystem.git"
