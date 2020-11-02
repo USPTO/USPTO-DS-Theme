@@ -18,6 +18,10 @@ $danger-dark: uspto-color("red", "600") !default;
 $danger-darker: uspto-color("red", "700") !default;
 
 $dark: uspto-color("gray", "900") !default;
+//dark variant
+$dark-lightest: uspto-color("dark", "100") !default;
+$dark-dark: uspto-color("dark", "600") !default;
+$dark-darker: uspto-color("dark", "700") !default;
 
 $info: uspto-color("cyan") !default;
 //info variant
@@ -62,9 +66,9 @@ $colors-variant: map-merge(
     danger-lightest: $danger-lightest,
     danger-dark: $danger-dark,
     danger-darker: $danger-darker,
-    dark-lightest: #aeaeae,
-    dark-dark: #24282c,
-    dark-darker: #141719,
+    dark-lightest: $dark-lightest,
+    dark-dark: $dark-dark,
+    dark-darker: $dark-darker,
     gray-deafult: $gray-deafult,
     gray-lightest: $gray-lightest,
     info-lightest: $info-lightest,
