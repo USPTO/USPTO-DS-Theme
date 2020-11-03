@@ -1,17 +1,9 @@
 const fs = require('fs')
-const fse = require('fs-extra')
-const glob = require('glob')
 const sassFile = /\.s[ac]ss$/i
-const srcFolder = 'src/pages/'
-const outFolder = 'dist/'
 const slashes = /[\\\/]/g
 
 
-const cwd = `${process.cwd()}\\`
 const log = (...a) => console.log(...['[build]', ...a])
-const recwd = new RegExp(cwd.replace(/\\/g, '\\\\'), 'g')
-
-
 const sass = require('sass')
 
 const includePaths = [
@@ -37,6 +29,24 @@ const renderSassFile = (options = {}) => new Promise((resolve, reject) => {
   }) 
 })
 
+//create min css
+const renderMinSassFile = (options = {}) => new Promise((resolve, reject) => {
+  let { file, outFile } = options
+  if (!outFile) {
+    outFile = file.replace(slashes, '/')
+      .replace(includePaths[0], 'assets/css')
+      .replace(sassFile, '.min.css')
+  }
+  log(`render ${file}`)
+  sass.render({ ...options, includePaths, outFile, outputStyle: 'compressed' }, (err, result) => {
+    if (err) reject(err)
+    else {
+      writeFile(outFile, result.css)
+      resolve(result)
+    }
+  }) 
+})
+
 const writeFile = (file, data) => {
   fs.mkdirSync(file.split(slashes).slice(0, -1).join('/'), { recursive: true })
   fs.writeFileSync(file, data)
@@ -56,6 +66,7 @@ const watch = (path, fn) => {
 
 Object.assign(exports, {
   renderSassFile,
+  renderMinSassFile,
   watch,
 })
 
@@ -64,6 +75,7 @@ if (!module.parent) {
   if (build) data.build = build
   
   renderSassFile({ file: 'src/scss/usptostrap.scss' })
+  renderMinSassFile({ file: 'src/scss/usptostrap.scss' })
   .then(() => log(`sass = success`))
   .catch(e => log(`sass error = ${e}`)) 
 
