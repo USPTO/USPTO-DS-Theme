@@ -22,3 +22,7 @@
     }
   }
 }
+
+.form-control-sm, .form-control-lg {
+  @include border-radius($input-border-radius, 0);
+}
