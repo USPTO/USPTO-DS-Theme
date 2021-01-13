@@ -12440,4 +12440,32 @@ footer .uspto-footer-middle .btn-collapse span {
   font-feature-settings: "liga";
 }
 
+.material-icons.md-xs {
+  font-size: 0.75rem;
+}
+
+.material-icons.md-sm {
+  font-size: 1rem;
+}
+
+.material-icons.md-lg {
+  font-size: 2rem;
+}
+
+.material-icons.md-2x {
+  font-size: 2.7rem;
+}
+
+.material-icons.md-3x {
+  font-size: 4.05rem;
+}
+
+.material-icons.md-5x {
+  font-size: 6.75rem;
+}
+
+.material-icons.md-10x {
+  font-size: 13.5rem;
+}
+
 /*# sourceMappingURL=usptostrap.css.map */
