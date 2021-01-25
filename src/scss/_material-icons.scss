@@ -33,3 +33,17 @@
   /* Support for IE. */
   font-feature-settings: "liga";
 }
+
+// Material icon sizes
+@mixin md-icon-size($size: 1.35rem) {
+  font-size: $size;  
+}
+
+.material-icons.md-xs{ @include md-icon-size(.75rem) }
+.material-icons.md-sm { @include md-icon-size(1rem) }
+.material-icons.md-lg{ @include md-icon-size(2rem) }
+
+.material-icons.md-2x{ @include md-icon-size(2.7rem) }
+.material-icons.md-3x{ @include md-icon-size(4.05rem) }
+.material-icons.md-5x{ @include md-icon-size(6.75rem) }
+.material-icons.md-10x{ @include md-icon-size(13.5rem) }

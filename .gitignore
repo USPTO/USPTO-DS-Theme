@@ -3,3 +3,4 @@
 !.prettierrc
 assets/css/*.css.map
 /package-lock.json
+debug.log
