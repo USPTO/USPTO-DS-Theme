@@ -23,6 +23,7 @@
   }
 }
 
-.form-control-sm, .form-control-lg {
+.form-control-sm,
+.form-control-lg {
   @include border-radius($input-border-radius);
 }

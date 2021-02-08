@@ -62,3 +62,49 @@
     }
   }
 }
+
+//
+// Site alert style
+//
+.alert-site {
+  &::before {
+    background-color: $site;
+    width: 0;
+  }
+  background-color: $site;
+  color: $white;
+  margin-bottom: 0;
+  .alert-link {
+    color: $light;
+    font-weight: normal;
+    @include hover() {
+      color: $white;
+    }
+  }
+  ul {
+    margin-left: -1.3rem;
+  }
+}
+
+//
+// summary alert style
+//
+.alert-summary {
+  &::before {
+    background-color: $info-lightest;
+    width: 0;
+  }
+  background-color: $info-lightest;
+  border: 1px solid $summary;
+  border-radius: 0.25rem;
+  .alert-link {
+    font-weight: normal;
+  }
+  ul {
+    margin-top: 1rem;
+    margin-left: -1.3rem;
+    li {
+      line-height: 1.7;
+    }
+  }
+}
