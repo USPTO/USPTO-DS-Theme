@@ -11,6 +11,9 @@
       &:focus {
         background-color: $primary-dark;
       }
+      &.disabled {
+        color: uspto-color("gray", "200") !important;
+      }
     }
     &.active {
       a {
