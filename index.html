@@ -284,6 +284,9 @@
                   </li>
                 </ul>
               </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" href="#!">Disabled</a>
+              </li>
             </ul>
             <ul class="navbar-nav ml-auto">
 
@@ -350,7 +353,7 @@
             <li>
               <a href="#headingExample">Heading</a>
             </li>
-            
+
             <li>
               <a href="#iconsExample">Material icons</a>
             </li>
@@ -373,8 +376,15 @@
               <a href="#progressExample">Progress</a>
             </li>
             <li>
+              <a href="#siteAlertExample">Site alert</a>
+            </li>
+            <li>
               <a href="#stepIndicatorExample">Step indicator</a>
             </li>
+            <li>
+              <a href="#summaryBoxExample">Summary box</a>
+            </li>
+
             <li>
               <a href="#tableExample">Table</a>
             </li>
@@ -1681,21 +1691,21 @@
             </div>
           </div>
         </section>
- <section class="mt-3" id="iconsExample">
+        <section class="mt-3" id="iconsExample">
           <h2>Material icons</h2>
           <div class="row">
             <div class="col-12">
-            <i class="material-icons md-xs">public</i>
-            <i class="material-icons md-sm">public</i>
-            <i class="material-icons md-lg">public</i>
-            <i class="material-icons md-2x">public</i>
-            <i class="material-icons md-3x">public</i>
-            <i class="material-icons md-5x">public</i>
-            <i class="material-icons md-10x">public</i>
+              <i class="material-icons md-xs">public</i>
+              <i class="material-icons md-sm">public</i>
+              <i class="material-icons md-lg">public</i>
+              <i class="material-icons md-2x">public</i>
+              <i class="material-icons md-3x">public</i>
+              <i class="material-icons md-5x">public</i>
+              <i class="material-icons md-10x">public</i>
             </div>
           </div>
 
-          </section>
+        </section>
         <section class="mt-3" id="jumbotronExample">
           <h2>Jumbotron</h2>
           <div class="jumbotron rounded-0">
@@ -1847,6 +1857,48 @@
             <div class="progress-bar progress-bar-striped bg-dark" role="progressbar" style="width: 16%"
             aria-valuenow="16" aria-valuemin="0" aria-valuemax="100"></div>
           </div>
+        </section>
+
+        <section class="mt-3" id="siteAlertExample">
+          <h2>Site alert</h2>
+          <!--Standard emergency site alert -->
+          <div class=" alert alert-site" aria-label="Site alert">
+            <div class="alert-icon">
+              <i class="material-icons">error</i>
+            </div>
+            <div>
+              <h4 class="alert-heading">Emergency alert message</h4>
+    Additional context and followup information including 
+    <a href="#" class="alert-link">an example link</a>.
+  </div>
+          </div >
+          <br>
+          <!--Site alert with list -->
+          <div class="alert alert-site" aria-label="Site alert">
+            <div class="alert-icon">
+              <i class="material-icons">error</i>
+            </div>
+            <div>
+              <h4 class="alert-heading">Emergency alert message</h4>
+              <ul>
+                <li>The primary emergency message and <a class="alert-link" href="javascript:void(0);">a link</a> for supporting context.</li>
+                <li>Another message, <a class="alert-link" href="javascript:void(0);">and another link</a>.</li>
+                <li>A final emergency message.</li>
+              </ul>
+            </div>
+          </div>
+          <br>
+          <!-- Slim site alert -->
+          <div class= "alert alert-site alert-sm" aria-label="Site alert">
+            <div class="alert-icon">
+              <i class="material-icons">error</i>
+            </div>
+            <div>
+              <strong>Short alert message.</strong> Additional context and followup information including
+    <a href="#" class="alert-link">an example link</a>.
+  </div>
+          </div>
+
         </section>
         <section class="mt-3" id="stepIndicatorExample">
           <h2>Step indicator</h2>
@@ -2006,6 +2058,25 @@
               </div>
             </div>
 
+          </div>
+        </section>
+
+        <section class="mt-3" id="summaryBoxExample">
+          <h2>Summary box</h2>
+          <div class="alert alert-summary" role="complementary">
+
+            <div>
+              <h4 class="alert-heading">Key information</h4>
+              <ul>
+                <li>
+                If you are under a winter storm warning,  
+                
+                 <a class="alert-link" href="javascript:void(0);">find shelter</a> right away.</li>
+                <li>Sign up for <a class="alert-link" href="javascript:void(0);">your community’s warning system</a>.</li>
+                <li>Learn the signs of, and basic treatments for <a class="alert-link" href="javascript:void(0);"> frostbite</a> and <a class="alert-link" href="javascript:void(0);"> hypothermia</a>.</li>
+                <li>Gather emergency supplies for your <a class="alert-link" href="javascript:void(0);">home</a> and your <a class="alert-link" href="javascript:void(0);">car</a>.</li>
+              </ul>
+            </div>
           </div>
         </section>
         <section class="mt-3" id="tableExample">

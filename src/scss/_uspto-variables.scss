@@ -51,7 +51,13 @@ $warning: uspto-color("orange") !default;
 //warning variant
 $warning-lightest: uspto-color("yellow", "100") !default;
 $warning-dark: uspto-color("orange", "600") !default;
-$warning-darker: uspto-color("orange", "700") !default;
+$warning-darker: uspto-color("orange", "900") !default;
+
+//site alert variant
+$site: uspto-color("orange", "700") !default;
+
+//summary alert variant
+$summary: uspto-color("cyan", "200") !default;
 
 $gray-deafult: uspto-color("gray") !default;
 //gray variant
