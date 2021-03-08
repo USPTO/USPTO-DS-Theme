@@ -5,7 +5,7 @@ We’re so glad you’re thinking about contributing to an USPTO open source pro
 
 We encourage you to read this project’s CONTRIBUTING policy (you are here), and it's [LICENSE](LICENSE.md).
 
-If you have any questions [send us an email](mailto:uxb@uspto.gov).
+If you have any questions [send us an email](mailto:contactuxd@uspto.gov).
 
 
 ## Contributing

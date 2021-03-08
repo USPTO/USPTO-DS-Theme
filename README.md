@@ -1,10 +1,10 @@
-# USPTO Design System Base Theme v2.x (usptostrap)
+# USPTO Design System v2.x Theme (usptostrap)
 The USPTO's Design System Theme, an open source design library based on the United States Web Design System (USWDS) and Bootstrap 4.
 
 This theme library is currently in Beta and we welcome your [feedback](https://github.com/USPTO/USPTO-DS-Theme/issues)!
 
 - Supporting an older and/or legacy application? Take a look at version 1.x of our [UI Design Library](https://github.com/USPTO/designpatterns).
-- Looking for UX tools and assets to support software development? Check out our UX [resources site](https://github.com/USPTO/USPTO-DS-for-Designers) -COMING SOON
+- Looking for UX tools and assets to support software development? Check out our UX [resources site](https://github.com/USPTO/USPTO-DS-for-Designers) - Coming soon.
 
 ## Installing
 Install the project's dependencies with:
@@ -37,7 +37,7 @@ Add the following to your package.json file:
 ```
 "dependencies": {
   "bootstrap": "^4.5.0",
-  "usptostrap": "^2.0.1"
+  "usptostrap": "^2.0.5"
   }
 ```
 Adding directly:
@@ -49,10 +49,10 @@ npm install usptostrap
 
 - Download the [lastest](https://github.com/USPTO/USPTO-DS-Theme/archive/master.zip) source code.
 - Copy the /assets to the root folder to your project.
-- Add the following code to the head of your HTML pages or templates: 
+- Add the following code to the head of your HTML pages or templates:
 
 ```
-<!-- USPTO v2.x Base Theme - Note: This already includes Bootstrap 4 -->
+<!-- USPTO Design System v2.x Theme - Note: This already includes Bootstrap 4.x -->
 <link rel="stylesheet" href="assets/css/usptostrap.css">
 <!-- Optional libraries -->
 <link rel="stylesheet" href="assets/css/uswds-combobox.css">
