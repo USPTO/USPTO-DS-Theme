@@ -11588,6 +11588,36 @@ h3 {
   font-size: 1.25rem;
 }
 
+.nav-tabs.nav-tabs-light {
+  border-bottom: 1px solid #dee2e6;
+}
+.nav-tabs.nav-tabs-light > li > a {
+  border: none;
+  background: transparent;
+  border-bottom: 2px solid transparent;
+}
+.nav-tabs.nav-tabs-light > li > a:hover, .nav-tabs.nav-tabs-light > li > a.page-link:focus {
+  border: none;
+  background: transparent;
+  border-bottom: 3px solid #5c5c5c;
+}
+.nav-tabs.nav-tabs-light > li > a.active {
+  font-weight: bold;
+  border: none;
+  background: transparent;
+  border-bottom: 3px solid #5c5c5c;
+}
+.nav-tabs.nav-tabs-light > li > a.active:hover, .nav-tabs.nav-tabs-light > li > a.active:focus, .nav-tabs.nav-tabs-light > li > a.active:active {
+  border: none;
+  background: transparent;
+  border-bottom: 3px solid #5c5c5c;
+}
+.nav-tabs.nav-tabs-light > li > a.show {
+  border: none;
+  background: transparent;
+  border-bottom: 3px solid #5c5c5c;
+}
+
 .navbar li a.nav-link, header .uspto-header-middle li a.nav-link, .navbar .sidenav li > a, header .uspto-header-middle .sidenav li > a, .sidenav .navbar li > a, .sidenav header .uspto-header-middle li > a, header .sidenav .uspto-header-middle li > a {
   color: #fff !important;
   font-size: 0.875rem;
@@ -12457,7 +12487,7 @@ footer .uspto-footer-middle .btn-collapse span {
   font-family: "Material Icons";
   font-style: normal;
   font-weight: 400;
-  src: url(MaterialIcons-Regular.eot);
+  src: url(.././icons/material-icons/MaterialIcons-Regular.eot);
   /* For IE6-8 */
   src: local("Material Icons"), local("MaterialIcons-Regular"), url(.././icons/material-icons/MaterialIcons-Regular.woff2) format("woff2"), url(.././icons/material-icons/MaterialIcons-Regular.woff) format("woff"), url(.././icons/material-icons/MaterialIcons-Regular.ttf) format("truetype");
 }

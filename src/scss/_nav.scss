@@ -1,0 +1,43 @@
+@use "sass:map";
+
+
+.nav-tabs.nav-tabs-light {
+  border-bottom: 1px solid $nav-tabs-border-color;
+  > li {
+      > a {
+          border: none;
+          background: transparent;
+          border-bottom: 2px solid transparent;
+          &:hover {
+              border: none;
+              background: transparent;
+              border-bottom: 3px solid $secondary-dark;
+          }
+          &.active  {
+            font-weight: bold;
+            border: none;
+            background: transparent;
+            border-bottom: 3px solid $secondary-dark;
+            &:hover,
+            &:focus,
+            &:active {
+                border: none;
+                background: transparent;
+                border-bottom: 3px solid $secondary-dark;
+                
+            }
+            
+        }
+        &.show  {
+            border: none;
+            background: transparent;
+            border-bottom: 3px solid $secondary-dark;
+        }
+          
+      }
+      
+      }
+
+    
+  }
+
