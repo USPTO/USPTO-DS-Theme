@@ -3228,19 +3228,19 @@ fieldset:disabled a.btn {
   box-shadow: 0 0 0 0 rgba(27, 27, 27, 0.5);
 }
 
-.btn-link, .btn-link-light, .banner-dark .btn.banner-btn {
+.btn-link, .btn-link-light, .banner-dark .btn span, .banner-dark .btn.banner-btn {
   font-weight: 400;
   color: #005ea2;
   text-decoration: underline;
 }
-.btn-link:hover, .btn-link.page-link:focus, .btn-link-light:hover, .btn-link-light.page-link:focus, .banner-dark .btn.banner-btn:hover, .banner-dark .btn.banner-btn.page-link:focus {
+.btn-link:hover, .btn-link.page-link:focus, .btn-link-light:hover, .btn-link-light.page-link:focus, .banner-dark .btn span:hover, .banner-dark .btn span.page-link:focus, .banner-dark .btn.banner-btn:hover, .banner-dark .btn.banner-btn.page-link:focus {
   color: #003256;
   text-decoration: underline;
 }
-.btn-link:focus, .btn-link-light:focus, .banner-dark .btn.banner-btn:focus, .btn-link.focus, .focus.btn-link-light, .banner-dark .focus.btn.banner-btn {
+.btn-link:focus, .btn-link-light:focus, .banner-dark .btn span:focus, .banner-dark .btn.banner-btn:focus, .btn-link.focus, .focus.btn-link-light, .banner-dark .btn span.focus, .banner-dark .focus.btn.banner-btn {
   text-decoration: underline;
 }
-.btn-link:disabled, .btn-link-light:disabled, .banner-dark .btn.banner-btn:disabled, .btn-link.disabled, .disabled.btn-link-light, .banner-dark .disabled.btn.banner-btn {
+.btn-link:disabled, .btn-link-light:disabled, .banner-dark .btn span:disabled, .banner-dark .btn.banner-btn:disabled, .btn-link.disabled, .disabled.btn-link-light, .banner-dark .btn span.disabled, .banner-dark .disabled.btn.banner-btn {
   color: #6c757d;
   pointer-events: none;
 }
@@ -10611,6 +10611,14 @@ h3 {
 .banner button:focus, .banner button.focus {
   outline-offset: 0;
 }
+.banner .btn span {
+  color: #005ea2;
+  text-decoration: underline;
+}
+.banner .btn.banner-btn {
+  color: #005ea2;
+  text-decoration: underline;
+}
 .banner-content {
   font-size: 0.94rem;
   line-height: 1.6;
@@ -11253,21 +11261,21 @@ h3 {
   color: #775540;
 }
 
-.btn-link, .btn-link-light, .banner-dark .btn.banner-btn {
+.btn-link, .btn-link-light, .banner-dark .btn span, .banner-dark .btn.banner-btn {
   padding: 0;
   margin: 0;
 }
-.btn-link.disabled, .disabled.btn-link-light, .banner-dark .disabled.btn.banner-btn, .btn-link:disabled, .btn-link-light:disabled, .banner-dark .btn.banner-btn:disabled {
+.btn-link.disabled, .disabled.btn-link-light, .banner-dark .btn span.disabled, .banner-dark .disabled.btn.banner-btn, .btn-link:disabled, .btn-link-light:disabled, .banner-dark .btn span:disabled, .banner-dark .btn.banner-btn:disabled {
   background-color: transparent;
 }
 
-.btn-link-light, .banner-dark .btn.banner-btn {
+.btn-link-light, .banner-dark .btn span, .banner-dark .btn.banner-btn {
   color: #adadad;
 }
-.btn-link-light:hover, .btn-link-light.page-link:focus, .banner-dark .btn.banner-btn:hover, .banner-dark .btn.banner-btn.page-link:focus {
+.btn-link-light:hover, .btn-link-light.page-link:focus, .banner-dark .btn span:hover, .banner-dark .btn span.page-link:focus, .banner-dark .btn.banner-btn:hover, .banner-dark .btn.banner-btn.page-link:focus {
   color: #f0f0f0;
 }
-.btn-link-light:not(:disabled):not(.disabled):active, .banner-dark .btn.banner-btn:not(:disabled):not(.disabled):active, .btn-link-light:not(:disabled):not(.disabled).active, .banner-dark .btn.banner-btn:not(:disabled):not(.disabled).active, .show > .btn-link-light.dropdown-toggle, .banner-dark .show > .dropdown-toggle.btn.banner-btn {
+.btn-link-light:not(:disabled):not(.disabled):active, .banner-dark .btn span:not(:disabled):not(.disabled):active, .banner-dark .btn.banner-btn:not(:disabled):not(.disabled):active, .btn-link-light:not(:disabled):not(.disabled).active, .banner-dark .btn span:not(:disabled):not(.disabled).active, .banner-dark .btn.banner-btn:not(:disabled):not(.disabled).active, .show > .btn-link-light.dropdown-toggle, .banner-dark .btn .show > span.dropdown-toggle, .banner-dark .show > .dropdown-toggle.btn.banner-btn {
   color: #ffffff;
 }
 
@@ -11470,6 +11478,24 @@ h3 {
 .custom-range:focus {
   outline: 0.25rem solid #2491ff;
   outline-offset: 0;
+}
+
+.custom-control.tile {
+  padding-left: 0;
+}
+.custom-control.tile .custom-control-input + .custom-control-label {
+  border: 2px solid #e6e6e6;
+  border-radius: 0.25rem;
+  padding: 0.75rem 1rem 0.75rem 3rem;
+  width: 100%;
+}
+.custom-control.tile .custom-control-input + .custom-control-label::before, .custom-control.tile .custom-control-input + .custom-control-label::after {
+  top: 0.8rem;
+  left: 1rem;
+}
+.custom-control.tile .custom-control-input:checked + .custom-control-label {
+  background-color: #d9e8f6;
+  border-color: #73b3e7;
 }
 
 .form-control:focus, .form-control.focus {
@@ -11740,6 +11766,68 @@ h3 {
   text-decoration: none !important;
   outline: 0.25rem solid #2491ff;
   outline-offset: 0;
+}
+
+.pagination .page-item .md-icon {
+  padding: 0.25rem !important;
+}
+.pagination .page-item .md-icon .material-icons {
+  font-size: 1.3rem;
+}
+
+.pagination-lg .page-item .md-icon {
+  padding: 0.5rem !important;
+}
+.pagination-lg .page-item .md-icon .material-icons {
+  font-size: 1.5rem;
+}
+
+.pagination-sm .page-item .md-icon {
+  padding: 0rem !important;
+}
+.pagination-sm .page-item .md-icon .material-icons {
+  font-size: 1.2rem;
+}
+
+.pagination .page-item .page-go {
+  padding: 0.25rem 0.5rem !important;
+}
+.pagination .page-item .page-go input, .pagination .page-item .page-go select {
+  min-width: 3rem;
+  border: 1px solid #efefef;
+  color: #005ea2;
+}
+.pagination .page-item .page-go input {
+  width: 3rem;
+  padding: 0.2rem 0.5rem;
+}
+.pagination .page-item .page-go select {
+  padding: 0.16rem 0.5rem;
+}
+
+.pagination-sm .page-item .page-go {
+  padding: 0.12rem 0.25rem !important;
+}
+.pagination-sm .page-item .page-go input {
+  padding: 0.08rem 0.5rem;
+}
+
+.pagination-lg .page-item .page-go {
+  padding: 0.5rem 0.75rem !important;
+}
+.pagination-lg .page-item .page-go select {
+  padding: 0.3rem 0.5rem;
+}
+
+.pagination-bar {
+  display: flex;
+}
+.pagination-bar .pagination {
+  display: inline-flex;
+  margin-right: 1rem !important;
+}
+.pagination-bar .pagination:last-child {
+  margin-right: 0 !important;
 }
 
 .table td,
