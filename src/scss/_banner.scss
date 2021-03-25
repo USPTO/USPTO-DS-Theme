@@ -6,6 +6,17 @@
       outline-offset: 0;
     }
   }
+
+  .btn {
+    span {color: $primary;
+      text-decoration: underline;}
+    
+    &.banner-btn {
+      color: $primary;
+      text-decoration: underline;
+    }
+  }
+
   &-content {
     font-size: 0.94rem;
     line-height: 1.6;
@@ -51,6 +62,9 @@
     @extend .bg-dark;
     color: $white;
     .btn {
+      span{
+        @extend .btn-link-light;
+      }
       color: $white;
       &.banner-btn {
         @extend .btn-link-light;
