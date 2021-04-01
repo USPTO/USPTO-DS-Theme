@@ -1,7 +1,7 @@
 var ptoDynamicHeader = (function () {
     'use strict';
     var addLink = function (url, label){
-        return '<li><a href="' + url + '" target="_blank">' + label + '</a></li>';
+        return '<li><a class="dropdown-item" href="' + url + '" target="_blank">' + label + '</a></li>';
     }
     var addButton = function (label, ulIcon){
 
