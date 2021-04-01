@@ -6,7 +6,7 @@ var ptoDynamicHeader = (function () {
     var addButton = function (label, ulIcon){
 
         return '<button type="button" class="btn btn-default dropdown-toggle ex-btn-inverse"' +
-            'data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">' +
+            'data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" aria-label="' + label + '">' +
             '<span class="btn-text">' + label + '&nbsp;<span class="caret"></span></span>' +
             '<span class="btn-icon"><span class="icon ' + ulIcon + ' "></span></span>' +
             '</button>';
