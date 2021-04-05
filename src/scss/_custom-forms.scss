@@ -82,3 +82,29 @@
     outline-offset: 0;
   }
 }
+
+//Custom control with border and blue background
+.custom-control {
+  &.tile {
+    padding-left: 0;    
+    .custom-control-input+.custom-control-label {  
+      &::before, &::after {
+        top: .8rem;
+        left: 1rem;
+      }  
+      border: 2px solid #e6e6e6;
+      border-radius: .25rem;
+      padding: .75rem 1rem .75rem 3rem;
+      width: 100%;
+  } 
+  .custom-control-input:checked+.custom-control-label {
+    background-color: #d9e8f6;
+    border-color: #73b3e7;    
+  } 
+  .custom-control-input:disabled+.custom-control-label {
+    background-color: #fff;
+    border-color: #e6e6e6;    
+  } 
+  }
+}
+
