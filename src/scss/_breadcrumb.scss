@@ -14,3 +14,11 @@
     }
   }
 }
+
+
+.breadcrumb-item  
+  + .breadcrumb-item {  
+    &::before {
+      float: none; 
+    }
+  }
