@@ -10741,6 +10741,10 @@ h3 {
   outline-offset: 0;
 }
 
+.breadcrumb-item + .breadcrumb-item::before {
+  float: none;
+}
+
 .btn:focus, .btn.focus {
   outline: 0.25rem solid #2491ff;
   outline-offset: 0.25rem;
@@ -11496,6 +11500,10 @@ h3 {
 .custom-control.tile .custom-control-input:checked + .custom-control-label {
   background-color: #d9e8f6;
   border-color: #73b3e7;
+}
+.custom-control.tile .custom-control-input:disabled + .custom-control-label {
+  background-color: #fff;
+  border-color: #e6e6e6;
 }
 
 .form-control:focus, .form-control.focus {

@@ -1358,6 +1358,7 @@
                   <input type="checkbox" class="custom-control-input" id="customCheck1" checked>
                   <label class="custom-control-label" for="customCheck1">Custom checkbox checked</label>
                 </div>
+
                 <div class="custom-control custom-checkbox">
                   <input type="checkbox" class="custom-control-input" id="customCheck2">
                   <label class="custom-control-label" for="customCheck2">Custom checkbox unchecked</label>
@@ -1369,6 +1370,25 @@
                 <div class="custom-control custom-checkbox">
                   <input type="checkbox" class="custom-control-input" id="customCheck4" disabled checked>
                   <label class="custom-control-label" for="customCheck4">Custom checkbox disabled checked</label>
+                </div>
+
+                <p class="mb-1 mt-4">Custom tile checkboxes</p>
+                <div class="custom-control custom-checkbox tile">
+                  <input type="checkbox" class="custom-control-input" id="customCheck7" checked>
+                  <label class="custom-control-label" for="customCheck7">Custom checkbox checked</label>
+                </div>
+
+                <div class="custom-control custom-checkbox tile">
+                  <input type="checkbox" class="custom-control-input" id="customCheck8">
+                  <label class="custom-control-label" for="customCheck8">Custom checkbox unchecked</label>
+                </div>
+                <div class="custom-control custom-checkbox tile">
+                  <input type="checkbox" class="custom-control-input" id="customCheck9" disabled>
+                  <label class="custom-control-label" for="customCheck9">Custom checkbox disabled</label>
+                </div>
+                <div class="custom-control custom-checkbox tile">
+                  <input type="checkbox" class="custom-control-input" id="customCheck9" disabled checked>
+                  <label class="custom-control-label" for="customCheck9">Custom checkbox disabled</label>
                 </div>
 
                 <p class="mb-1 mt-4">Indeterminate custom checkboxes</p>
@@ -1399,8 +1419,28 @@
                   <input type="radio" id="customRadio4" name="customRadio1" class="custom-control-input" disabled checked>
                   <label class="custom-control-label" for="customRadio4">Custom radio disabled checked</label>
                 </div>
+                <p class="mb-1 mt-4">Custom tile radio</p>
+                <div class="custom-control custom-radio tile">
+                  <input type="radio" id="customRadio5" name="customRadio4" class="custom-control-input" checked>
+                  <label class="custom-control-label" for="customRadio5">Custom radio checked1</label>
+                </div>
+                <div class="custom-control custom-radio tile">
+                  <input type="radio" id="customRadio6" name="customRadio4" class="custom-control-input">
+                  <label class="custom-control-label" for="customRadio6">Custom radio unchecked</label>
+                </div>
+                <div class="custom-control custom-radio tile">
+                  <input type="radio" id="customRadio7" name="customRadio4" class="custom-control-input" disabled>
+                  <label class="custom-control-label" for="customRadio7">Custom radio disabled</label>
+                </div>
+
+                <div class="custom-control custom-radio tile">
+                  <input type="radio" id="customRadio8" name="customRadio5" class="custom-control-input" disabled checked>
+                  <label class="custom-control-label" for="customRadio8">Custom radio checked disabled</label>
+                </div>
+
               </div>
             </div>
+            
             <br>
             <div class="row mt-3">
               <div class="col">
@@ -2082,12 +2122,12 @@
             </div>
           </div>
         </section>
-<section class="mt-3" id="tabsExample">
+        <section class="mt-3" id="tabsExample">
           <h2>Tabs</h2>
           <!--Justified  tabs-->
-<ul class="nav nav-tabs nav-fill nav-tabs-light" id="myTab" role="tablist">
-  <li class="nav-item" role="presentation">
-    <a
+          <ul class="nav nav-tabs nav-fill nav-tabs-light" id="myTab" role="tablist">
+            <li class="nav-item" role="presentation">
+              <a
       class="nav-link active"
       id="home-tab"
       data-toggle="tab"
@@ -2097,9 +2137,9 @@
       aria-selected="true"
       >Home</a
     >
-  </li>
-  <li class="nav-item" role="presentation">
-    <a
+            </li>
+            <li class="nav-item" role="presentation">
+              <a
       class="nav-link"
       id="profile-tab"
       data-toggle="tab"
@@ -2109,9 +2149,9 @@
       aria-selected="false"
       >Profile</a
     >
-  </li>
-  <li class="nav-item" role="presentation">
-    <a
+            </li>
+            <li class="nav-item" role="presentation">
+              <a
       class="nav-link"
       id="contact-tab"
       data-toggle="tab"
@@ -2121,10 +2161,10 @@
       aria-selected="false"
       >Contact</a
     >
-  </li>
-</ul>
-<div class="border border-light border-top-0 p-2 tab-content" id="myTabContent">
-  <div
+            </li>
+          </ul>
+          <div class="border border-light border-top-0 p-2 tab-content" id="myTabContent">
+            <div
     class="tab-pane fade show active"
     id="home1"
     role="tabpanel"
@@ -2132,7 +2172,7 @@
   >
     Nulla est ullamco ut irure incididunt nulla
   </div>
-  <div
+            <div
     class="tab-pane fade"
     id="profile1"
     role="tabpanel"
@@ -2140,7 +2180,7 @@
   >
     Lorem Lorem minim irure officia enim reprehenderit. Magna duis labore cillum
   </div>
-  <div
+            <div
     class="tab-pane fade"
     id="contact1"
     role="tabpanel"
@@ -2149,13 +2189,12 @@
     Commodo esse dolore fugiat sint velit ullamco magna consequat voluptate
     minim amet aliquip ipsum aute laboris nisi.
   </div>
-</div>
-
+          </div>
 
           <div class="row">
             <div class="col-12 col-lg-6"></div>
-            </div>
-            </section>
+          </div>
+        </section>
 
         <section class="mt-3" id="tableExample">
           <h2>Table</h2>
@@ -2884,7 +2923,6 @@
     integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
     crossorigin="anonymous"></script>
 
-    
 <script src="assets/js/uswds.min.js"></script>
 
 <!-- <script src="https://components.uspto.gov/json/dynamic-trans-menu-2.0.0.js"></script>
