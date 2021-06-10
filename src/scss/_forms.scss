@@ -121,3 +121,9 @@
     @include range-ms-fill;
   }
 }
+// Form help text
+.form-hint {
+  color:$secondar;
+  margin-bottom: .2rem;
+  font-size: .9rem;
+}
