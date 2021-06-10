@@ -11608,6 +11608,12 @@ h3 {
   border-radius: 99rem;
 }
 
+.form-hint {
+  color: #757575;
+  margin-bottom: 0.2rem;
+  font-size: 0.9rem;
+}
+
 .input-group-text {
   border-radius: 0.2rem;
 }
@@ -11625,6 +11631,44 @@ h3 {
 }
 .input-group-sm > .form-control, .input-group-sm > .custom-select, .input-group-lg > .form-control, .input-group-lg > .custom-select {
   border-radius: 0;
+}
+
+.suffix.input-group .input-group-text, .prefix.input-group .input-group-text {
+  padding: 0.12rem 0.5rem !important;
+}
+
+.suffix .input-group-text {
+  background-color: transparent;
+  color: #757575;
+}
+.suffix.input-group-sm .input-group-text {
+  padding: 0.12rem 0.5rem !important;
+}
+.suffix.input-group-sm .input-group-text .material-icons {
+  font-size: 1rem;
+}
+.suffix.input-group-lg .input-group-text {
+  padding: 0.3rem 0.5rem !important;
+}
+.suffix.input-group-lg .input-group-text .material-icons {
+  font-size: 1.5rem;
+}
+
+.prefix .input-group-text {
+  background-color: transparent;
+  color: #757575;
+}
+.prefix.input-group-sm .input-group-text {
+  padding: 0.12rem 0.5rem !important;
+}
+.prefix.input-group-sm .input-group-text .material-icons {
+  font-size: 1rem;
+}
+.prefix.input-group-lg .input-group-text {
+  padding: 0.3rem 0.5rem !important;
+}
+.prefix.input-group-lg .input-group-text .material-icons {
+  font-size: 1.5rem;
 }
 
 .list-group-item-primary {

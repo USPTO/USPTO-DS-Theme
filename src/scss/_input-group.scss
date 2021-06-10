@@ -28,3 +28,61 @@
     border-radius: 0;
   }
 }
+
+//Input prefix or suffix
+.suffix, .prefix {
+  &.input-group{
+    .input-group-text{
+      padding: .12rem .5rem!important;      
+    }
+  }
+ 
+}
+.suffix {
+  input {
+    //border-right: none;
+  } .input-group-text {
+    background-color:transparent;
+        color: $secondary;
+  }
+  &.input-group-sm {
+    .input-group-text{
+      padding: .12rem .5rem!important;
+      .material-icons{
+        font-size: 1rem;
+      }
+    }
+  }
+
+  &.input-group-lg {
+    .input-group-text{
+      padding: .3rem .5rem!important; 
+      .material-icons{
+        font-size: 1.5rem;
+      }
+    }
+  }
+}
+.prefix {
+   .input-group-text {
+    background-color:transparent;
+        color: $secondary;
+  }
+  &.input-group-sm {
+    .input-group-text{
+      padding: .12rem .5rem!important;
+      .material-icons{
+        font-size: 1rem;
+      }
+    }
+  }
+
+  &.input-group-lg {
+    .input-group-text{
+      padding: .3rem .5rem!important; 
+      .material-icons{
+        font-size: 1.5rem;
+      }
+    }
+  }
+}
