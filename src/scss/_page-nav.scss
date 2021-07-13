@@ -1,0 +1,126 @@
+@use "sass:map";
+
+//Page left navigation
+@mixin material-icons($color:secondary, $visibility:visible) {
+  font-family: "Material Icons";
+  @content;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 1.35rem; /* Preferred icon size */
+  display: inline-block;
+  line-height: inherit;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+  vertical-align: middle;
+  color:$color;
+  margin-right: .3rem;
+  visibility: $visibility;
+}
+
+.accordion {
+  &.navigation {
+.accordion-heading {
+  margin: 0;
+}
+    .btn {
+      &.active {
+        color:$primary;
+        .material-icons {
+          color:$dark;
+          
+        }
+      }
+      @extend .d-flex;
+          @extend .align-items-center;
+          line-height: 1.25;
+          padding: 0.5rem;
+      .material-icons { 
+        margin-right: .3rem;    
+        &.collapsed-icon {
+          display: block;
+        }
+        &.expanded-icon {
+          display: none;
+        }
+      }
+      &[aria-expanded="true"] {
+        .collapsed-icon {
+          display: none;
+        }
+        .expanded-icon {
+          display: block;
+        }
+      } 
+
+     }
+    .sidenav {      
+      border: 0;
+     margin: 0;
+      width:100%;
+      li {
+        &:last-child {
+          border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+        }
+        a {
+          padding-left: 2rem;
+          color:$secondary;
+          &:before {
+            @include material-icons($secondary, hidden) {
+              content: "arrow_forward"; 
+            };                     
+          } 
+        }
+      &.active {       
+        a {color:$primary;
+          //border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+          border-top:1px transparent;
+          // &:after {
+          //   content: " (in progress)"; 
+          // }
+          &:before {
+            @include material-icons($primary) {
+              content: "arrow_forward";               
+            };                     
+          }  
+        }              
+      }
+      &.success {        
+        a {color:$dark;
+          // &:after {
+          //   content: " (complete)"; 
+          // }
+          &:before {
+            @include material-icons($success) {
+              content: "check_circle"; 
+            };                     
+          }  
+        }                
+      }
+      &.error {        
+        a {color:$dark;
+          // &:after {
+          //   content: " (error)"; 
+          // }
+          &:before {
+            @include material-icons($danger) {
+              content: "error_outline"; 
+            };                     
+          }  
+        }                
+      }
+    } 
+      .material-icons {
+        vertical-align: middle;
+        margin-right: .5rem;
+      }
+      .active {        
+        background-color:$light;
+      }
+    }
+
+  }
+
+}
