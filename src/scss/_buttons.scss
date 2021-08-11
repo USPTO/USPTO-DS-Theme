@@ -38,7 +38,7 @@
   .btn-#{$color} {
     color: color-yiq($value);
     @include hover {
-      background-color: map.get($colors-variant, #{$color}-dark);
+      background-color: map-get($colors-variant, #{$color}-dark);
     }
     &.disabled,
     &:disabled {
@@ -48,14 +48,14 @@
     &:not(:disabled):not(.disabled):active,
     &:not(:disabled):not(.disabled).active,
     .show > &.dropdown-toggle {
-      background-color: map.get($colors-variant, #{$color}-darker);
-      // color: color-yiq(map.get($colors-variant, #{$color}-darker));
+      background-color: map-get($colors-variant, #{$color}-darker);
+      // color: color-yiq(map-get($colors-variant, #{$color}-darker));
     }
   }
   .btn-outline-#{$color} {
     box-shadow: $btn-box-shadow;
     @include hover {
-      color: map.get($colors-variant, #{$color}-dark);
+      color: map-get($colors-variant, #{$color}-dark);
       background-color: transparent;
     }
     &:focus,
@@ -70,7 +70,7 @@
     &:not(:disabled):not(.disabled):active,
     &:not(:disabled):not(.disabled).active,
     .show > &.dropdown-toggle {
-      color: map.get($colors-variant, #{$color}-darker);
+      color: map-get($colors-variant, #{$color}-darker);
       background-color: transparent;
       &:focus {
         // Avoid using mixin so we can pass custom focus shadow properly
@@ -81,7 +81,7 @@
   .btn-icon-only-#{$color} {
     color: $value;
     @include hover {
-      color: map.get($colors-variant, #{$color}-dark);
+      color: map-get($colors-variant, #{$color}-dark);
       background-color: transparent;
       box-shadow: $btn-box-shadow;
     }
@@ -97,7 +97,7 @@
     &:not(:disabled):not(.disabled):active,
     &:not(:disabled):not(.disabled).active,
     .show > &.dropdown-toggle {
-      color: map.get($colors-variant, #{$color}-darker);
+      color: map-get($colors-variant, #{$color}-darker);
       background-color: transparent;
       &:focus {
         // Avoid using mixin so we can pass custom focus shadow properly

@@ -26,7 +26,7 @@
 @each $color, $value in $theme-colors {
   @include table-row-variant(
     $color,
-    map.get($colors-variant, #{$color}-lightest),
+    map-get($colors-variant, #{$color}-lightest),
     $value
   );
   .table-#{$color} {
