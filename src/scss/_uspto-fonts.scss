@@ -206,7 +206,7 @@ $uspto-fonts: (
   $this-src: map-get($font-name, src);
   $display-name: map-get($font-name, display-name);
   @if $this-src {
-    $dir: map.get($this-src, dir);
+    $dir: map-get($this-src, dir);
     $roman: map-get($this-src, roman);
     $italic: map-get($this-src, italic);
     $output-weights: (

@@ -21,9 +21,9 @@
   }
   @each $color, $value in $theme-colors {
     &.bg-#{$color} {
-      border-color: map.get($colors-variant, #{$color}-dark);
+      border-color: map-get($colors-variant, #{$color}-dark);
       .card-header {
-        border-color: map.get($colors-variant, #{$color}-dark);
+        border-color: map-get($colors-variant, #{$color}-dark);
       }
     }
   }

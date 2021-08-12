@@ -39,7 +39,7 @@
     &::before {
       background-color: $value;
     }
-    background-color: map.get($colors-variant, #{$color}-lightest);
+    background-color: map-get($colors-variant, #{$color}-lightest);
     color: $body-color;
     .alert-link {
       color: $link-color;
