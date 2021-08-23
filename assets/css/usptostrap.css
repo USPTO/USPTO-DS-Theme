@@ -12016,6 +12016,72 @@ h3 {
   margin-right: 0 !important;
 }
 
+.process-list {
+  line-height: 1.5;
+  margin-bottom: 0;
+  margin-top: 0;
+  list-style-type: none;
+  padding-left: 0;
+  counter-reset: usa-numbered-list;
+  padding: 20px 0 0 1rem;
+  position: relative;
+}
+.process-list .process-list-item {
+  border-left: 0.5rem solid #e7f6f8;
+  margin-bottom: 0;
+  padding-bottom: 2rem;
+  padding-left: 2rem;
+}
+.process-list .process-list-item:last-child {
+  border-left: 0.5rem solid transparent;
+}
+.process-list .process-list-item::before {
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  border-radius: 99rem;
+  background-color: #fff;
+  border: 0.25rem solid #1b1b1b;
+  box-shadow: 0 0 0 0.25rem #fff;
+  color: #1b1b1b;
+  content: counter(usa-numbered-list, decimal);
+  counter-increment: usa-numbered-list;
+  display: flex;
+  font-size: 1.33rem;
+  font-weight: 700;
+  height: 2.5rem;
+  left: 0;
+  line-height: 0.9;
+  margin-top: -0.4rem;
+  position: absolute;
+  width: 2.5rem;
+}
+.process-list .process-list-item ul {
+  list-style-type: disc;
+}
+.process-list .process-list-item ul li {
+  margin-bottom: 0.25rem;
+}
+.process-list .process-list-item ul li:last-child {
+  margin-bottom: 0;
+}
+.process-list .process-list-item > *:first-child {
+  margin-top: 0;
+}
+.process-list .process-list-item > *:last-child {
+  margin-bottom: 0;
+}
+.process-list .process-list-heading {
+  font-size: 1.33rem;
+  line-height: 1.1;
+  color: #1b1b1b;
+  font-weight: 700;
+  margin: 0;
+}
+.process-list .process-list-heading + * {
+  margin-top: 0.25rem;
+}
+
 .table td,
 .table th {
   border-bottom: 1px solid #cccccc;
