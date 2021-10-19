@@ -11422,6 +11422,138 @@ h3 {
   margin-top: 0.5rem;
 }
 
+.collection {
+  padding-left: 0;
+}
+
+.collection-item {
+  list-style-type: none;
+  padding: 1rem 0 0 0;
+  align-items: flex-start;
+  border-top: 1px solid #f0f0f0;
+  display: flex;
+  margin: 1rem 0;
+}
+
+.collection-item:first-child {
+  border-top: none;
+  margin-top: 0;
+  padding-top: 0;
+}
+
+.collection-img,
+.collection-calendar-date {
+  flex-shrink: 0;
+  margin: 0 1rem 0 0;
+  width: 4rem;
+}
+
+.collection-body {
+  flex: 1 1 0%;
+}
+
+.collection-heading {
+  font-size: 1.13rem;
+  line-height: 1.3;
+  margin: 0;
+}
+
+.collection-description {
+  margin: 0.5rem 0;
+}
+
+.collection-meta {
+  list-style-type: none;
+  padding-left: 0;
+  margin: 0.25rem 0 0 0;
+}
+
+.collection-meta > li {
+  margin-bottom: 0;
+  max-width: unset;
+}
+
+.collection-meta-item {
+  margin: 0.25rem 0.5rem 0 0;
+  font-size: 0.93rem;
+  line-height: 1.3;
+  display: block;
+}
+.collection-meta-item i.material-icons {
+  vertical-align: middle;
+}
+.collection-meta-item.tag {
+  background-color: #f0f0f0;
+  line-height: 0.9;
+  padding: 0.25rem 0.5rem;
+  color: #1b1b1b;
+  display: inline-block;
+  margin-top: 0.25rem;
+  border-radius: 2px;
+}
+.collection-meta-item.tag-new {
+  background-color: #c05600;
+  color: #fff;
+}
+
+.collection-footer {
+  margin-top: 0.5rem !important;
+}
+.collection-footer .collection-meta-item {
+  display: inline-block;
+}
+.collection-footer .collection-meta-item + .collection-meta-item::before {
+  content: " ·";
+  margin-right: 0.5rem;
+}
+.collection-footer.small .collection-meta-item {
+  font-size: 80% !important;
+  font-weight: 400 !important;
+}
+
+.collection-calendar-date {
+  text-decoration: none;
+}
+
+.collection-calendar-date-month,
+.collection-calendar-date-day {
+  font-size: 1.13rem;
+  display: block;
+  font-weight: 700;
+  padding: 0.25rem;
+  text-align: center;
+}
+
+.collection-calendar-date-month {
+  border-top-left-radius: 2px;
+  border-top-right-radius: 2px;
+  background-color: #005ea2;
+  color: #fff;
+}
+
+.collection-calendar-date-day {
+  border-bottom-left-radius: 2px;
+  border-bottom-right-radius: 2px;
+  border: 1px solid #005ea2;
+  color: #005ea2;
+}
+
+.collection--condensed .collection-item {
+  margin: 0.5rem 0;
+  padding-top: 0.5rem;
+}
+
+@media all and (min-width: 40em) {
+  .collection-calendar-date-month,
+.collection-calendar-date-day {
+    padding: 0.5rem;
+  }
+
+  .collection-img,
+.collection-calendar-date {
+    width: 5rem;
+  }
+}
 .custom-control + .custom-control {
   margin-top: 0.75rem;
 }
