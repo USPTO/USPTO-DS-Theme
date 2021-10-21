@@ -4,7 +4,7 @@
   "description": "USPTO Design System Base Theme v2.x",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/uspto/designsystem.git"
+    "url": "git+https://github.com/USPTO/USPTO-DS-Theme.git"
   },
   "main": "index.js",
   "scripts": {
