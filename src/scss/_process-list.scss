@@ -1,0 +1,78 @@
+// PROCESS LIST
+
+.process-list {
+  line-height: 1.5;
+  margin-bottom: 0;
+  margin-top: 0;
+  list-style-type: none;
+  padding-left: 0;
+  counter-reset: usa-numbered-list;
+  padding: 20px 0 0 1rem;
+  position: relative;
+
+  .process-list-item {
+    border-left: 0.5rem solid $info-lightest;
+    margin-bottom: 0;
+    padding-bottom: 2rem;
+    padding-left: 2rem;
+  }
+
+  .process-list-item {
+    &:last-child {
+      border-left: 0.5rem solid transparent;
+    }
+
+    &::before {
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      border-radius: 99rem;
+      background-color: $white;
+      border: 0.25rem solid $dark;
+      box-shadow: 0 0 0 0.25rem $white;
+      color: $dark;
+      content: counter(usa-numbered-list, decimal);
+      counter-increment: usa-numbered-list;
+      display: flex;
+      font-size: 1.33rem;
+      font-weight: 700;
+      height: 2.5rem;
+      left: 0;
+      line-height: 0.9;
+      margin-top: -0.4rem;
+      position: absolute;
+      width: 2.5rem;
+    }
+
+    ul {
+      list-style-type: disc;
+
+      li {
+        margin-bottom: 0.25rem;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+
+    > *:first-child {
+      margin-top: 0;
+    }
+
+    > *:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  .process-list-heading {
+    font-size: 1.33rem;
+    line-height: 1.1;
+    color: $dark;
+    font-weight: 700;
+    margin: 0;
+    & + * {
+      margin-top: 0.25rem;
+    }
+  }
+}
