@@ -11413,7 +11413,7 @@ h3 {
   display: block;
 }
 .accordion .card-body {
-  padding: 1rem 1.25rem calc(1rem - 0.25rem);
+  padding: 1rem 1.25rem 0.75rem;
 }
 .accordion .card:not(:last-of-type) {
   border-bottom: 0.125rem solid #f0f0f0;
@@ -12969,62 +12969,62 @@ footer .uspto-footer-middle .btn-collapse span {
 }
 
 .uspto-icon-home:before {
-  content: "";
+  content: "\e90a";
   color: #fff;
 }
 
 .uspto-icon-sign-out:before {
-  content: "";
+  content: "\e90b";
   color: #fff;
 }
 
 .uspto-icon-myuspto:before {
-  content: "";
+  content: "\e909";
   color: #fff;
 }
 
 .uspto-icon-bars:before {
-  content: "";
+  content: "\e900";
   color: #fff;
 }
 
 .uspto-icon-user:before {
-  content: "";
+  content: "\e901";
   color: #f2a900;
 }
 
 .uspto-icon-trademark:before {
-  content: "";
+  content: "\e902";
   color: #fff;
 }
 
 .uspto-icon-question-circle:before {
-  content: "";
+  content: "\e903";
   color: #fff;
 }
 
 .uspto-icon-user-white:before {
-  content: "";
+  content: "\e904";
   color: #fff;
 }
 
 .uspto-icon-caret:before {
-  content: "";
+  content: "\e905";
   color: #fff;
 }
 
 .uspto-icon-dollar:before {
-  content: "";
+  content: "\e906";
   color: #fff;
 }
 
 .uspto-icon-external-link:before {
-  content: "";
+  content: "\e907";
   color: #fff;
 }
 
 .uspto-icon-lightbulb:before {
-  content: "";
+  content: "\e908";
   color: #fff;
 }
 
