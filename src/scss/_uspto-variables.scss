@@ -37,6 +37,7 @@ $light-darker: uspto-color("light", "700") !default;
 
 $secondary: uspto-color("gray") !default;
 //secondary variant
+$secondary-light: uspto-color("gray", "100") !default;
 $secondary-lightest: uspto-color("gray", "200") !default;
 $secondary-dark: uspto-color("gray", "600") !default;
 $secondary-darker: uspto-color("gray", "700") !default;

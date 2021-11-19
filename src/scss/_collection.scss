@@ -138,3 +138,51 @@
     width: 5rem;
   }
 }
+
+
+// Event collection
+.event_date, .event_img {
+	 width:  60px;
+    height:  60px;
+    border-radius: 0.25rem;
+	  float: left;
+}
+.event_date {   
+    background-color: $info-lightest;
+    border:  1px solid $secondary-light;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    font-weight:  bold;
+    padding:  0.5rem 0.625rem;
+    text-align:  center;  
+    margin: 0 0.625rem 0 0.313rem;
+}
+
+.event_img {   
+    margin-right: 0.625rem;
+}
+
+#event-calendar-section .list-group-item {
+	border: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+}
+
+//Footer date view
+.date-view {
+ 
+  .date-view-item{
+    display: inline-block;
+    padding-right: .5rem;
+  }
+  .date-view-item + .date-view-item::before  {
+    content: " \00B7 ";
+    margin-right: .6rem;
+  }
+  &.small {
+    .date-view-item{
+      font-size: .9rem!important;
+      font-weight: 400!important;
+    }
+    
+  }
+  }
