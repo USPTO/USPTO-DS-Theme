@@ -11413,7 +11413,7 @@ h3 {
   display: block;
 }
 .accordion .card-body {
-  padding: 1rem 1.25rem 0.75rem;
+  padding: 1rem 1.25rem calc(1rem - 0.25rem);
 }
 .accordion .card:not(:last-of-type) {
   border-bottom: 0.125rem solid #f0f0f0;
@@ -11554,6 +11554,46 @@ h3 {
     width: 5rem;
   }
 }
+.event_date, .event_img {
+  width: 60px;
+  height: 60px;
+  border-radius: 0.25rem;
+  float: left;
+}
+
+.event_date {
+  background-color: #e7f6f8;
+  border: 1px solid #cccccc;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-weight: bold;
+  padding: 0.5rem 0.625rem;
+  text-align: center;
+  margin: 0 0.625rem 0 0.313rem;
+}
+
+.event_img {
+  margin-right: 0.625rem;
+}
+
+#event-calendar-section .list-group-item {
+  border: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+}
+
+.date-view .date-view-item {
+  display: inline-block;
+  padding-right: 0.5rem;
+}
+.date-view .date-view-item + .date-view-item::before {
+  content: " ·";
+  margin-right: 0.6rem;
+}
+.date-view.small .date-view-item {
+  font-size: 0.9rem !important;
+  font-weight: 400 !important;
+}
+
 .custom-control + .custom-control {
   margin-top: 0.75rem;
 }
@@ -12448,6 +12488,23 @@ h6,
   letter-spacing: -0.04em;
 }
 
+.blockquote {
+  font-size: 1rem;
+  border-left: 0.25rem solid #f0f0f0;
+  margin-left: 0;
+  padding-left: 1rem;
+}
+.blockquote footer {
+  background-color: transparent;
+  padding: 0;
+  margin-top: 0.5rem;
+}
+
+.blockquote-footer {
+  font-size: 1rem;
+  color: #757575;
+}
+
 a:hover, a.page-link:focus, a:focus {
   text-decoration: underline;
 }
@@ -12969,62 +13026,62 @@ footer .uspto-footer-middle .btn-collapse span {
 }
 
 .uspto-icon-home:before {
-  content: "\e90a";
+  content: "";
   color: #fff;
 }
 
 .uspto-icon-sign-out:before {
-  content: "\e90b";
+  content: "";
   color: #fff;
 }
 
 .uspto-icon-myuspto:before {
-  content: "\e909";
+  content: "";
   color: #fff;
 }
 
 .uspto-icon-bars:before {
-  content: "\e900";
+  content: "";
   color: #fff;
 }
 
 .uspto-icon-user:before {
-  content: "\e901";
+  content: "";
   color: #f2a900;
 }
 
 .uspto-icon-trademark:before {
-  content: "\e902";
+  content: "";
   color: #fff;
 }
 
 .uspto-icon-question-circle:before {
-  content: "\e903";
+  content: "";
   color: #fff;
 }
 
 .uspto-icon-user-white:before {
-  content: "\e904";
+  content: "";
   color: #fff;
 }
 
 .uspto-icon-caret:before {
-  content: "\e905";
+  content: "";
   color: #fff;
 }
 
 .uspto-icon-dollar:before {
-  content: "\e906";
+  content: "";
   color: #fff;
 }
 
 .uspto-icon-external-link:before {
-  content: "\e907";
+  content: "";
   color: #fff;
 }
 
 .uspto-icon-lightbulb:before {
-  content: "\e908";
+  content: "";
   color: #fff;
 }
 

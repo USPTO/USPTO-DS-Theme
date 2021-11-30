@@ -12,3 +12,22 @@ h6,
 .h6 {
   letter-spacing: -0.04em;
 }
+// blockquote styles
+.blockquote {
+  font-size: 1rem;
+  border-left: .25rem solid $light;
+    margin-left: 0;
+    padding-left: 1rem;
+    footer {
+    background-color:transparent;
+    padding: 0;
+    margin-top: 0.5rem;
+    
+    }
+}
+.blockquote-footer {
+  font-size: 1rem;
+  color:$secondary;
+  
+}
+
