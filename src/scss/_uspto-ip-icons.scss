@@ -1,0 +1,153 @@
+@import "_uspto-ip-icons-vars";
+
+@font-face {
+  font-family: '#{$iconathon-font-family}';
+  src:  url('#{$iconathon-font-path}/#{$iconathon-font-family}.eot?qdew2m');
+  src:  url('#{$iconathon-font-path}/#{$iconathon-font-family}.eot?qdew2m#iefix') format('embedded-opentype'),
+    url('#{$iconathon-font-path}/#{$iconathon-font-family}.ttf?qdew2m') format('truetype'),
+    url('#{$iconathon-font-path}/#{$iconathon-font-family}.woff?qdew2m') format('woff'),
+    url('#{$iconathon-font-path}/#{$iconathon-font-family}.svg?qdew2m##{$iconathon-font-family}') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+[class^="uspto-ip-icon-"],
+[class*="uspto-ip-icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: '#{$iconathon-font-family}' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  font-size: 1.35rem;
+  color:$dark;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.uspto-ip-icon-noun-utility-patent {
+  &:before {
+    content: $icon-noun-utility-patent; 
+  }
+}
+.uspto-ip-icon-noun-patent-pending {
+  &:before {
+    content: $icon-noun-patent-pending; 
+  }
+}
+.uspto-ip-icon-noun-plant-patent {
+  &:before {
+    content: $icon-noun-plant-patent; 
+  }
+}
+.uspto-ip-icon-noun-pro-se {
+  &:before {
+    content: $icon-noun-pro-se; 
+  }
+}
+.uspto-ip-icon-noun-invention {
+  &:before {
+    content: $icon-noun-invention; 
+  }
+}
+.uspto-ip-icon-noun-maker {
+  &:before {
+    content: $icon-noun-maker; 
+  }
+}
+.uspto-ip-icon-noun-intellectual-property {
+  &:before {
+    content: $icon-noun-intellectual-property; 
+  }
+}
+.uspto-ip-icon-noun-design-patent {
+  &:before {
+    content: $icon-noun-design-patent; 
+  }
+}
+.uspto-ip-icon-noun-prior-art {
+  &:before {
+    content: $icon-noun-prior-art; 
+  }
+}
+.uspto-ip-icon-noun-small-inventor {
+  &:before {
+    content: $icon-noun-small-inventor; 
+  }
+}
+.uspto-ip-icon-noun-large-inventor {
+  &:before {
+    content: $icon-noun-large-inventor; 
+  }
+}
+.uspto-ip-icon-noun-infringement {
+  &:before {
+    content: $icon-noun-infringement; 
+  }
+}
+.uspto-ip-icon-noun-trade-secret {
+  &:before {
+    content: $icon-noun-trade-secret; 
+  }
+}
+.uspto-ip-icon-noun-micro-entity-inventor {
+  &:before {
+    content: $icon-noun-micro-entity-inventor; 
+  }
+}
+.uspto-ip-icon-noun-service-mark {
+  &:before {
+    content: $icon-noun-service-mark; 
+  }
+}
+.uspto-ip-icon-noun-counterfeit {
+  &:before {
+    content: $icon-noun-counterfeit; 
+  }
+}
+.uspto-ip-icon-noun-trademark {
+  &:before {
+    content: $icon-noun-trademark; 
+  }
+}
+.uspto-ip-icon-noun-stem {
+  &:before {
+    content: $icon-noun-stem; 
+  }
+}
+.uspto-ip-icon-noun-pro-bono {
+  &:before {
+    content: $icon-noun-pro-bono; 
+  }
+}
+
+// IP icon sizes
+@mixin ip-icon-size($size: 1.35rem) {
+  font-size: $size;
+}
+[class^="uspto-ip-icon-"].is-xs,[class*="uspto-ip-icon-"].is-xs {
+  @include ip-icon-size(0.75rem);
+}
+[class^="uspto-ip-icon-"].is-sm,[class*="uspto-ip-icon-"].is-sm { 
+  @include ip-icon-size(1rem);
+}
+[class^="uspto-ip-icon-"].is-lg,[class*="uspto-ip-icon-"].is-lg {
+  @include ip-icon-size(2rem);
+}
+
+[class^="uspto-ip-icon-"].is-2x,[class*="uspto-ip-icon-"].is-2x {
+  @include ip-icon-size(2.7rem);
+}
+[class^="uspto-ip-icon-"].is-3x,[class*="uspto-ip-icon-"].is-3x {
+  @include ip-icon-size(4.05rem);
+}
+[class^="uspto-ip-icon-"].is-5x,[class*="uspto-ip-icon-"].is-5x {
+  @include ip-icon-size(6.75rem);
+}
+[class^="uspto-ip-icon-"].is-10x,[class*="uspto-ip-icon-"].is-10x {
+  @include ip-icon-size(13.5rem);
+}

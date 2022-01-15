@@ -11413,7 +11413,7 @@ h3 {
   display: block;
 }
 .accordion .card-body {
-  padding: 1rem 1.25rem 0.75rem;
+  padding: 1rem 1.25rem calc(1rem - 0.25rem);
 }
 .accordion .card:not(:last-of-type) {
   border-bottom: 0.125rem solid #f0f0f0;
@@ -13026,63 +13026,192 @@ footer .uspto-footer-middle .btn-collapse span {
 }
 
 .uspto-icon-home:before {
-  content: "\e90a";
+  content: "";
   color: #fff;
 }
 
 .uspto-icon-sign-out:before {
-  content: "\e90b";
+  content: "";
   color: #fff;
 }
 
 .uspto-icon-myuspto:before {
-  content: "\e909";
+  content: "";
   color: #fff;
 }
 
 .uspto-icon-bars:before {
-  content: "\e900";
+  content: "";
   color: #fff;
 }
 
 .uspto-icon-user:before {
-  content: "\e901";
+  content: "";
   color: #f2a900;
 }
 
 .uspto-icon-trademark:before {
-  content: "\e902";
+  content: "";
   color: #fff;
 }
 
 .uspto-icon-question-circle:before {
-  content: "\e903";
+  content: "";
   color: #fff;
 }
 
 .uspto-icon-user-white:before {
-  content: "\e904";
+  content: "";
   color: #fff;
 }
 
 .uspto-icon-caret:before {
-  content: "\e905";
+  content: "";
   color: #fff;
 }
 
 .uspto-icon-dollar:before {
-  content: "\e906";
+  content: "";
   color: #fff;
 }
 
 .uspto-icon-external-link:before {
-  content: "\e907";
+  content: "";
   color: #fff;
 }
 
 .uspto-icon-lightbulb:before {
-  content: "\e908";
+  content: "";
   color: #fff;
+}
+
+@font-face {
+  font-family: "uspto-ip-icons";
+  src: url("../icons/uspto-ip-icons/uspto-ip-icons.eot?qdew2m");
+  src: url("../icons/uspto-ip-icons/uspto-ip-icons.eot?qdew2m#iefix") format("embedded-opentype"), url("../icons/uspto-ip-icons/uspto-ip-icons.ttf?qdew2m") format("truetype"), url("../icons/uspto-ip-icons/uspto-ip-icons.woff?qdew2m") format("woff"), url("../icons/uspto-ip-icons/uspto-ip-icons.svg?qdew2m#uspto-ip-icons") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+[class^=uspto-ip-icon-],
+[class*=uspto-ip-icon-] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: "uspto-ip-icons" !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  font-size: 1.35rem;
+  color: #1b1b1b;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.uspto-ip-icon-noun-utility-patent:before {
+  content: "";
+}
+
+.uspto-ip-icon-noun-patent-pending:before {
+  content: "";
+}
+
+.uspto-ip-icon-noun-plant-patent:before {
+  content: "";
+}
+
+.uspto-ip-icon-noun-pro-se:before {
+  content: "";
+}
+
+.uspto-ip-icon-noun-invention:before {
+  content: "";
+}
+
+.uspto-ip-icon-noun-maker:before {
+  content: "";
+}
+
+.uspto-ip-icon-noun-intellectual-property:before {
+  content: "";
+}
+
+.uspto-ip-icon-noun-design-patent:before {
+  content: "";
+}
+
+.uspto-ip-icon-noun-prior-art:before {
+  content: "";
+}
+
+.uspto-ip-icon-noun-small-inventor:before {
+  content: "";
+}
+
+.uspto-ip-icon-noun-large-inventor:before {
+  content: "";
+}
+
+.uspto-ip-icon-noun-infringement:before {
+  content: "";
+}
+
+.uspto-ip-icon-noun-trade-secret:before {
+  content: "";
+}
+
+.uspto-ip-icon-noun-micro-entity-inventor:before {
+  content: "";
+}
+
+.uspto-ip-icon-noun-service-mark:before {
+  content: "";
+}
+
+.uspto-ip-icon-noun-counterfeit:before {
+  content: "";
+}
+
+.uspto-ip-icon-noun-trademark:before {
+  content: "";
+}
+
+.uspto-ip-icon-noun-stem:before {
+  content: "";
+}
+
+.uspto-ip-icon-noun-pro-bono:before {
+  content: "";
+}
+
+[class^=uspto-ip-icon-].is-xs, [class*=uspto-ip-icon-].is-xs {
+  font-size: 0.75rem;
+}
+
+[class^=uspto-ip-icon-].is-sm, [class*=uspto-ip-icon-].is-sm {
+  font-size: 1rem;
+}
+
+[class^=uspto-ip-icon-].is-lg, [class*=uspto-ip-icon-].is-lg {
+  font-size: 2rem;
+}
+
+[class^=uspto-ip-icon-].is-2x, [class*=uspto-ip-icon-].is-2x {
+  font-size: 2.7rem;
+}
+
+[class^=uspto-ip-icon-].is-3x, [class*=uspto-ip-icon-].is-3x {
+  font-size: 4.05rem;
+}
+
+[class^=uspto-ip-icon-].is-5x, [class*=uspto-ip-icon-].is-5x {
+  font-size: 6.75rem;
+}
+
+[class^=uspto-ip-icon-].is-10x, [class*=uspto-ip-icon-].is-10x {
+  font-size: 13.5rem;
 }
 
 .text-muted {
