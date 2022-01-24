@@ -13110,107 +13110,107 @@ footer .uspto-footer-middle .btn-collapse span {
   -moz-osx-font-smoothing: grayscale;
 }
 
-.uspto-ip-icon-noun-utility-patent:before {
+.uspto-ip-icon-utility-patent:before {
   content: "";
 }
 
-.uspto-ip-icon-noun-patent-pending:before {
+.uspto-ip-icon-patent-pending:before {
   content: "";
 }
 
-.uspto-ip-icon-noun-plant-patent:before {
+.uspto-ip-icon-plant-patent:before {
   content: "";
 }
 
-.uspto-ip-icon-noun-pro-se:before {
+.uspto-ip-icon-pro-se:before {
   content: "";
 }
 
-.uspto-ip-icon-noun-invention:before {
+.uspto-ip-icon-invention:before {
   content: "";
 }
 
-.uspto-ip-icon-noun-maker:before {
+.uspto-ip-icon-maker:before {
   content: "";
 }
 
-.uspto-ip-icon-noun-intellectual-property:before {
+.uspto-ip-icon-intellectual-property:before {
   content: "";
 }
 
-.uspto-ip-icon-noun-design-patent:before {
+.uspto-ip-icon-design-patent:before {
   content: "";
 }
 
-.uspto-ip-icon-noun-prior-art:before {
+.uspto-ip-icon-prior-art:before {
   content: "";
 }
 
-.uspto-ip-icon-noun-small-inventor:before {
+.uspto-ip-icon-small-inventor:before {
   content: "";
 }
 
-.uspto-ip-icon-noun-large-inventor:before {
+.uspto-ip-icon-large-inventor:before {
   content: "";
 }
 
-.uspto-ip-icon-noun-infringement:before {
+.uspto-ip-icon-infringement:before {
   content: "";
 }
 
-.uspto-ip-icon-noun-trade-secret:before {
+.uspto-ip-icon-trade-secret:before {
   content: "";
 }
 
-.uspto-ip-icon-noun-micro-entity-inventor:before {
+.uspto-ip-icon-micro-entity-inventor:before {
   content: "";
 }
 
-.uspto-ip-icon-noun-service-mark:before {
+.uspto-ip-icon-service-mark:before {
   content: "";
 }
 
-.uspto-ip-icon-noun-counterfeit:before {
+.uspto-ip-icon-counterfeit:before {
   content: "";
 }
 
-.uspto-ip-icon-noun-trademark:before {
+.uspto-ip-icon-trademark:before {
   content: "";
 }
 
-.uspto-ip-icon-noun-stem:before {
+.uspto-ip-icon-stem:before {
   content: "";
 }
 
-.uspto-ip-icon-noun-pro-bono:before {
+.uspto-ip-icon-pro-bono:before {
   content: "";
 }
 
-[class^=uspto-ip-icon-].is-xs, [class*=uspto-ip-icon-].is-xs {
+[class^=uspto-ip-icon-].md-xs, [class*=uspto-ip-icon-].md-xs {
   font-size: 0.75rem;
 }
 
-[class^=uspto-ip-icon-].is-sm, [class*=uspto-ip-icon-].is-sm {
+[class^=uspto-ip-icon-].md-sm, [class*=uspto-ip-icon-].md-sm {
   font-size: 1rem;
 }
 
-[class^=uspto-ip-icon-].is-lg, [class*=uspto-ip-icon-].is-lg {
+[class^=uspto-ip-icon-].md-lg, [class*=uspto-ip-icon-].md-lg {
   font-size: 2rem;
 }
 
-[class^=uspto-ip-icon-].is-2x, [class*=uspto-ip-icon-].is-2x {
+[class^=uspto-ip-icon-].md-2x, [class*=uspto-ip-icon-].md-2x {
   font-size: 2.7rem;
 }
 
-[class^=uspto-ip-icon-].is-3x, [class*=uspto-ip-icon-].is-3x {
+[class^=uspto-ip-icon-].md-3x, [class*=uspto-ip-icon-].md-3x {
   font-size: 4.05rem;
 }
 
-[class^=uspto-ip-icon-].is-5x, [class*=uspto-ip-icon-].is-5x {
+[class^=uspto-ip-icon-].md-5x, [class*=uspto-ip-icon-].md-5x {
   font-size: 6.75rem;
 }
 
-[class^=uspto-ip-icon-].is-10x, [class*=uspto-ip-icon-].is-10x {
+[class^=uspto-ip-icon-].md-10x, [class*=uspto-ip-icon-].md-10x {
   font-size: 13.5rem;
 }
 
