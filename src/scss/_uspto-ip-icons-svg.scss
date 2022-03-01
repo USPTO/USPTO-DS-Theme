@@ -1,0 +1,113 @@
+
+$svg-path: "../icons/uspto-ip-icons" !default;
+
+@mixin icon-size ($width:48px, $height:48px) {
+width: $width;
+height: $height;
+}
+
+.icon-ip:after {
+  content: "";
+  display: inline-block;
+  position: relative;
+  top: 2px;
+  vertical-align: middle;
+  background-repeat: no-repeat;
+  background-image: url("#{$svg-path}/IPicons-large.svg");
+}
+
+
+.icon-utility-patent:after {
+  @include icon-size();
+  background-position: 0 0
+}
+
+.icon-patent-pending:after {
+@include icon-size();
+  background-position: -64px 0
+}
+
+.icon-plant-patent:after {
+@include icon-size();
+  background-position: -128px 0
+}
+
+.icon-pro-se:after {
+@include icon-size();
+  background-position: -192px 0
+}
+
+.icon-invention:after {
+@include icon-size();
+  background-position: -256px 0
+}
+
+.icon-maker:after {
+@include icon-size();
+  background-position: -320px 0
+}
+
+.icon-intellectual-property:after {
+@include icon-size();
+  background-position: -384px 0
+}
+
+.icon-design-patent:after {
+@include icon-size();
+  background-position: -448px 0
+}
+
+.icon-prior-art:after {
+@include icon-size();
+  background-position: -512px 0
+}
+
+.icon-small-inventor:after {
+@include icon-size();
+  background-position: -576px 0
+}
+
+.icon-large-inventor:after {
+@include icon-size();
+  background-position: -640px 0
+}
+
+.icon-infringement:after {
+@include icon-size();
+  background-position: -704px 0
+}
+
+.icon-trade-secret:after {
+@include icon-size();
+  background-position: -768px 0
+}
+
+.icon-micro-entity-inventor:after {
+@include icon-size();
+  background-position: -832px 0
+}
+
+.icon-service-mark:after {
+@include icon-size();
+  background-position: -896px 0
+}
+
+.icon-counterfeit:after {
+@include icon-size();
+  background-position: -960px 0
+}
+
+.icon-ptotrademark:after {
+@include icon-size();
+  background-position: 0 -64px
+}
+
+.icon-stem:after {
+@include icon-size();
+  background-position: -64px -64px
+}
+
+.icon-pro-bono:after {
+@include icon-size();
+  background-position: -128px -64px
+}

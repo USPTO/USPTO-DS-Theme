@@ -108,3 +108,67 @@
   }
 }
 
+// multiple file upload
+/*
+.multiple-file-upload {
+  padding: 1.2rem;
+  margin: 1rem 0;
+  background: $white;
+  border-radius: .4rem;
+  overflow: hidden;
+  .input-file {
+    position: absolute; z-index: -9999; height: 0px; width: 0px; padding: 0px; margin: 0px; line-height: 0; outline: 0px; border: 0px; opacity: 0;
+  }
+  .input-upload-area {
+    border: 2px dashed;
+    border-radius: .4rem;
+    text-align: center;
+    padding: 3rem 0 3.5rem 0;
+  }
+
+}
+*/
+
+
+
+@each $color, $value in $theme-colors {
+  .multiple-upload-#{$color} {
+    padding: 0.5rem;
+    margin: 1rem 0;
+    background: $white;
+    border-radius: .4rem;
+    overflow: hidden;
+    .input-file {
+      position: absolute; z-index: -9999; height: 0px; width: 0px; padding: 0px; margin: 0px; line-height: 0; outline: 0px; border: 0px; opacity: 0;
+    }
+    .input-upload-area {
+      border: 2px dashed $value;
+      border-radius: .4rem;
+      text-align: center;
+      padding: 3rem 0 3.5rem 0;
+      .material-icons {
+        color:$value;
+      }
+      .btn-upload {
+        color: color-yiq($value);
+        
+  background-color: $value;
+  border-color: $value;
+        @include hover {
+          background-color: map-get($colors-variant, #{$color}-dark);
+        }
+        &.disabled,
+        &:disabled {
+          background-color: uspto-color("gray", "200");
+          color: $white;
+        }
+        &:not(:disabled):not(.disabled):active,
+        &:not(:disabled):not(.disabled).active,
+        .show > &.dropdown-toggle {
+          background-color: map-get($colors-variant, #{$color}-darker);
+          // color: color-yiq(map-get($colors-variant, #{$color}-darker));
+        }
+      }
+    }
+  }
+}

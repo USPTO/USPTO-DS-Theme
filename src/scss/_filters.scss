@@ -1,0 +1,33 @@
+.filter-value {
+  padding: 2px 8px;
+  border-radius: 2px;
+  background-color: $light;
+  border: none;
+  margin: 0 5px 5px 0;
+  display: inline-block;
+
+  i {
+    color: $secondary !important;
+    font-weight: bold;
+    font-size: 1rem;
+  }
+
+  &:hover,
+  &:focus {
+    background: #ddd;
+    cursor: pointer;
+    i {
+      color: $dark !important;
+    }
+  }
+  &.filter-sm {
+    font-size: 80%!important;
+    i {
+      font-size: 95%!important;
+    }
+  }
+
+  i {
+    margin-left: 5px;
+  }
+}
