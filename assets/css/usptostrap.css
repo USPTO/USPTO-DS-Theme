@@ -11413,7 +11413,7 @@ h3 {
   display: block;
 }
 .accordion .card-body {
-  padding: 1rem 1.25rem calc(1rem - 0.25rem);
+  padding: 1rem 1.25rem 0.75rem;
 }
 .accordion .card:not(:last-of-type) {
   border-bottom: 0.125rem solid #f0f0f0;
@@ -13079,7 +13079,7 @@ table.dataTable > thead .sorting_asc_disabled:before,
 table.dataTable > thead .sorting_desc_disabled:before {
   right: 1em;
   font-family: "Material Icons";
-  content: "";
+  content: "\f1e0";
   margin-right: 7px;
 }
 
@@ -13090,7 +13090,7 @@ table.dataTable > thead .sorting_asc_disabled:after,
 table.dataTable > thead .sorting_desc_disabled:after {
   right: 0.5em;
   font-family: "Material Icons";
-  content: "";
+  content: "\f1e3";
   margin-left: 7px;
 }
 
@@ -13756,62 +13756,62 @@ footer .uspto-footer-middle .btn-collapse span {
 }
 
 .uspto-icon-home:before {
-  content: "";
+  content: "\e90a";
   color: #fff;
 }
 
 .uspto-icon-sign-out:before {
-  content: "";
+  content: "\e90b";
   color: #fff;
 }
 
 .uspto-icon-myuspto:before {
-  content: "";
+  content: "\e909";
   color: #fff;
 }
 
 .uspto-icon-bars:before {
-  content: "";
+  content: "\e900";
   color: #fff;
 }
 
 .uspto-icon-user:before {
-  content: "";
+  content: "\e901";
   color: #f2a900;
 }
 
 .uspto-icon-trademark:before {
-  content: "";
+  content: "\e902";
   color: #fff;
 }
 
 .uspto-icon-question-circle:before {
-  content: "";
+  content: "\e903";
   color: #fff;
 }
 
 .uspto-icon-user-white:before {
-  content: "";
+  content: "\e904";
   color: #fff;
 }
 
 .uspto-icon-caret:before {
-  content: "";
+  content: "\e905";
   color: #fff;
 }
 
 .uspto-icon-dollar:before {
-  content: "";
+  content: "\e906";
   color: #fff;
 }
 
 .uspto-icon-external-link:before {
-  content: "";
+  content: "\e907";
   color: #fff;
 }
 
 .uspto-icon-lightbulb:before {
-  content: "";
+  content: "\e908";
   color: #fff;
 }
 
@@ -13841,79 +13841,79 @@ footer .uspto-footer-middle .btn-collapse span {
 }
 
 .uspto-ip-icon-utility-patent:before {
-  content: "";
+  content: "\e900";
 }
 
 .uspto-ip-icon-patent-pending:before {
-  content: "";
+  content: "\e901";
 }
 
 .uspto-ip-icon-plant-patent:before {
-  content: "";
+  content: "\e902";
 }
 
 .uspto-ip-icon-pro-se:before {
-  content: "";
+  content: "\e903";
 }
 
 .uspto-ip-icon-invention:before {
-  content: "";
+  content: "\e904";
 }
 
 .uspto-ip-icon-maker:before {
-  content: "";
+  content: "\e905";
 }
 
 .uspto-ip-icon-intellectual-property:before {
-  content: "";
+  content: "\e906";
 }
 
 .uspto-ip-icon-design-patent:before {
-  content: "";
+  content: "\e907";
 }
 
 .uspto-ip-icon-prior-art:before {
-  content: "";
+  content: "\e908";
 }
 
 .uspto-ip-icon-small-inventor:before {
-  content: "";
+  content: "\e909";
 }
 
 .uspto-ip-icon-large-inventor:before {
-  content: "";
+  content: "\e90a";
 }
 
 .uspto-ip-icon-infringement:before {
-  content: "";
+  content: "\e90b";
 }
 
 .uspto-ip-icon-trade-secret:before {
-  content: "";
+  content: "\e90c";
 }
 
 .uspto-ip-icon-micro-entity-inventor:before {
-  content: "";
+  content: "\e90d";
 }
 
 .uspto-ip-icon-service-mark:before {
-  content: "";
+  content: "\e90e";
 }
 
 .uspto-ip-icon-counterfeit:before {
-  content: "";
+  content: "\e90f";
 }
 
 .uspto-ip-icon-trademark:before {
-  content: "";
+  content: "\e910";
 }
 
 .uspto-ip-icon-stem:before {
-  content: "";
+  content: "\e911";
 }
 
 .uspto-ip-icon-pro-bono:before {
-  content: "";
+  content: "\e912";
 }
 
 [class^=uspto-ip-icon-].md-xs, [class*=uspto-ip-icon-].md-xs {
