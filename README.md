@@ -37,7 +37,7 @@ Add the following to your package.json file:
 ```
 "dependencies": {
   "bootstrap": "^4.5.0",
-  "usptostrap": "^2.1.1"
+  "usptostrap": "^2.1.4"
   }
 ```
 Adding directly:
