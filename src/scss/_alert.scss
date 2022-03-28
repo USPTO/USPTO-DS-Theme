@@ -62,6 +62,23 @@
     }
   }
 }
+//
+// Inline information alert
+//
+.inline {
+  padding-left: 1.25rem;
+  &::before {
+    height: 5px;
+    width: 100%;
+  }
+ /*
+  &.alert-sm {
+    &::before {
+      height: 3px;
+    }
+  }
+  */
+}
 
 //
 // Site alert style

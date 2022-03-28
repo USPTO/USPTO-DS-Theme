@@ -109,27 +109,6 @@
 }
 
 // multiple file upload
-/*
-.multiple-file-upload {
-  padding: 1.2rem;
-  margin: 1rem 0;
-  background: $white;
-  border-radius: .4rem;
-  overflow: hidden;
-  .input-file {
-    position: absolute; z-index: -9999; height: 0px; width: 0px; padding: 0px; margin: 0px; line-height: 0; outline: 0px; border: 0px; opacity: 0;
-  }
-  .input-upload-area {
-    border: 2px dashed;
-    border-radius: .4rem;
-    text-align: center;
-    padding: 3rem 0 3.5rem 0;
-  }
-
-}
-*/
-
-
 
 @each $color, $value in $theme-colors {
   .multiple-upload-#{$color} {
@@ -171,4 +150,17 @@
       }
     }
   }
+}
+
+/* multiple file upload */
+.input-upload-area:hover, .dragover {background: #f0f0f0;
+  -moz-transform: scale(0.99);
+  -webkit-transform: scale(0.99);
+  -o-transform: scale(0.99);
+  -ms-transform: scale(0.99);
+  -webkit-transform: scale(0.99);
+  transform: scale(0.99);
+  -webkit-transition: transform 0.3s ease-in-out;
+  -moz-transition:transform 0.3s ease-in-out;
+  -ms-transition:transform 0.3s ease-in-out;
 }

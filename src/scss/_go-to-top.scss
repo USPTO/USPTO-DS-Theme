@@ -1,0 +1,27 @@
+@use "sass:map";
+
+@each $color, $value in $theme-colors {
+    .gototop {
+  &.#{$color} {
+    display: none;
+    position: fixed;
+   background-color: map-get($colors-variant, #{$color}-dark);
+
+    color: color-yiq($value);
+    bottom: 0.75rem;
+    right: 0.75rem;
+    z-index: 1000;
+    //width: 5.5rem;
+    //height: 2rem;
+    padding: 0 1rem;
+    border-radius: 0.25rem;
+    text-decoration: none;
+    text-align: center;
+    border: 1px solid color-yiq($value);
+    @include hover {
+        background-color: map-get($colors-variant, #{$color}-darker);
+        color: color-yiq($value);
+      }
+  }
+}
+}
