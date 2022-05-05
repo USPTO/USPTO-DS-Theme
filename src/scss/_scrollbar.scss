@@ -1,0 +1,61 @@
+/* ===== Scrollbar CSS ===== */
+
+/* Firefox */
+
+.scrollbar-custom {
+  scrollbar-width: auto;
+  scrollbar-color: $secondary $light;
+  /* Chrome, Edge, and Safari */
+  &::-webkit-scrollbar {
+    width: 1rem;
+  }
+  &::-webkit-scrollbar-track {
+    background: $light;
+  }
+  &::-webkit-scrollbar-thumb {
+    background-color: $secondary;
+    border-radius: 0.625rem;
+    border: 3px solid $light;
+  }
+  &::-webkit-scrollbar-thumb:hover {
+    background-color: #5c5c5c;
+  }
+}
+
+//
+// Alternate style
+//
+
+@each $color, $value in $theme-colors {
+  .scrollbar-custom-#{$color} {
+    scrollbar-width: auto;
+    scrollbar-color: map-get($colors-variant, #{$color}-dark) map-get($colors-variant, #{$color}-lightest);
+    /* Chrome, Edge, and Safari */
+    &::-webkit-scrollbar {
+      width: 1rem;
+    }
+    &::-webkit-scrollbar-track {
+      background: map-get($colors-variant, #{$color}-lightest);
+    }
+    &::-webkit-scrollbar-thumb {
+      background-color: map-get($colors-variant, #{$color}-dark);
+      border-radius: 0.625rem;
+      border: 3px solid map-get($colors-variant, #{$color}-lightest);
+    }
+    &::-webkit-scrollbar-thumb:hover {
+      background-color: map-get($colors-variant, #{$color}-darker);
+    }
+  }
+}
+
+.scrollbar-custom-sm {
+    scrollbar-width: thin;
+  /* Chrome, Edge, and Safari */
+  &::-webkit-scrollbar {
+    width: 10px;
+  }
+  &::-webkit-scrollbar-thumb {
+    border-radius: 0.5rem;
+    border-width: 2px;
+  }
+}
