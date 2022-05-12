@@ -12167,6 +12167,16 @@ h3 {
   font-size: 0.9rem;
 }
 
+label.required::after {
+  content: " *";
+  color: #d83933;
+}
+
+label.optional::after {
+  content: " (optional)";
+  color: #757575;
+}
+
 .gototop.primary {
   display: none;
   position: fixed;

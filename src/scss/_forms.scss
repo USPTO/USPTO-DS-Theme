@@ -127,3 +127,13 @@
   margin-bottom: .2rem;
   font-size: .9rem;
 }
+
+//Form required & optional fields
+label.required::after { 
+  content: " *";
+  color: $danger;
+}
+label.optional::after { 
+  content: " (optional)"; 
+  color:$secondary;  
+}
