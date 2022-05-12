@@ -37,7 +37,7 @@ Add the following to your package.json file:
 ```
 "dependencies": {
   "bootstrap": "^4.5.0",
-  "usptostrap": "^2.1.5"
+  "usptostrap": "^2.1.6"
   }
 ```
 Adding directly:
@@ -52,7 +52,7 @@ npm install usptostrap
 - Add the following code to the head of your HTML pages or templates:
 
 ```
-<!-- USPTO Design System v2.x Theme - Note: This already includes Bootstrap 4.x -->
+<!-- USPTO Design System v2.x Theme -->
 <link rel="stylesheet" href="assets/css/usptostrap.css">
 <!-- Optional libraries -->
 <link rel="stylesheet" href="assets/css/uswds-combobox.css">
