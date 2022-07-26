@@ -13394,6 +13394,43 @@ footer .uspto-footer-middle .btn-collapse span {
     display: none;
   }
 }
+.megamenu {
+  /*
+   .nav-item.show {
+    & > a {
+      position: relative;
+      &:before {
+        color: fff;
+        border-bottom: 6px solid;
+        border-left: 6px solid transparent;
+        border-right: 6px solid transparent;
+        display: inline-block;
+        content: "";
+        position: absolute;
+        bottom: 0px;
+        left: 50%;
+      }
+    }
+  }
+  .dropdown-menu {
+    margin: 0;
+  }
+  */
+}
+.megamenu .dropdown {
+  position: static;
+}
+.megamenu .dropdown > .dropdown-menu {
+  width: 100%;
+  border: none;
+  border-radius: 0;
+}
+
+@media screen and (min-width: 992px) {
+  .megamenu .dropdown > .dropdown-menu {
+    min-width: 800px;
+  }
+}
 @font-face {
   font-family: "uspto-icons";
   src: url("../icons/uspto-icons/uspto-icons.eot?a38xwg");
