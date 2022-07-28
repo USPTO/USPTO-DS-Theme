@@ -13219,7 +13219,7 @@ header .dropdown-menu {
   border: 1px solid #444;
   border-radius: 2px;
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
-  padding: 0;
+  padding: 0.5rem 0;
 }
 header .uspto-header-top {
   background-color: #323232;
@@ -13235,7 +13235,7 @@ header .uspto-header-top .btn:hover, header .uspto-header-top .btn:focus, header
   outline-offset: 0 !important;
 }
 header .uspto-header-top .btn-group .btn-text {
-  font-size: 0.8125rem;
+  font-size: 0.875rem;
 }
 header .uspto-header-top .btn-group .user-link {
   color: #f2a900;
@@ -13264,7 +13264,7 @@ header .uspto-header-top .dropdown-menu li a {
   display: block;
   padding: 0.5rem 1rem;
   clear: both;
-  font-size: 0.8125rem;
+  font-size: 0.875rem;
   font-weight: 400;
   color: #ccc;
   white-space: nowrap;
@@ -13284,9 +13284,13 @@ header .uspto-header-bottom {
   background-color: #005ea2;
 }
 header .uspto-header-bottom .navbar .dropdown-item, header .uspto-header-bottom .uspto-header-middle .dropdown-item {
+  /*
   padding-left: 1.25rem;
   padding-right: 1.25rem;
-  font-size: 0.8125rem;
+  */
+  padding: 0.4rem 1.25rem;
+  line-height: 1.2rem;
+  font-size: 0.875rem;
 }
 header .uspto-header-bottom .navbar .dropdown-item:hover header .uspto-header-bottom .navbar .dropdown-item:focus, header .uspto-header-bottom .uspto-header-middle .dropdown-item:hover header .uspto-header-bottom .navbar .dropdown-item:focus, header .uspto-header-bottom .navbar .dropdown-item.page-link:focus header .uspto-header-bottom .navbar .dropdown-item:focus, header .uspto-header-bottom .uspto-header-middle .dropdown-item.page-link:focus header .uspto-header-bottom .navbar .dropdown-item:focus, header .uspto-header-bottom .navbar .dropdown-item:hover header .uspto-header-bottom .uspto-header-middle .dropdown-item:focus, header .uspto-header-bottom .uspto-header-middle .dropdown-item:hover header .uspto-header-bottom .uspto-header-middle .dropdown-item:focus, header .uspto-header-bottom .navbar .dropdown-item.page-link:focus header .uspto-header-bottom .uspto-header-middle .dropdown-item:focus, header .uspto-header-bottom .uspto-header-middle .dropdown-item.page-link:focus header .uspto-header-bottom .uspto-header-middle .dropdown-item:focus {
   color: #262626;
@@ -13328,7 +13332,7 @@ footer .uspto-footer-middle {
   overflow: hidden;
 }
 footer .uspto-footer-middle .column-header {
-  font-size: 0.8125rem;
+  font-size: 0.875rem;
   line-height: 1.1em;
   margin-top: 1.5rem;
   margin-bottom: 9px;
@@ -13347,13 +13351,13 @@ footer .uspto-footer-middle ul li {
 }
 footer .uspto-footer-middle ul li a {
   color: #4ec5f1;
-  font-size: 0.8125rem;
+  font-size: 0.875rem;
 }
 footer .uspto-footer-middle .btn-collapse {
   text-align: left;
   color: white;
   width: 100%;
-  font-size: 0.8125rem;
+  font-size: 0.875rem;
   text-transform: uppercase;
   background: transparent;
   border: 0;
@@ -13420,10 +13424,34 @@ footer .uspto-footer-middle .btn-collapse span {
 .megamenu .dropdown {
   position: static;
 }
+.megamenu .dropdown .row {
+  margin: 0;
+}
+.megamenu .dropdown .row .col {
+  padding: 0;
+}
 .megamenu .dropdown > .dropdown-menu {
   width: 100%;
   border: none;
   border-radius: 0;
+}
+.megamenu .dropdown > .dropdown-menu .dropdown-item {
+  white-space: normal;
+}
+
+@media (max-width: 768px) {
+  .megamenu .dropdown .col {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  .megamenu .dropdown > .dropdown-menu h6 {
+    padding-top: 8px;
+  }
+}
+header .navbar .dropdown-header, header .uspto-header-middle .dropdown-header {
+  color: #1b1b1b;
+  padding: 0.5rem 1.25rem;
+  font-size: 1rem;
 }
 
 @media screen and (min-width: 992px) {
