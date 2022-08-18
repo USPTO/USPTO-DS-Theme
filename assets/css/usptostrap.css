@@ -13216,7 +13216,7 @@ header .dropdown-toggle:after {
   vertical-align: middle;
 }
 header .dropdown-menu {
-  border: 1px solid #444;
+  border: none;
   border-radius: 2px;
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
   padding: 0.5rem 0;
@@ -13399,52 +13399,69 @@ footer .uspto-footer-middle .btn-collapse span {
   }
 }
 .megamenu {
+  position: static;
   /*
-   .nav-item.show {
-    & > a {
-      position: relative;
-      &:before {
-        color: fff;
-        border-bottom: 6px solid;
-        border-left: 6px solid transparent;
-        border-right: 6px solid transparent;
-        display: inline-block;
-        content: "";
-        position: absolute;
-        bottom: 0px;
-        left: 50%;
+    .dropdown {
+      position: static;
+      .row {
+        margin: 0;
+        .col {
+          padding: 0;
+        }
+      }
+      & > .dropdown-menu {
+        width: 100%;
+        border: none;
+        border-radius: 0;
+        .dropdown-item {      
+          white-space: normal;
+
+      }
       }
     }
-  }
-  .dropdown-menu {
-    margin: 0;
-  }
-  */
+
+     .nav-item.show {
+      & > a {
+        position: relative;
+        &:before {
+          color: fff;
+          border-bottom: 6px solid;
+          border-left: 6px solid transparent;
+          border-right: 6px solid transparent;
+          display: inline-block;
+          content: "";
+          position: absolute;
+          bottom: 0px;
+          left: 50%;
+        }
+      }
+    }
+    .dropdown-menu {
+      margin: 0;
+    }
+    */
 }
-.megamenu .dropdown {
-  position: static;
-}
-.megamenu .dropdown .row {
+.megamenu .row {
   margin: 0;
 }
-.megamenu .dropdown .row .col {
+.megamenu .row .col {
   padding: 0;
 }
-.megamenu .dropdown > .dropdown-menu {
+.megamenu > .dropdown-menu {
   width: 100%;
   border: none;
   border-radius: 0;
 }
-.megamenu .dropdown > .dropdown-menu .dropdown-item {
+.megamenu > .dropdown-menu .dropdown-item {
   white-space: normal;
 }
 
 @media (max-width: 768px) {
-  .megamenu .dropdown .col {
+  .megamenu .col {
     flex: 0 0 100%;
     max-width: 100%;
   }
-  .megamenu .dropdown > .dropdown-menu h6 {
+  .megamenu > .dropdown-menu h6 {
     padding-top: 8px;
   }
 }
@@ -13455,7 +13472,7 @@ header .navbar .dropdown-header, header .uspto-header-middle .dropdown-header {
 }
 
 @media screen and (min-width: 992px) {
-  .megamenu .dropdown > .dropdown-menu {
+  .megamenu > .dropdown-menu {
     min-width: 800px;
   }
 }
