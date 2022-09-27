@@ -31,3 +31,20 @@ h6,
   
 }
 
+// Optional responsive text classes for header tag
+$responsive-text-size: (
+    "h1": "1",
+    "h2": "0.6",
+    "h3": "0.4",
+    "h4": "0.3",
+    "h5": "0.2"
+);
+
+@each $name, $size in $responsive-text-size {
+  #{$name}, .#{$name} {
+    &.text-responsive {
+    font-size: calc(100% + #{$size}vw + #{$size}vh);
+  }
+}
+}
+

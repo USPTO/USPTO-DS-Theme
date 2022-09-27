@@ -12706,6 +12706,26 @@ h6,
   color: #757575;
 }
 
+h1.text-responsive, .h1.text-responsive {
+  font-size: calc(100% + 1vw + 1vh);
+}
+
+h2.text-responsive, .h2.text-responsive {
+  font-size: calc(100% + 0.6vw + 0.6vh);
+}
+
+h3.text-responsive, .h3.text-responsive {
+  font-size: calc(100% + 0.4vw + 0.4vh);
+}
+
+h4.text-responsive, .h4.text-responsive {
+  font-size: calc(100% + 0.3vw + 0.3vh);
+}
+
+h5.text-responsive, .h5.text-responsive {
+  font-size: calc(100% + 0.2vw + 0.2vh);
+}
+
 a:hover, a.page-link:focus, a:focus {
   text-decoration: underline;
 }
