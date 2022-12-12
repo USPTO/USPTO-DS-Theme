@@ -153,7 +153,8 @@
 }
 
 /* multiple file upload */
-.input-upload-area:hover, .dragover {background: #f0f0f0;
+.input-upload-area:hover, .dragover, input.input-file:focus + div.input-upload-area {
+  background: #f0f0f0;
   -moz-transform: scale(0.99);
   -webkit-transform: scale(0.99);
   -o-transform: scale(0.99);
@@ -163,4 +164,9 @@
   -webkit-transition: transform 0.3s ease-in-out;
   -moz-transition:transform 0.3s ease-in-out;
   -ms-transition:transform 0.3s ease-in-out;
+}
+input.input-file:focus + div.input-upload-area {
+  outline: 0.25rem solid #2491ff;
+  outline-offset: 0.25rem;
+  background: #f0f0f0;
 }
