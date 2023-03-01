@@ -262,7 +262,9 @@ footer {
       border-radius: 0;
       .dropdown-item {
         white-space: normal;
-
+    }
+    .dropdown-header {
+      white-space: normal!important;
     }
     }
 
