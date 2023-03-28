@@ -39,25 +39,41 @@
   font-size: $size;
 }
 
-.material-icons.md-xs {
-  @include md-icon-size(0.75rem);
+$material-font-size: (
+    "xs": 0.75rem,
+    "sm": 1rem,
+    "lg": 2rem,
+    "2x": 2.7rem,
+    "3x": 4.05rem,
+    "5x": 6.75rem,
+    "10x": 13.5rem
+);
+@each $size, $value in $material-font-size {
+  .material-icons {
+    &.md-#{$size} {
+      @include md-icon-size($value);
+    }  
+  }
 }
-.material-icons.md-sm {
-  @include md-icon-size(1rem);
-}
-.material-icons.md-lg {
-  @include md-icon-size(2rem);
-}
+// .material-icons.md-xs {
+//   @include md-icon-size(0.75rem);
+// }
+// .material-icons.md-sm {
+//   @include md-icon-size(1rem);
+// }
+// .material-icons.md-lg {
+//   @include md-icon-size(2rem);
+// }
 
-.material-icons.md-2x {
-  @include md-icon-size(2.7rem);
-}
-.material-icons.md-3x {
-  @include md-icon-size(4.05rem);
-}
-.material-icons.md-5x {
-  @include md-icon-size(6.75rem);
-}
-.material-icons.md-10x {
-  @include md-icon-size(13.5rem);
-}
+// .material-icons.md-2x {
+//   @include md-icon-size(2.7rem);
+// }
+// .material-icons.md-3x {
+//   @include md-icon-size(4.05rem);
+// }
+// .material-icons.md-5x {
+//   @include md-icon-size(6.75rem);
+// }
+// .material-icons.md-10x {
+//   @include md-icon-size(13.5rem);
+// }
