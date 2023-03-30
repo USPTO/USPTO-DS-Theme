@@ -129,25 +129,40 @@
 @mixin ip-icon-size($size: 1.35rem) {
   font-size: $size;
 }
-[class^="uspto-ip-icon-"].md-xs,[class*="uspto-ip-icon-"].md-xs {
-  @include ip-icon-size(0.75rem);
-}
-[class^="uspto-ip-icon-"].md-sm,[class*="uspto-ip-icon-"].md-sm { 
-  @include ip-icon-size(1rem);
-}
-[class^="uspto-ip-icon-"].md-lg,[class*="uspto-ip-icon-"].md-lg {
-  @include ip-icon-size(2rem);
+$ip-font-size: (
+    "xs": 0.75rem,
+    "sm": 1rem,
+    "lg": 2rem,
+    "2x": 2.7rem,
+    "3x": 4.05rem,
+    "5x": 6.75rem,
+    "10x": 13.5rem
+);
+@each $size, $value in $ip-font-size {
+  [class^="uspto-ip-icon-"].md-#{$size},[class*="uspto-ip-icon-"].md-#{$size} {
+      @include ip-icon-size($value);
+    }   
 }
 
-[class^="uspto-ip-icon-"].md-2x,[class*="uspto-ip-icon-"].md-2x {
-  @include ip-icon-size(2.7rem);
-}
-[class^="uspto-ip-icon-"].md-3x,[class*="uspto-ip-icon-"].md-3x {
-  @include ip-icon-size(4.05rem);
-}
-[class^="uspto-ip-icon-"].md-5x,[class*="uspto-ip-icon-"].md-5x {
-  @include ip-icon-size(6.75rem);
-}
-[class^="uspto-ip-icon-"].md-10x,[class*="uspto-ip-icon-"].md-10x {
-  @include ip-icon-size(13.5rem);
-}
+// [class^="uspto-ip-icon-"].md-xs,[class*="uspto-ip-icon-"].md-xs {
+//   @include ip-icon-size(0.75rem);
+// }
+// [class^="uspto-ip-icon-"].md-sm,[class*="uspto-ip-icon-"].md-sm { 
+//   @include ip-icon-size(1rem);
+// }
+// [class^="uspto-ip-icon-"].md-lg,[class*="uspto-ip-icon-"].md-lg {
+//   @include ip-icon-size(2rem);
+// }
+
+// [class^="uspto-ip-icon-"].md-2x,[class*="uspto-ip-icon-"].md-2x {
+//   @include ip-icon-size(2.7rem);
+// }
+// [class^="uspto-ip-icon-"].md-3x,[class*="uspto-ip-icon-"].md-3x {
+//   @include ip-icon-size(4.05rem);
+// }
+// [class^="uspto-ip-icon-"].md-5x,[class*="uspto-ip-icon-"].md-5x {
+//   @include ip-icon-size(6.75rem);
+// }
+// [class^="uspto-ip-icon-"].md-10x,[class*="uspto-ip-icon-"].md-10x {
+//   @include ip-icon-size(13.5rem);
+// }

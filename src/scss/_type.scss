@@ -48,3 +48,20 @@ $responsive-text-size: (
 }
 }
 
+// Optional line height classes
+$line-height-size: (
+    "xs": 1.15,
+    "sm": 1.35,
+    "md": 1.5, //default line height
+    "lg": 1.62,
+    "xl": 1.75,
+    "2x": 2,
+    "3x": 2.5
+);
+
+@each $type, $height in $line-height-size {
+  .line-height-#{$type} {
+    line-height: $height!important;
+}
+}
+
